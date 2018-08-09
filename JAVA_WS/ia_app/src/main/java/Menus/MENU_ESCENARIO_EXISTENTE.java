@@ -1,0 +1,96 @@
+package Menus;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.Scanner;
+import java.util.Vector;
+
+import Logger.LoggerIA;
+import MenuUtil.ActionsCLS;
+import MenuUtil.menuOption;
+
+public class MENU_ESCENARIO_EXISTENTE {
+	private Connection conexion;
+	private Scanner scanner;
+	private LoggerIA log=new LoggerIA("MENU_ESCENARIO_EXISTENTE");
+	private Vector<String>ids;
+	private Vector<String>nombres;
+	
+	
+	public MENU_ESCENARIO_EXISTENTE(Connection connection, Scanner sca) {
+		// TODO Auto-generated constructor stub
+		conexion=connection;
+		scanner=sca;
+	}
+	
+	public void menu() {
+		String msg="Buscando escenarios...";
+		
+		try {
+			String query="SELECT * FROM IA_APP.T_ESCENARIOS";
+			Statement sta=conexion.createStatement();
+			ResultSet res=sta.executeQuery(query);
+			ids=new Vector<String>();
+			nombres=new Vector<String>();
+			while (res.next()) {
+				ids.add(String.valueOf(res.getInt(1)));
+				nombres.add(res.getString(2));
+			}
+			res.close();
+			sta.close();
+			
+			if(ids.size()<1) {
+				msg="No se encontro ningun escenario.";
+				log.WriteMessage(msg);
+				System.out.println(msg);
+				ActionsCLS.procesaAccion("menuPrincipal", conexion, scanner);
+			}else {
+				boolean seleccionvalida=false;
+				while(seleccionvalida==false) {
+					msg="Seleccione un escenario: ";
+					log.WriteMessage(msg);
+					System.out.println(msg);
+					for(int i=0;i<ids.size();i++) {
+						msg="    "+ids.get(i)+" - "+nombres.get(i);
+						log.WriteMessage(msg);
+						System.out.println(msg);
+					}
+					msg="    0 - Volver";
+					log.WriteMessage(msg);
+					System.out.println(msg);
+					String opcionElegida=scanner.nextLine();
+					if(opcionElegida.equals("0")) {
+						ActionsCLS.procesaAccion("menuPrincipal", conexion, scanner);
+						return;
+					}
+					if(menuOption.existeOpcion(ids, opcionElegida)) {
+						msg="Seleccionando escenario "+opcionElegida+"...";
+						log.WriteMessage(msg);
+						System.out.println(msg);
+						String accion="MENU_ESCENARIO";
+						ActionsCLS.procesaAccionPorIDEscenario(accion, conexion, scanner, opcionElegida);
+						return;
+					}else {
+						msg="Opcion no valida";
+						log.WriteMessage(msg);
+						System.out.println(msg);
+					}
+				}
+				
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			msg="Error obteniendo opciones para el menu 'MENU_ESCENARIO_EXISTENTE'";
+			log.WriteMessage(msg);
+			System.out.println(msg);
+			msg=e.toString();
+			log.WriteMessage(msg);
+			System.out.println(msg);
+			ActionsCLS.procesaAccion("menuPrincipal", conexion, scanner);
+		}
+		
+	}
+	
+	
+}

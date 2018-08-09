@@ -114,4 +114,26 @@ public class resultsetUseful {
 			return matres;
 		}	
 	}
+	
+	public static String [][] queryToMatrix(String Query, Connection conexion) {
+		String msg="";
+		Statement sta;
+		ResultSet res;
+		LoggerIA log=new LoggerIA("resultsetUsefull");
+		try {
+			
+			sta=conexion.createStatement();
+			res=sta.executeQuery(Query);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}finally {
+			try {
+				
+			} catch (Exception e2) {
+				// TODO: handle exception
+			}
+		}
+		
+		
+	}
 }
