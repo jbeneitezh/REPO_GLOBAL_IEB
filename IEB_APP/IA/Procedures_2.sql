@@ -1,0 +1,283 @@
+
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS IA_APP.NUEVO_ESCENARIO;
+$$
+DELIMITER;
+
+
+DELIMITER $$
+CREATE PROCEDURE IA_APP.NUEVO_ESCENARIO(IN  NOMBRE  VARCHAR (200), 
+										OUT P_RES   INT)
+
+BEGIN
+
+	DECLARE vID INT DEFAULT 0;
+	
+	SET P_RES = 0;
+	
+	SELECT MAX(a.ID_ESCENARIO) 
+	  INTO vID
+	  FROM IA_APP.T_ESCENARIOS a;
+	
+	SET vID = IFNULL(vID, 0) + 1;
+	/*Registrando escenario*/
+	INSERT INTO T_ESCENARIOS VALUES (vID,
+									 NOMBRE,
+									 SYSDATE(),
+									 SYSDATE(),
+									 NULL);
+	/*Insertando valores por defecto*/
+	INSERT INTO IA_APP.T_CONFIG_ESCENARIOS VALUES(vID, 1, 
+	
+	INSERT INTO IA_APP.T_CONFIG_ESCENARIOS VALUES(vID, 1, CONCAT(NOMBRE,'_X_INPUT.txt'), SYSDATE());
+	
+	INSERT INTO IA_APP.T_CONFIG_ESCENARIOS VALUES(vID, 2, CONCAT(NOMBRE,'_Y_OUTPUT.txt'), SYSDATE());
+	
+	INSERT INTO IA_APP.T_CONFIG_ESCENARIOS VALUES(vID, 3, '0', SYSDATE());
+	
+	INSERT INTO IA_APP.T_CONFIG_ESCENARIOS VALUES(vID, 4, '1', SYSDATE());
+	
+	INSERT INTO IA_APP.T_CONFIG_ESCENARIOS VALUES(vID, 5, '1000', SYSDATE());
+	
+	INSERT INTO IA_APP.T_CONFIG_ESCENARIOS VALUES(vID, 99, '5', SYSDATE());
+	
+	INSERT INTO IA_APP.T_CONFIG_ESCENARIOS VALUES(vID, 100, '15', SYSDATE());
+	
+	INSERT INTO IA_APP.T_CONFIG_ESCENARIOS VALUES(vID, 102, '0.1', SYSDATE());	
+	
+	
+	
+	SET P_RES = 1;
+	
+END$$
+DELIMITER;
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS IA_APP.MODIFICA_PARAM_ESCENARIO;
+$$
+DELIMITER;
+
+
+DELIMITER $$
+CREATE PROCEDURE IA_APP.MODIFICA_PARAM_ESCENARIO(IN  pID_ESCEN    INT,
+												 IN  pID_PARAM    INT,
+												 IN  pVALOR       VARCHAR (200), 
+										         OUT P_RES        INT,
+												 OUT P_TXT_RES    VARCHAR(200))
+
+BEGIN
+
+	DECLARE vExiste  INT DEFAULT 0;
+	DECLARE vInserta INT DEFAULT 0;
+	
+	SET P_RES = 0;
+	SET P_TXT_RES = 'Se produjo un error.';
+	
+	SELECT COUNT(*)
+	  INTO vExiste
+	  FROM IA_APP.T_CONFIG_ESCENARIOS a
+	 WHERE a.ID_ESCENARIO = pID_ESCEN
+	   AND a.ID_PARAM = pID_PARAM;
+	
+	IF vExiste = 0 THEN
+		SET P_TXT_RES = 'El parametro no existe.';
+	ELSE
+		SELECT COUNT(*)
+		  INTO vExiste
+		  FROM IA_APP.T_CONFIG_ESC_PARAM a
+		 WHERE a.ID_PARAM = pID_PARAM
+		   AND a.MODIFICABLE = 1;
+		
+		IF vExiste = 0 THEN
+			SET P_TXT_RES = 'Parametro no modificable.';
+			
+			SET P_RES = 0;
+		ELSE
+		
+			SELECT COUNT(*)
+			  INTO vExiste
+			  FROM IA_APP.T_PARAM_VALORES_VALIDOS a
+			 WHERE a.ID_PARAM = pID_PARAM;
+			  
+			IF vExiste = 0 THEN
+				SET vInserta = 1;
+			ELSE
+				SELECT COUNT(*)
+				  INTO vExiste
+				  FROM IA_APP.T_PARAM_VALORES_VALIDOS a
+				 WHERE a.ID_PARAM = pID_PARAM
+				   AND a.ID_OPCION = CAST(pVALOR AS SIGNED INTEGER);
+				 
+				IF vExiste > 0 THEN
+					SET vInserta = 1;
+				ELSE
+					SET vInserta = 0;
+					SET P_RES = 0;
+					SET P_TXT_RES = 'No se puede asignar el valor al campo seleccionado.';
+				END IF;
+			END IF;
+			
+			IF vInserta = 1 THEN
+			
+				UPDATE IA_APP.T_CONFIG_ESCENARIOS
+				   SET VALOR = pVALOR,
+					   F_CONFIG = SYSDATE()
+				 WHERE ID_ESCENARIO = pID_ESCEN
+				   AND ID_PARAM     = pID_PARAM;
+				
+				UPDATE IA_APP.T_ESCENARIOS
+				   SET F_MODIFICACION = SYSDATE()
+				 WHERE ID_ESCENARIO = pID_ESCEN;
+				 
+				/*SELECT CONCAT('Actualizado el parametro ',CONVERT(pID_PARAM,CHAR), ' del Escenario ', CONVERT(pID_ESCEN, CHAR), ' a ', pVALOR) INTO P_TXT_RES FROM DUAL;*/
+				SET P_TXT_RES = 'Parametro actualizado';
+				
+				SET P_RES = 1;
+			END IF;
+			
+		END IF;
+		
+	END IF;
+	
+END$$
+DELIMITER;
+
+
+
+
+
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS IA_APP.MODIFICA_AUTOCORRELACION;
+$$
+DELIMITER;
+
+
+DELIMITER $$
+CREATE PROCEDURE IA_APP.MODIFICA_AUTOCORRELACION(IN  pID_ESCEN    INT,
+												 IN  pCAMPO       VARCHAR(100),
+												 IN  pVALOR       INT, 
+										         OUT P_RES        INT,
+												 OUT P_TXT_RES    VARCHAR(200))
+
+BEGIN
+
+	DECLARE vExiste  INT DEFAULT 0;
+	DECLARE vInserta INT DEFAULT 0;
+	DECLARE vContinuar INT DEFAULT 0;
+	
+	SET P_RES = 0;
+	SET P_TXT_RES = 'Se produjo un error.';
+	
+	IF pVALOR >= 0 THEN
+		SET vContinuar = 1;
+	ELSE
+		SET P_RES = 0;
+		SET P_TXT_RES = 'No es posible introducir el valor seleccionado para la autocorrelacion';
+		SET vContinuar = 0;
+	END IF;
+	
+	IF vContinuar = 1 THEN
+		SELECT COUNT(*)
+		  INTO vExiste
+		  FROM IA_APP.T_ESCENARIOS a
+		 WHERE a.ID_ESCENARIO = pID_ESCEN;
+		
+		IF vExiste = 0 THEN
+			SET P_TXT_RES = 'El escenario no existe.';
+			SET P_RES = 0;
+			SET vContinuar = 0;
+		ELSE
+			SET vContinuar = 1;
+		END IF;
+	END IF;
+	
+	IF vContinuar = 1 THEN
+		SELECT COUNT(*)
+		  INTO vExiste
+		  FROM IA_APP.T_ESCENARIOS_AUTOCORRELACION a
+		 WHERE a.ID_ESCENARIO = pID_ESCEN
+		   AND a.CAMPO = pCAMPO;
+		
+		IF vExiste = 0 THEN
+			SET vContinuar = 0;
+			SET P_RES = 0;
+			SET P_TXT_RES = CONCAT('El campo ', pCAMPO, ' no existe para el escenario seleccionado.';
+		ELSE
+			SET vContinuar = 1;
+		END IF;
+	END IF;
+	
+	IF vContinuar = 1 THEN
+	
+		UPDATE T_ESCENARIOS_AUTOCORRELACION
+		   SET AUTOCORREL = pVALOR
+		 WHERE ID_ESCENARIO = pID_ESCEN
+		   AND CAMPO = pCAMPO;
+		   
+		SET P_RES = 1;
+		SET P_TXT_RES = CONCAT('Autocorrelacion actualizada para el campo ', pCAMPO);
+		
+	END IF;
+	
+END$$
+DELIMITER;
+
+
+
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS IA_APP.BORRA_ESCENARIO;
+$$
+DELIMITER;
+
+
+DELIMITER $$
+CREATE PROCEDURE IA_APP.BORRA_ESCENARIO(IN  pID_ESCEN    INT, 
+									    OUT P_RES        INT,
+									    OUT P_TXT_RES    VARCHAR(200))
+
+BEGIN
+
+	DECLARE vExiste INT DEFAULT 0;
+	
+	SET P_RES = 0;
+	SET P_TXT_RES = 'Se produjo un error.';
+	
+	SELECT COUNT(*)
+	  INTO vExiste
+	  FROM IA_APP.T_ESCENARIOS a
+	 WHERE a.ID_ESCENARIO = pID_ESCEN;
+	
+	IF vExiste = 0 THEN
+		SET P_TXT_RES = 'No existe el escenario.';
+		SET P_RES = 0;
+	ELSE
+	
+		DELETE FROM IA_APP.T_PESOS
+		 WHERE ID_ESCENARIO = pID_ESCEN;
+		 
+		DELETE FROM IA_APP.T_ESCENARIOS_AUTOCORREL
+		 WHERE ID_ESCENARIO = pID_ESCEN;
+		
+		DELETE FROM IA_APP.T_CONFIG_ESCENARIOS
+		 WHERE ID_ESCENARIO = pID_ESCEN;
+		
+		DELETE FROM IA_APP.T_ESCENARIOS
+		 WHERE ID_ESCENARIO = pID_ESCEN;
+		
+		SET P_TXT_RES = CONCAT('Se elimino el escenario ',CAST(pID_ESCEN AS CHAR)); 
+		SET P_RES = 1;
+		
+	END IF;
+	
+
+END$$
+DELIMITER;
+
+
+
+
+
+

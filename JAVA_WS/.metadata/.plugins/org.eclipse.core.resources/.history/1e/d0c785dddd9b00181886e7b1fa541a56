@@ -1,0 +1,34 @@
+package ieb_app;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.Vector;
+
+public class TestConexion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public static Vector<String> getSubyacentesUso(Connection con){
+		Vector<String>res=new Vector<>();
+		try {
+			Statement sta=con.createStatement();
+			String Query="SELECT a.ID_SUBYACENTE \n"
+						+"  FROM IEB_PRO.T_ACTIVOS_USO a";
+			ResultSet resul=sta.executeQuery(Query);
+			while(resul.next()) {
+				res.add(resul.getString(1));
+			}
+			resul.close();
+			sta.close();
+			return res;
+		} catch (Exception e) {
+			// TODO: handle exception
+			String msg="IEB_Querys::getSubyacentesUso::ERROR::No se pudo realizar la extraccion. \n"+e.toString();
+			System.out.println(msg);
+			return null;
+		}
+	}
+}
