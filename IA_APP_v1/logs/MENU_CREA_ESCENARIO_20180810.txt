@@ -1,0 +1,24 @@
+2018.08.10 00:00:33 Ha seleccionado crear un nuevo escenario.
+2018.08.10 00:00:33 Indique un nombre para el escenario: 
+2018.08.10 00:00:35 jejwhref
+2018.08.10 00:00:35 Validando el nombre: jejwhref
+2018.08.10 00:00:35 Nombre valido: jejwhref
+2018.08.10 00:00:35 Creando escenario 'jejwhref'...
+2018.08.10 00:00:35 Se creo el escenario 'jejwhref'.
+2018.08.10 00:00:35 Se añadieron valores por defecto 'jejwhref'.
+2018.08.10 00:05:44 Ha seleccionado crear un nuevo escenario.
+2018.08.10 00:05:44 Indique un nombre para el escenario: 
+2018.08.10 00:05:45 erwqe
+2018.08.10 00:05:45 Validando el nombre: erwqe
+2018.08.10 00:05:45 Nombre valido: erwqe
+2018.08.10 00:05:45 Creando escenario 'erwqe'...
+2018.08.10 00:05:45 Se creo el escenario 'erwqe'.
+2018.08.10 00:05:45 Se añadieron valores por defecto 'erwqe'.
+2018.08.10 00:09:57 Ha seleccionado crear un nuevo escenario.
+2018.08.10 00:09:57 Indique un nombre para el escenario: 
+2018.08.10 00:09:59 sawe
+2018.08.10 00:09:59 Validando el nombre: sawe
+2018.08.10 00:09:59 Nombre valido: sawe
+2018.08.10 00:09:59 Creando escenario 'sawe'...
+2018.08.10 00:09:59 Se creo el escenario 'sawe'.
+2018.08.10 00:09:59 Se añadieron valores por defecto 'sawe'.

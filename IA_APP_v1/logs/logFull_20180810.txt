@@ -1,0 +1,1744 @@
+2018.08.10 00:00:18 Accediendo a la aplicación...
+2018.08.10 00:00:18 Conectado a BBDD.
+2018.08.10 00:00:25 Usuario y password incorrectos
+2018.08.10 00:00:30 Conectado como jb...
+2018.08.10 00:00:30 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 00:00:30 
+2018.08.10 00:00:30 Seleccione una opcion de la lista:
+2018.08.10 00:00:30     0 - Salir
+2018.08.10 00:00:30     1 - Acceder a escenario existente
+2018.08.10 00:00:30     2 - Crear nuevo escenario
+2018.08.10 00:00:33 Elegida: 2
+2018.08.10 00:00:33 Procesando accion: escenarioNuevo
+2018.08.10 00:00:33 Ha seleccionado crear un nuevo escenario.
+2018.08.10 00:00:33 Indique un nombre para el escenario: 
+2018.08.10 00:00:35 jejwhref
+2018.08.10 00:00:35 Validando el nombre: jejwhref
+2018.08.10 00:00:35 Nombre valido: jejwhref
+2018.08.10 00:00:35 Creando escenario 'jejwhref'...
+2018.08.10 00:00:35 Se creo el escenario 'jejwhref'.
+2018.08.10 00:00:35 Se añadieron valores por defecto 'jejwhref'.
+2018.08.10 00:00:35 Procesando accion: menuPrincipal
+2018.08.10 00:00:35 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 00:00:35 
+2018.08.10 00:00:35 Seleccione una opcion de la lista:
+2018.08.10 00:00:35     0 - Salir
+2018.08.10 00:00:35     1 - Acceder a escenario existente
+2018.08.10 00:00:35     2 - Crear nuevo escenario
+2018.08.10 00:00:36 Elegida: 1
+2018.08.10 00:00:36 Procesando accion: escenariosExistentes
+2018.08.10 00:00:36 Seleccione un escenario: 
+2018.08.10 00:00:36     1 - adsdew
+2018.08.10 00:00:36     2 - dwet
+2018.08.10 00:00:36     3 - jejwhref
+2018.08.10 00:00:36     0 - Volver
+2018.08.10 00:00:46 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:00:46 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 00:00:46 Seleccionando escenario 1...
+2018.08.10 00:00:46 Procesando accion: MENU_ESCENARIO
+2018.08.10 00:00:46 Accediendo al escenario con id: 1
+2018.08.10 00:00:46 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:00:46 
+2018.08.10 00:00:46 Seleccione una opcion de la lista:
+2018.08.10 00:00:46     0 - Volver
+2018.08.10 00:00:46     1 - Ver parametros
+2018.08.10 00:00:46     2 - Ver status
+2018.08.10 00:00:46     3 - Modificar parametros
+2018.08.10 00:00:46     4 - Procesar ficheros
+2018.08.10 00:00:46     5 - Modificar Autocorrelaciones
+2018.08.10 00:00:46     6 - Borrar escenario
+2018.08.10 00:00:47 Elegida: 6
+2018.08.10 00:00:47 Procesando accion: borraEscenario
+2018.08.10 00:00:47 Entrando a borrar el escenario 1
+2018.08.10 00:00:47 
+2018.08.10 00:00:47 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 00:00:47 
+2018.08.10 00:00:47 El escenario se borrara junto a toda su parametrizacion. ¿Esta de acuerdo?
+2018.08.10 00:00:47 s / n
+2018.08.10 00:00:48 Elegida: s
+2018.08.10 00:00:48 Borrando el escenario 1...
+2018.08.10 00:00:48 Se elimino el escenario 1
+2018.08.10 00:00:48 Borrado el escenario 1
+2018.08.10 00:00:48 Procesando accion: escenariosExistentes
+2018.08.10 00:00:48 Seleccione un escenario: 
+2018.08.10 00:00:48     2 - dwet
+2018.08.10 00:00:48     3 - jejwhref
+2018.08.10 00:00:48     0 - Volver
+2018.08.10 00:00:53 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:00:53 menuOption::existeOpcion::opcion ('2') OK
+2018.08.10 00:00:53 Seleccionando escenario 2...
+2018.08.10 00:00:53 Procesando accion: MENU_ESCENARIO
+2018.08.10 00:00:53 Accediendo al escenario con id: 2
+2018.08.10 00:00:53 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:00:53 
+2018.08.10 00:00:53 Seleccione una opcion de la lista:
+2018.08.10 00:00:53     0 - Volver
+2018.08.10 00:00:53     1 - Ver parametros
+2018.08.10 00:00:53     2 - Ver status
+2018.08.10 00:00:53     3 - Modificar parametros
+2018.08.10 00:00:53     4 - Procesar ficheros
+2018.08.10 00:00:53     5 - Modificar Autocorrelaciones
+2018.08.10 00:00:53     6 - Borrar escenario
+2018.08.10 00:00:55 Elegida: 6
+2018.08.10 00:00:55 Procesando accion: borraEscenario
+2018.08.10 00:00:55 Entrando a borrar el escenario 2
+2018.08.10 00:00:55 
+2018.08.10 00:00:55 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 00:00:55 
+2018.08.10 00:00:55 El escenario se borrara junto a toda su parametrizacion. ¿Esta de acuerdo?
+2018.08.10 00:00:55 s / n
+2018.08.10 00:00:56 Elegida: s
+2018.08.10 00:00:56 Borrando el escenario 2...
+2018.08.10 00:00:56 Se elimino el escenario 2
+2018.08.10 00:00:56 Borrado el escenario 2
+2018.08.10 00:00:56 Procesando accion: escenariosExistentes
+2018.08.10 00:00:56 Seleccione un escenario: 
+2018.08.10 00:00:56     3 - jejwhref
+2018.08.10 00:00:56     0 - Volver
+2018.08.10 00:00:58 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:00:58 menuOption::existeOpcion::opcion ('3') OK
+2018.08.10 00:00:58 Seleccionando escenario 3...
+2018.08.10 00:00:58 Procesando accion: MENU_ESCENARIO
+2018.08.10 00:00:58 Accediendo al escenario con id: 3
+2018.08.10 00:00:58 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:00:58 
+2018.08.10 00:00:58 Seleccione una opcion de la lista:
+2018.08.10 00:00:58     0 - Volver
+2018.08.10 00:00:58     1 - Ver parametros
+2018.08.10 00:00:58     2 - Ver status
+2018.08.10 00:00:58     3 - Modificar parametros
+2018.08.10 00:00:58     4 - Procesar ficheros
+2018.08.10 00:00:58     5 - Modificar Autocorrelaciones
+2018.08.10 00:00:58     6 - Borrar escenario
+2018.08.10 00:01:03 Elegida: 3
+2018.08.10 00:01:03 Procesando accion: modParamEscenario
+2018.08.10 00:01:03 Buscando paramentros del escenario 3
+2018.08.10 00:01:03 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 3 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:01:03 
+2018.08.10 00:01:03 Seleccione el parametro que desea modificar: 
+2018.08.10 00:01:03 ID_PARAM  - 'DESCRIPCION              - 'VALOR                  - 'DATA_TYPE      
+2018.08.10 00:01:03 1         - 'Nombre_Fic_Data_Input    - 'jejwhref_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 00:01:03 2         - 'Nombre_Fic_Data_Output   - 'jejwhref_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 00:01:03 4         - 'Tipo_Optimizacion        - '1                      - 'INT            
+2018.08.10 00:01:03 5         - 'Num_Soluciones           - '1000                   - 'INT            
+2018.08.10 00:01:03 99        - 'Vueltas_por_Iteracion    - '5                      - 'INT            
+2018.08.10 00:01:03 100       - 'Max_Precision_Decimales  - '15                     - 'INT            
+2018.08.10 00:01:03 102       - 'Max_Cambio               - '0.1                    - 'NUMERIC(20,18) 
+2018.08.10 00:01:03 0 - Volver
+2018.08.10 00:05:36 Accediendo a la aplicación...
+2018.08.10 00:05:36 Conectado a BBDD.
+2018.08.10 00:05:40 Conectado como jb...
+2018.08.10 00:05:40 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 00:05:40 
+2018.08.10 00:05:40 Seleccione una opcion de la lista:
+2018.08.10 00:05:40     0 - Salir
+2018.08.10 00:05:40     1 - Acceder a escenario existente
+2018.08.10 00:05:40     2 - Crear nuevo escenario
+2018.08.10 00:05:42 Elegida: 1
+2018.08.10 00:05:42 Procesando accion: escenariosExistentes
+2018.08.10 00:05:42 No se encontro ningun escenario.
+2018.08.10 00:05:42 Procesando accion: menuPrincipal
+2018.08.10 00:05:42 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 00:05:42 
+2018.08.10 00:05:42 Seleccione una opcion de la lista:
+2018.08.10 00:05:42     0 - Salir
+2018.08.10 00:05:42     1 - Acceder a escenario existente
+2018.08.10 00:05:42     2 - Crear nuevo escenario
+2018.08.10 00:05:44 Elegida: 2
+2018.08.10 00:05:44 Procesando accion: escenarioNuevo
+2018.08.10 00:05:44 Ha seleccionado crear un nuevo escenario.
+2018.08.10 00:05:44 Indique un nombre para el escenario: 
+2018.08.10 00:05:45 erwqe
+2018.08.10 00:05:45 Validando el nombre: erwqe
+2018.08.10 00:05:45 Nombre valido: erwqe
+2018.08.10 00:05:45 Creando escenario 'erwqe'...
+2018.08.10 00:05:45 Se creo el escenario 'erwqe'.
+2018.08.10 00:05:45 Se añadieron valores por defecto 'erwqe'.
+2018.08.10 00:05:45 Procesando accion: menuPrincipal
+2018.08.10 00:05:45 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 00:05:45 
+2018.08.10 00:05:45 Seleccione una opcion de la lista:
+2018.08.10 00:05:45     0 - Salir
+2018.08.10 00:05:45     1 - Acceder a escenario existente
+2018.08.10 00:05:45     2 - Crear nuevo escenario
+2018.08.10 00:05:49 Elegida: 1
+2018.08.10 00:05:49 Procesando accion: escenariosExistentes
+2018.08.10 00:05:49 Seleccione un escenario: 
+2018.08.10 00:05:49     1 - erwqe
+2018.08.10 00:05:49     0 - Volver
+2018.08.10 00:05:50 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:05:50 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 00:05:50 Seleccionando escenario 1...
+2018.08.10 00:05:50 Procesando accion: MENU_ESCENARIO
+2018.08.10 00:05:50 Accediendo al escenario con id: 1
+2018.08.10 00:05:50 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:05:50 
+2018.08.10 00:05:50 Seleccione una opcion de la lista:
+2018.08.10 00:05:50     0 - Volver
+2018.08.10 00:05:50     1 - Ver parametros
+2018.08.10 00:05:50     2 - Ver status
+2018.08.10 00:05:50     3 - Modificar parametros
+2018.08.10 00:05:50     4 - Procesar ficheros
+2018.08.10 00:05:50     5 - Modificar Autocorrelaciones
+2018.08.10 00:05:50     6 - Borrar escenario
+2018.08.10 00:05:53 Elegida: 3
+2018.08.10 00:05:53 Procesando accion: modParamEscenario
+2018.08.10 00:05:53 Buscando paramentros del escenario 1
+2018.08.10 00:05:53 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:05:53 
+2018.08.10 00:05:53 Seleccione el parametro que desea modificar: 
+2018.08.10 00:05:53 ID_PARAM  - 'DESCRIPCION              - 'VALOR               - 'DATA_TYPE      
+2018.08.10 00:05:53 1         - 'Nombre_Fic_Data_Input    - 'erwqe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 00:05:53 2         - 'Nombre_Fic_Data_Output   - 'erwqe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 00:05:53 4         - 'Tipo_Optimizacion        - '1                   - 'INT            
+2018.08.10 00:05:53 5         - 'Modo_Rotacion_Pesos      - '1000                - 'VARCHAR(100)   
+2018.08.10 00:05:53 99        - 'Vueltas_por_Iteracion    - '5                   - 'INT            
+2018.08.10 00:05:53 100       - 'Max_Precision_Decimales  - '15                  - 'INT            
+2018.08.10 00:05:53 102       - 'Max_Cambio               - '0.1                 - 'NUMERIC(20,18) 
+2018.08.10 00:05:53 0 - Volver
+2018.08.10 00:05:56 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:05:56 menuOption::existeOpcion::opcion ('5') OK
+2018.08.10 00:05:56 Accediendo a la modificacion del parametro 'Modo_Rotacion_Pesos'
+2018.08.10 00:05:56 El valor actual es: '1000'
+2018.08.10 00:05:56 Comprobando si existen parametrizaciones sobre el parametro 5
+2018.08.10 00:05:56 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 5
+2018.08.10 00:05:56 Indique el nuevo valor
+2018.08.10 00:06:13 das
+2018.08.10 00:06:13 Procesando consulta de S/N
+2018.08.10 00:06:13 
+2018.08.10 00:06:13 Se va a modificar el parametro 'Modo_Rotacion_Pesos' cambiando '1000' por das'. ¿Esta de acuerdo? (S/N)
+2018.08.10 00:06:25 s
+2018.08.10 00:06:25 Error al actualizar el valor
+2018.08.10 00:06:25 Buscando paramentros del escenario 1
+2018.08.10 00:06:25 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:06:25 
+2018.08.10 00:06:25 Seleccione el parametro que desea modificar: 
+2018.08.10 00:06:25 ID_PARAM  - 'DESCRIPCION              - 'VALOR               - 'DATA_TYPE      
+2018.08.10 00:06:25 1         - 'Nombre_Fic_Data_Input    - 'erwqe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 00:06:25 2         - 'Nombre_Fic_Data_Output   - 'erwqe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 00:06:25 4         - 'Tipo_Optimizacion        - '1                   - 'INT            
+2018.08.10 00:06:25 5         - 'Modo_Rotacion_Pesos      - '1000                - 'VARCHAR(100)   
+2018.08.10 00:06:25 99        - 'Vueltas_por_Iteracion    - '5                   - 'INT            
+2018.08.10 00:06:25 100       - 'Max_Precision_Decimales  - '15                  - 'INT            
+2018.08.10 00:06:25 102       - 'Max_Cambio               - '0.1                 - 'NUMERIC(20,18) 
+2018.08.10 00:06:25 0 - Volver
+2018.08.10 00:09:41 Accediendo al escenario con id: 1
+2018.08.10 00:09:41 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:09:41 
+2018.08.10 00:09:41 Seleccione una opcion de la lista:
+2018.08.10 00:09:41     0 - Volver
+2018.08.10 00:09:41     1 - Ver parametros
+2018.08.10 00:09:41     2 - Ver status
+2018.08.10 00:09:41     3 - Modificar parametros
+2018.08.10 00:09:41     4 - Procesar ficheros
+2018.08.10 00:09:41     5 - Modificar Autocorrelaciones
+2018.08.10 00:09:41     6 - Borrar escenario
+2018.08.10 00:09:47 Elegida: 3
+2018.08.10 00:09:47 Procesando accion: modParamEscenario
+2018.08.10 00:09:47 Buscando paramentros del escenario 1
+2018.08.10 00:09:47 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:09:47 
+2018.08.10 00:09:47 Seleccione el parametro que desea modificar: 
+2018.08.10 00:09:47 ID_PARAM  - 'DESCRIPCION              - 'VALOR               - 'DATA_TYPE      
+2018.08.10 00:09:47 1         - 'Nombre_Fic_Data_Input    - 'erwqe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 00:09:47 2         - 'Nombre_Fic_Data_Output   - 'erwqe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 00:09:47 4         - 'Tipo_Optimizacion        - '1                   - 'INT            
+2018.08.10 00:09:47 5         - 'Modo_Rotacion_Pesos      - '1000                - 'VARCHAR(100)   
+2018.08.10 00:09:47 99        - 'Vueltas_por_Iteracion    - '5                   - 'INT            
+2018.08.10 00:09:47 100       - 'Max_Precision_Decimales  - '15                  - 'INT            
+2018.08.10 00:09:47 102       - 'Max_Cambio               - '0.1                 - 'NUMERIC(20,18) 
+2018.08.10 00:09:47 0 - Volver
+2018.08.10 00:09:51 Accediendo al escenario con id: 1
+2018.08.10 00:09:51 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:09:51 
+2018.08.10 00:09:51 Seleccione una opcion de la lista:
+2018.08.10 00:09:51     0 - Volver
+2018.08.10 00:09:51     1 - Ver parametros
+2018.08.10 00:09:51     2 - Ver status
+2018.08.10 00:09:51     3 - Modificar parametros
+2018.08.10 00:09:51     4 - Procesar ficheros
+2018.08.10 00:09:51     5 - Modificar Autocorrelaciones
+2018.08.10 00:09:51     6 - Borrar escenario
+2018.08.10 00:09:53 Elegida: 6
+2018.08.10 00:09:53 Procesando accion: borraEscenario
+2018.08.10 00:09:53 Entrando a borrar el escenario 1
+2018.08.10 00:09:53 
+2018.08.10 00:09:53 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 00:09:53 
+2018.08.10 00:09:53 El escenario se borrara junto a toda su parametrizacion. ¿Esta de acuerdo?
+2018.08.10 00:09:53 s / n
+2018.08.10 00:09:55 Elegida: s
+2018.08.10 00:09:55 Borrando el escenario 1...
+2018.08.10 00:09:55 Se elimino el escenario 1
+2018.08.10 00:09:55 Borrado el escenario 1
+2018.08.10 00:09:55 Procesando accion: escenariosExistentes
+2018.08.10 00:09:55 No se encontro ningun escenario.
+2018.08.10 00:09:55 Procesando accion: menuPrincipal
+2018.08.10 00:09:55 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 00:09:55 
+2018.08.10 00:09:55 Seleccione una opcion de la lista:
+2018.08.10 00:09:55     0 - Salir
+2018.08.10 00:09:55     1 - Acceder a escenario existente
+2018.08.10 00:09:55     2 - Crear nuevo escenario
+2018.08.10 00:09:57 Elegida: 2
+2018.08.10 00:09:57 Procesando accion: escenarioNuevo
+2018.08.10 00:09:57 Ha seleccionado crear un nuevo escenario.
+2018.08.10 00:09:57 Indique un nombre para el escenario: 
+2018.08.10 00:09:59 sawe
+2018.08.10 00:09:59 Validando el nombre: sawe
+2018.08.10 00:09:59 Nombre valido: sawe
+2018.08.10 00:09:59 Creando escenario 'sawe'...
+2018.08.10 00:09:59 Se creo el escenario 'sawe'.
+2018.08.10 00:09:59 Se añadieron valores por defecto 'sawe'.
+2018.08.10 00:09:59 Procesando accion: menuPrincipal
+2018.08.10 00:09:59 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 00:09:59 
+2018.08.10 00:09:59 Seleccione una opcion de la lista:
+2018.08.10 00:09:59     0 - Salir
+2018.08.10 00:09:59     1 - Acceder a escenario existente
+2018.08.10 00:09:59     2 - Crear nuevo escenario
+2018.08.10 00:10:01 Elegida: 1
+2018.08.10 00:10:01 Procesando accion: escenariosExistentes
+2018.08.10 00:10:01 Seleccione un escenario: 
+2018.08.10 00:10:01     1 - sawe
+2018.08.10 00:10:01     0 - Volver
+2018.08.10 00:10:03 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:10:03 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 00:10:03 Seleccionando escenario 1...
+2018.08.10 00:10:03 Procesando accion: MENU_ESCENARIO
+2018.08.10 00:10:03 Accediendo al escenario con id: 1
+2018.08.10 00:10:03 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:10:03 
+2018.08.10 00:10:03 Seleccione una opcion de la lista:
+2018.08.10 00:10:03     0 - Volver
+2018.08.10 00:10:03     1 - Ver parametros
+2018.08.10 00:10:03     2 - Ver status
+2018.08.10 00:10:03     3 - Modificar parametros
+2018.08.10 00:10:03     4 - Procesar ficheros
+2018.08.10 00:10:03     5 - Modificar Autocorrelaciones
+2018.08.10 00:10:03     6 - Borrar escenario
+2018.08.10 00:10:04 Elegida: 3
+2018.08.10 00:10:04 Procesando accion: modParamEscenario
+2018.08.10 00:10:04 Buscando paramentros del escenario 1
+2018.08.10 00:10:04 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:10:04 
+2018.08.10 00:10:04 Seleccione el parametro que desea modificar: 
+2018.08.10 00:10:04 ID_PARAM  - 'DESCRIPCION              - 'VALOR              - 'DATA_TYPE      
+2018.08.10 00:10:04 1         - 'Nombre_Fic_Data_Input    - 'sawe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 00:10:04 2         - 'Nombre_Fic_Data_Output   - 'sawe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 00:10:04 4         - 'Tipo_Optimizacion        - '1                  - 'INT            
+2018.08.10 00:10:04 5         - 'Modo_Rotacion_Pesos      - '1                  - 'VARCHAR(100)   
+2018.08.10 00:10:04 6         - 'Num_Soluciones           - '1000               - 'INT            
+2018.08.10 00:10:04 99        - 'Vueltas_por_Iteracion    - '5                  - 'INT            
+2018.08.10 00:10:04 100       - 'Max_Precision_Decimales  - '15                 - 'INT            
+2018.08.10 00:10:04 102       - 'Max_Cambio               - '0.1                - 'NUMERIC(20,18) 
+2018.08.10 00:10:04 0 - Volver
+2018.08.10 00:10:08 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:10:08 menuOption::existeOpcion::opcion ('6') OK
+2018.08.10 00:10:08 Accediendo a la modificacion del parametro 'Num_Soluciones'
+2018.08.10 00:10:08 El valor actual es: '1000'
+2018.08.10 00:10:08 Comprobando si existen parametrizaciones sobre el parametro 6
+2018.08.10 00:10:08 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 6
+2018.08.10 00:10:08 Indique el nuevo valor
+2018.08.10 00:10:19 200
+2018.08.10 00:10:19 Procesando consulta de S/N
+2018.08.10 00:10:19 
+2018.08.10 00:10:19 Se va a modificar el parametro 'Num_Soluciones' cambiando '1000' por 200'. ¿Esta de acuerdo? (S/N)
+2018.08.10 00:10:20 s
+2018.08.10 00:10:20 Error al actualizar el valor
+2018.08.10 00:10:20 Buscando paramentros del escenario 1
+2018.08.10 00:10:20 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:10:20 
+2018.08.10 00:10:20 Seleccione el parametro que desea modificar: 
+2018.08.10 00:10:20 ID_PARAM  - 'DESCRIPCION              - 'VALOR              - 'DATA_TYPE      
+2018.08.10 00:10:20 1         - 'Nombre_Fic_Data_Input    - 'sawe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 00:10:20 2         - 'Nombre_Fic_Data_Output   - 'sawe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 00:10:20 4         - 'Tipo_Optimizacion        - '1                  - 'INT            
+2018.08.10 00:10:20 5         - 'Modo_Rotacion_Pesos      - '1                  - 'VARCHAR(100)   
+2018.08.10 00:10:20 6         - 'Num_Soluciones           - '1000               - 'INT            
+2018.08.10 00:10:20 99        - 'Vueltas_por_Iteracion    - '5                  - 'INT            
+2018.08.10 00:10:20 100       - 'Max_Precision_Decimales  - '15                 - 'INT            
+2018.08.10 00:10:20 102       - 'Max_Cambio               - '0.1                - 'NUMERIC(20,18) 
+2018.08.10 00:10:20 0 - Volver
+2018.08.10 00:10:24 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:10:24 menuOption::existeOpcion::opcion ('5') OK
+2018.08.10 00:10:24 Accediendo a la modificacion del parametro 'Modo_Rotacion_Pesos'
+2018.08.10 00:10:24 El valor actual es: '1'
+2018.08.10 00:10:24 Comprobando si existen parametrizaciones sobre el parametro 5
+2018.08.10 00:10:24 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 5
+2018.08.10 00:10:24 Indique el nuevo valor
+2018.08.10 00:12:13 Accediendo a la aplicación...
+2018.08.10 00:12:16 Conectado a BBDD.
+2018.08.10 00:12:20 Conectado como jb...
+2018.08.10 00:12:20 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 00:12:20 
+2018.08.10 00:12:20 Seleccione una opcion de la lista:
+2018.08.10 00:12:20     0 - Salir
+2018.08.10 00:12:20     1 - Acceder a escenario existente
+2018.08.10 00:12:20     2 - Crear nuevo escenario
+2018.08.10 00:12:22 Elegida: 1
+2018.08.10 00:12:22 Procesando accion: escenariosExistentes
+2018.08.10 00:12:22 Seleccione un escenario: 
+2018.08.10 00:12:22     1 - sawe
+2018.08.10 00:12:22     0 - Volver
+2018.08.10 00:12:23 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:12:23 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 00:12:23 Seleccionando escenario 1...
+2018.08.10 00:12:23 Procesando accion: MENU_ESCENARIO
+2018.08.10 00:12:23 Accediendo al escenario con id: 1
+2018.08.10 00:12:23 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:12:23 
+2018.08.10 00:12:23 Seleccione una opcion de la lista:
+2018.08.10 00:12:23     0 - Volver
+2018.08.10 00:12:23     1 - Ver parametros
+2018.08.10 00:12:23     2 - Ver status
+2018.08.10 00:12:23     3 - Modificar parametros
+2018.08.10 00:12:23     4 - Procesar ficheros
+2018.08.10 00:12:23     5 - Modificar Autocorrelaciones
+2018.08.10 00:12:23     6 - Borrar escenario
+2018.08.10 00:12:26 Elegida: 3
+2018.08.10 00:12:26 Procesando accion: modParamEscenario
+2018.08.10 00:12:26 Buscando paramentros del escenario 1
+2018.08.10 00:12:26 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:12:26 
+2018.08.10 00:12:26 Seleccione el parametro que desea modificar: 
+2018.08.10 00:12:26 ID_PARAM  - 'DESCRIPCION              - 'VALOR              - 'DATA_TYPE      
+2018.08.10 00:12:26 1         - 'Nombre_Fic_Data_Input    - 'sawe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 00:12:26 2         - 'Nombre_Fic_Data_Output   - 'sawe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 00:12:26 4         - 'Tipo_Optimizacion        - '1                  - 'INT            
+2018.08.10 00:12:26 5         - 'Modo_Rotacion_Pesos      - '1                  - 'VARCHAR(100)   
+2018.08.10 00:12:26 6         - 'Num_Soluciones           - '1000               - 'INT            
+2018.08.10 00:12:26 99        - 'Vueltas_por_Iteracion    - '5                  - 'INT            
+2018.08.10 00:12:26 100       - 'Max_Precision_Decimales  - '15                 - 'INT            
+2018.08.10 00:12:26 102       - 'Max_Cambio               - '0.1                - 'NUMERIC(20,18) 
+2018.08.10 00:12:26 0 - Volver
+2018.08.10 00:12:27 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:12:27 menuOption::existeOpcion::opcion ('5') OK
+2018.08.10 00:12:27 Accediendo a la modificacion del parametro 'Modo_Rotacion_Pesos'
+2018.08.10 00:12:27 El valor actual es: '1'
+2018.08.10 00:12:39 Comprobando si existen parametrizaciones sobre el parametro 5
+2018.08.10 00:12:41 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 5
+2018.08.10 00:38:25 Indique el nuevo valor
+2018.08.10 00:38:25 8
+2018.08.10 00:38:25 Procesando consulta de S/N
+2018.08.10 00:38:25 
+2018.08.10 00:38:25 Se va a modificar el parametro 'Modo_Rotacion_Pesos' cambiando '1' por 8'. ¿Esta de acuerdo? (S/N)
+2018.08.10 00:38:27 s
+2018.08.10 00:38:27 Error al actualizar el valor
+2018.08.10 00:38:27 Buscando paramentros del escenario 1
+2018.08.10 00:38:27 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:38:27 
+2018.08.10 00:38:27 Seleccione el parametro que desea modificar: 
+2018.08.10 00:38:27 ID_PARAM  - 'DESCRIPCION              - 'VALOR              - 'DATA_TYPE      
+2018.08.10 00:38:27 1         - 'Nombre_Fic_Data_Input    - 'sawe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 00:38:27 2         - 'Nombre_Fic_Data_Output   - 'sawe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 00:38:27 4         - 'Tipo_Optimizacion        - '1                  - 'INT            
+2018.08.10 00:38:27 5         - 'Modo_Rotacion_Pesos      - '1                  - 'VARCHAR(100)   
+2018.08.10 00:38:27 6         - 'Num_Soluciones           - '1000               - 'INT            
+2018.08.10 00:38:27 99        - 'Vueltas_por_Iteracion    - '5                  - 'INT            
+2018.08.10 00:38:27 100       - 'Max_Precision_Decimales  - '15                 - 'INT            
+2018.08.10 00:38:27 102       - 'Max_Cambio               - '0.1                - 'NUMERIC(20,18) 
+2018.08.10 00:38:27 0 - Volver
+2018.08.10 00:38:31 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:38:31 menuOption::existeOpcion::opcion ('5') OK
+2018.08.10 00:38:31 Accediendo a la modificacion del parametro 'Modo_Rotacion_Pesos'
+2018.08.10 00:38:31 El valor actual es: '1'
+2018.08.10 00:38:36 Comprobando si existen parametrizaciones sobre el parametro 5
+2018.08.10 00:38:36 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 5
+2018.08.10 00:38:36 Lanzando Query
+2018.08.10 00:38:36 SELECT a.ID_OPCION, 
+       a.DESCRIPCION 
+  FROM IA_APP.T_PARAM_VALORES_VALIDOS a 
+ WHERE a.ID_PARAM = 5
+2018.08.10 00:38:36 queryToMatrix::lanzando query
+2018.08.10 00:38:36 SELECT a.ID_OPCION, 
+       a.DESCRIPCION 
+  FROM IA_APP.T_PARAM_VALORES_VALIDOS a 
+ WHERE a.ID_PARAM = 5
+2018.08.10 00:38:36 MaenusSQL::generaConsulta::Generando consulta...
+2018.08.10 00:38:36 
+2018.08.10 00:38:36 Seleccione un valor de la lista
+2018.08.10 00:38:36     1 - ROTAR_ORDENADO
+2018.08.10 00:38:36     2 - ROTAR_ALEATORIO
+2018.08.10 00:38:40 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 00:38:40 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 00:38:40 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 00:38:40 
+2018.08.10 00:38:40 Seleccione un valor de la lista
+2018.08.10 00:38:40     1 - ROTAR_ORDENADO
+2018.08.10 00:38:40     2 - ROTAR_ALEATORIO
+2018.08.10 00:38:42 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 00:38:42 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 00:38:42 
+2018.08.10 00:38:42 Ha elegido '1'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 00:38:42 s / n
+2018.08.10 00:38:46 Elegida: s
+2018.08.10 00:38:46 Ha elegido '1'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 00:38:46 Error al actualizar el valor
+2018.08.10 00:38:46 Buscando paramentros del escenario 1
+2018.08.10 00:38:46 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:38:46 
+2018.08.10 00:38:46 Seleccione el parametro que desea modificar: 
+2018.08.10 00:38:46 ID_PARAM  - 'DESCRIPCION              - 'VALOR              - 'DATA_TYPE      
+2018.08.10 00:38:46 1         - 'Nombre_Fic_Data_Input    - 'sawe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 00:38:46 2         - 'Nombre_Fic_Data_Output   - 'sawe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 00:38:46 4         - 'Tipo_Optimizacion        - '1                  - 'INT            
+2018.08.10 00:38:46 5         - 'Modo_Rotacion_Pesos      - '1                  - 'VARCHAR(100)   
+2018.08.10 00:38:46 6         - 'Num_Soluciones           - '1000               - 'INT            
+2018.08.10 00:38:46 99        - 'Vueltas_por_Iteracion    - '5                  - 'INT            
+2018.08.10 00:38:46 100       - 'Max_Precision_Decimales  - '15                 - 'INT            
+2018.08.10 00:38:46 102       - 'Max_Cambio               - '0.1                - 'NUMERIC(20,18) 
+2018.08.10 00:38:46 0 - Volver
+2018.08.10 00:39:31 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:39:31 menuOption::existeOpcion::opcion ('4') OK
+2018.08.10 00:39:31 Accediendo a la modificacion del parametro 'Tipo_Optimizacion'
+2018.08.10 00:39:31 El valor actual es: '1'
+2018.08.10 00:39:40 Accediendo a la aplicación...
+2018.08.10 00:39:43 Conectado a BBDD.
+2018.08.10 00:39:46 Conectado como jb...
+2018.08.10 00:39:46 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 00:39:46 
+2018.08.10 00:39:46 Seleccione una opcion de la lista:
+2018.08.10 00:39:46     0 - Salir
+2018.08.10 00:39:46     1 - Acceder a escenario existente
+2018.08.10 00:39:46     2 - Crear nuevo escenario
+2018.08.10 00:39:48 Elegida: 1
+2018.08.10 00:39:48 Procesando accion: escenariosExistentes
+2018.08.10 00:39:48 Seleccione un escenario: 
+2018.08.10 00:39:48     1 - sawe
+2018.08.10 00:39:48     0 - Volver
+2018.08.10 00:39:49 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:39:49 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 00:39:49 Seleccionando escenario 1...
+2018.08.10 00:39:49 Procesando accion: MENU_ESCENARIO
+2018.08.10 00:39:49 Accediendo al escenario con id: 1
+2018.08.10 00:39:49 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:39:49 
+2018.08.10 00:39:49 Seleccione una opcion de la lista:
+2018.08.10 00:39:49     0 - Volver
+2018.08.10 00:39:49     1 - Ver parametros
+2018.08.10 00:39:49     2 - Ver status
+2018.08.10 00:39:49     3 - Modificar parametros
+2018.08.10 00:39:49     4 - Procesar ficheros
+2018.08.10 00:39:49     5 - Modificar Autocorrelaciones
+2018.08.10 00:39:49     6 - Borrar escenario
+2018.08.10 00:39:54 Elegida: 1
+2018.08.10 00:39:54 Procesando accion: verParamEscenario
+2018.08.10 00:39:54 Buscando paramentros del escenario 1
+2018.08.10 00:39:54 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM 
+   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:39:54 Opciones encontradas del escenario 1
+2018.08.10 00:39:54 Mostrando opciones del escenario 1
+2018.08.10 00:39:54   1 - Nombre_Fic_Data_Input - 'sawe_X_INPUT.txt' - VARCHAR(100)
+2018.08.10 00:39:54   2 - Nombre_Fic_Data_Output - 'sawe_Y_OUTPUT.txt' - VARCHAR(100)
+2018.08.10 00:39:54   4 - Tipo_Optimizacion - '1' - INT
+2018.08.10 00:39:54   5 - Modo_Rotacion_Pesos - '1' - VARCHAR(100)
+2018.08.10 00:39:54   6 - Num_Soluciones - '1000' - INT
+2018.08.10 00:39:54   99 - Vueltas_por_Iteracion - '5' - INT
+2018.08.10 00:39:54   100 - Max_Precision_Decimales - '15' - INT
+2018.08.10 00:39:54   102 - Max_Cambio - '0.1' - NUMERIC(20,18)
+2018.08.10 00:39:54 Accediendo al escenario con id: 1
+2018.08.10 00:39:54 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:39:54 
+2018.08.10 00:39:54 Seleccione una opcion de la lista:
+2018.08.10 00:39:54     0 - Volver
+2018.08.10 00:39:54     1 - Ver parametros
+2018.08.10 00:39:54     2 - Ver status
+2018.08.10 00:39:54     3 - Modificar parametros
+2018.08.10 00:39:54     4 - Procesar ficheros
+2018.08.10 00:39:54     5 - Modificar Autocorrelaciones
+2018.08.10 00:39:54     6 - Borrar escenario
+2018.08.10 01:38:45 Accediendo a la aplicación...
+2018.08.10 01:38:48 Conectado a BBDD.
+2018.08.10 01:38:53 Conectado como jb...
+2018.08.10 01:38:53 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 01:38:53 
+2018.08.10 01:38:53 Seleccione una opcion de la lista:
+2018.08.10 01:38:53     0 - Salir
+2018.08.10 01:38:53     1 - Acceder a escenario existente
+2018.08.10 01:38:53     2 - Crear nuevo escenario
+2018.08.10 01:38:54 Elegida: 1
+2018.08.10 01:38:54 Procesando accion: escenariosExistentes
+2018.08.10 01:38:54 Seleccione un escenario: 
+2018.08.10 01:38:54     1 - sawe
+2018.08.10 01:38:54     0 - Volver
+2018.08.10 01:38:56 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:38:56 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 01:38:56 Seleccionando escenario 1...
+2018.08.10 01:38:56 Procesando accion: MENU_ESCENARIO
+2018.08.10 01:38:56 Accediendo al escenario con id: 1
+2018.08.10 01:38:56 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 01:38:56 
+2018.08.10 01:38:56 Seleccione una opcion de la lista:
+2018.08.10 01:38:56     0 - Volver
+2018.08.10 01:38:56     1 - Ver parametros
+2018.08.10 01:38:56     2 - Ver status
+2018.08.10 01:38:56     3 - Modificar parametros
+2018.08.10 01:38:56     4 - Procesar ficheros
+2018.08.10 01:38:56     5 - Modificar Autocorrelaciones
+2018.08.10 01:38:56     6 - Borrar escenario
+2018.08.10 01:39:02 Elegida: 3
+2018.08.10 01:39:02 Procesando accion: modParamEscenario
+2018.08.10 01:39:02 Buscando paramentros del escenario 1
+2018.08.10 01:39:02 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:39:02 
+2018.08.10 01:39:02 Seleccione el parametro que desea modificar: 
+2018.08.10 01:39:02 ID_PARAM  - 'DESCRIPCION              - 'VALOR              - 'DATA_TYPE      
+2018.08.10 01:39:02 1         - 'Nombre_Fic_Data_Input    - 'sawe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 01:39:02 2         - 'Nombre_Fic_Data_Output   - 'sawe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 01:39:02 4         - 'Tipo_Optimizacion        - '1                  - 'INT            
+2018.08.10 01:39:02 5         - 'Modo_Rotacion_Pesos      - '1                  - 'VARCHAR(100)   
+2018.08.10 01:39:02 6         - 'Num_Soluciones           - '1000               - 'INT            
+2018.08.10 01:39:02 99        - 'Vueltas_por_Iteracion    - '5                  - 'INT            
+2018.08.10 01:39:02 100       - 'Max_Precision_Decimales  - '15                 - 'INT            
+2018.08.10 01:39:02 102       - 'Max_Cambio               - '0.1                - 'NUMERIC(20,18) 
+2018.08.10 01:39:02 0 - Volver
+2018.08.10 01:39:08 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:39:08 menuOption::existeOpcion::opcion ('5') OK
+2018.08.10 01:39:08 Accediendo a la modificacion del parametro 'Modo_Rotacion_Pesos'
+2018.08.10 01:39:08 El valor actual es: '1'
+2018.08.10 01:39:08 Comprobando si existen parametrizaciones sobre el parametro 5
+2018.08.10 01:39:08 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 5
+2018.08.10 01:39:08 Lanzando Query
+2018.08.10 01:39:08 SELECT a.ID_OPCION, 
+       a.DESCRIPCION 
+  FROM IA_APP.T_PARAM_VALORES_VALIDOS a 
+ WHERE a.ID_PARAM = 5
+2018.08.10 01:39:08 queryToMatrix::lanzando query
+2018.08.10 01:39:08 SELECT a.ID_OPCION, 
+       a.DESCRIPCION 
+  FROM IA_APP.T_PARAM_VALORES_VALIDOS a 
+ WHERE a.ID_PARAM = 5
+2018.08.10 01:39:08 MaenusSQL::generaConsulta::Generando consulta...
+2018.08.10 01:39:08 
+2018.08.10 01:39:08 Seleccione un valor de la lista
+2018.08.10 01:39:08     1 - ROTAR_ORDENADO
+2018.08.10 01:39:08     2 - ROTAR_ALEATORIO
+2018.08.10 01:39:10 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 01:39:10 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 01:39:10 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 01:39:10 
+2018.08.10 01:39:10 Ha elegido '2'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 01:39:10 s / n
+2018.08.10 01:39:12 Elegida: s
+2018.08.10 01:39:12 Ha elegido '2'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 01:39:12 Error al actualizar el valor
+2018.08.10 01:39:12 Buscando paramentros del escenario 1
+2018.08.10 01:39:12 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:39:12 
+2018.08.10 01:39:12 Seleccione el parametro que desea modificar: 
+2018.08.10 01:39:12 ID_PARAM  - 'DESCRIPCION              - 'VALOR              - 'DATA_TYPE      
+2018.08.10 01:39:12 1         - 'Nombre_Fic_Data_Input    - 'sawe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 01:39:12 2         - 'Nombre_Fic_Data_Output   - 'sawe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 01:39:12 4         - 'Tipo_Optimizacion        - '1                  - 'INT            
+2018.08.10 01:39:12 5         - 'Modo_Rotacion_Pesos      - '1                  - 'VARCHAR(100)   
+2018.08.10 01:39:12 6         - 'Num_Soluciones           - '1000               - 'INT            
+2018.08.10 01:39:12 99        - 'Vueltas_por_Iteracion    - '5                  - 'INT            
+2018.08.10 01:39:12 100       - 'Max_Precision_Decimales  - '15                 - 'INT            
+2018.08.10 01:39:12 102       - 'Max_Cambio               - '0.1                - 'NUMERIC(20,18) 
+2018.08.10 01:39:12 0 - Volver
+2018.08.10 01:39:44 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:39:44 menuOption::existeOpcion::opcion ('5') OK
+2018.08.10 01:39:44 Accediendo a la modificacion del parametro 'Modo_Rotacion_Pesos'
+2018.08.10 01:39:44 El valor actual es: '1'
+2018.08.10 01:39:44 Comprobando si existen parametrizaciones sobre el parametro 5
+2018.08.10 01:39:44 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 5
+2018.08.10 01:39:44 Lanzando Query
+2018.08.10 01:39:44 SELECT a.ID_OPCION, 
+       a.DESCRIPCION 
+  FROM IA_APP.T_PARAM_VALORES_VALIDOS a 
+ WHERE a.ID_PARAM = 5
+2018.08.10 01:39:44 queryToMatrix::lanzando query
+2018.08.10 01:39:44 SELECT a.ID_OPCION, 
+       a.DESCRIPCION 
+  FROM IA_APP.T_PARAM_VALORES_VALIDOS a 
+ WHERE a.ID_PARAM = 5
+2018.08.10 01:39:44 MaenusSQL::generaConsulta::Generando consulta...
+2018.08.10 01:39:44 
+2018.08.10 01:39:44 Seleccione un valor de la lista
+2018.08.10 01:39:44     1 - ROTAR_ORDENADO
+2018.08.10 01:39:44     2 - ROTAR_ALEATORIO
+2018.08.10 01:39:45 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 01:39:45 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 01:39:45 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 01:39:45 
+2018.08.10 01:39:45 Ha elegido '2'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 01:39:45 s / n
+2018.08.10 01:39:47 Elegida: s
+2018.08.10 01:39:47 Ha elegido '2'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 01:39:47 Error al actualizar el valor
+2018.08.10 01:39:47 Buscando paramentros del escenario 1
+2018.08.10 01:39:47 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:39:47 
+2018.08.10 01:39:47 Seleccione el parametro que desea modificar: 
+2018.08.10 01:39:47 ID_PARAM  - 'DESCRIPCION              - 'VALOR              - 'DATA_TYPE      
+2018.08.10 01:39:47 1         - 'Nombre_Fic_Data_Input    - 'sawe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 01:39:47 2         - 'Nombre_Fic_Data_Output   - 'sawe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 01:39:47 4         - 'Tipo_Optimizacion        - '1                  - 'INT            
+2018.08.10 01:39:47 5         - 'Modo_Rotacion_Pesos      - '1                  - 'VARCHAR(100)   
+2018.08.10 01:39:47 6         - 'Num_Soluciones           - '1000               - 'INT            
+2018.08.10 01:39:47 99        - 'Vueltas_por_Iteracion    - '5                  - 'INT            
+2018.08.10 01:39:47 100       - 'Max_Precision_Decimales  - '15                 - 'INT            
+2018.08.10 01:39:47 102       - 'Max_Cambio               - '0.1                - 'NUMERIC(20,18) 
+2018.08.10 01:39:47 0 - Volver
+2018.08.10 01:40:14 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:40:14 menuOption::existeOpcion::opcion ('4') OK
+2018.08.10 01:40:14 Accediendo a la modificacion del parametro 'Tipo_Optimizacion'
+2018.08.10 01:40:14 El valor actual es: '1'
+2018.08.10 01:40:14 Comprobando si existen parametrizaciones sobre el parametro 4
+2018.08.10 01:40:14 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 4
+2018.08.10 01:40:14 Lanzando Query
+2018.08.10 01:40:14 SELECT a.ID_OPCION, 
+       a.DESCRIPCION 
+  FROM IA_APP.T_PARAM_VALORES_VALIDOS a 
+ WHERE a.ID_PARAM = 4
+2018.08.10 01:40:14 queryToMatrix::lanzando query
+2018.08.10 01:40:14 SELECT a.ID_OPCION, 
+       a.DESCRIPCION 
+  FROM IA_APP.T_PARAM_VALORES_VALIDOS a 
+ WHERE a.ID_PARAM = 4
+2018.08.10 01:40:14 MaenusSQL::generaConsulta::Generando consulta...
+2018.08.10 01:40:14 
+2018.08.10 01:40:14 Seleccione un valor de la lista
+2018.08.10 01:40:14     1 - MINIMIZAR_ERROR_CUADRATICO
+2018.08.10 01:40:15 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 01:40:15 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 01:40:15 
+2018.08.10 01:40:15 Ha elegido '1'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 01:40:15 s / n
+2018.08.10 01:40:18 Elegida: s
+2018.08.10 01:40:18 Ha elegido '1'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 01:40:18 Error al actualizar el valor
+2018.08.10 01:40:18 Buscando paramentros del escenario 1
+2018.08.10 01:40:18 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:40:18 
+2018.08.10 01:40:18 Seleccione el parametro que desea modificar: 
+2018.08.10 01:40:18 ID_PARAM  - 'DESCRIPCION              - 'VALOR              - 'DATA_TYPE      
+2018.08.10 01:40:18 1         - 'Nombre_Fic_Data_Input    - 'sawe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 01:40:18 2         - 'Nombre_Fic_Data_Output   - 'sawe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 01:40:18 4         - 'Tipo_Optimizacion        - '1                  - 'INT            
+2018.08.10 01:40:18 5         - 'Modo_Rotacion_Pesos      - '1                  - 'VARCHAR(100)   
+2018.08.10 01:40:18 6         - 'Num_Soluciones           - '1000               - 'INT            
+2018.08.10 01:40:18 99        - 'Vueltas_por_Iteracion    - '5                  - 'INT            
+2018.08.10 01:40:18 100       - 'Max_Precision_Decimales  - '15                 - 'INT            
+2018.08.10 01:40:18 102       - 'Max_Cambio               - '0.1                - 'NUMERIC(20,18) 
+2018.08.10 01:40:18 0 - Volver
+2018.08.10 01:40:23 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:40:23 menuOption::existeOpcion::opcion ('6') OK
+2018.08.10 01:40:23 Accediendo a la modificacion del parametro 'Num_Soluciones'
+2018.08.10 01:40:23 El valor actual es: '1000'
+2018.08.10 01:40:23 Comprobando si existen parametrizaciones sobre el parametro 6
+2018.08.10 01:40:23 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 6
+2018.08.10 01:40:23 Indique el nuevo valor
+2018.08.10 01:40:27 1000
+2018.08.10 01:40:27 Procesando consulta de S/N
+2018.08.10 01:40:27 
+2018.08.10 01:40:27 Se va a modificar el parametro 'Num_Soluciones' cambiando '1000' por 1000'. ¿Esta de acuerdo? (S/N)
+2018.08.10 01:40:28 s
+2018.08.10 01:40:28 Error al actualizar el valor
+2018.08.10 01:40:28 Buscando paramentros del escenario 1
+2018.08.10 01:40:28 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:40:28 
+2018.08.10 01:40:28 Seleccione el parametro que desea modificar: 
+2018.08.10 01:40:28 ID_PARAM  - 'DESCRIPCION              - 'VALOR              - 'DATA_TYPE      
+2018.08.10 01:40:28 1         - 'Nombre_Fic_Data_Input    - 'sawe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 01:40:28 2         - 'Nombre_Fic_Data_Output   - 'sawe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 01:40:28 4         - 'Tipo_Optimizacion        - '1                  - 'INT            
+2018.08.10 01:40:28 5         - 'Modo_Rotacion_Pesos      - '1                  - 'VARCHAR(100)   
+2018.08.10 01:40:28 6         - 'Num_Soluciones           - '1000               - 'INT            
+2018.08.10 01:40:28 99        - 'Vueltas_por_Iteracion    - '5                  - 'INT            
+2018.08.10 01:40:28 100       - 'Max_Precision_Decimales  - '15                 - 'INT            
+2018.08.10 01:40:28 102       - 'Max_Cambio               - '0.1                - 'NUMERIC(20,18) 
+2018.08.10 01:40:28 0 - Volver
+2018.08.10 01:41:30 Accediendo a la aplicación...
+2018.08.10 01:41:34 Conectado a BBDD.
+2018.08.10 01:41:36 Conectado como jb...
+2018.08.10 01:41:36 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 01:41:36 
+2018.08.10 01:41:36 Seleccione una opcion de la lista:
+2018.08.10 01:41:36     0 - Salir
+2018.08.10 01:41:36     1 - Acceder a escenario existente
+2018.08.10 01:41:36     2 - Crear nuevo escenario
+2018.08.10 01:41:39 Elegida: 12
+2018.08.10 01:41:39 Opcion no valida. Vuelva a intentarlo
+2018.08.10 01:41:39 
+2018.08.10 01:41:39 Seleccione una opcion de la lista:
+2018.08.10 01:41:39     0 - Salir
+2018.08.10 01:41:39     1 - Acceder a escenario existente
+2018.08.10 01:41:39     2 - Crear nuevo escenario
+2018.08.10 01:41:40 Elegida: 1
+2018.08.10 01:41:40 Procesando accion: escenariosExistentes
+2018.08.10 01:41:40 Seleccione un escenario: 
+2018.08.10 01:41:40     1 - sawe
+2018.08.10 01:41:40     0 - Volver
+2018.08.10 01:41:42 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:41:42 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 01:41:42 Seleccionando escenario 1...
+2018.08.10 01:41:42 Procesando accion: MENU_ESCENARIO
+2018.08.10 01:41:42 Accediendo al escenario con id: 1
+2018.08.10 01:41:42 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 01:41:42 
+2018.08.10 01:41:42 Seleccione una opcion de la lista:
+2018.08.10 01:41:42     0 - Volver
+2018.08.10 01:41:42     1 - Ver parametros
+2018.08.10 01:41:42     2 - Ver status
+2018.08.10 01:41:42     3 - Modificar parametros
+2018.08.10 01:41:42     4 - Procesar ficheros
+2018.08.10 01:41:42     5 - Modificar Autocorrelaciones
+2018.08.10 01:41:42     6 - Borrar escenario
+2018.08.10 01:41:44 Elegida: 3
+2018.08.10 01:41:44 Procesando accion: modParamEscenario
+2018.08.10 01:41:44 Buscando paramentros del escenario 1
+2018.08.10 01:41:44 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:41:44 
+2018.08.10 01:41:44 Seleccione el parametro que desea modificar: 
+2018.08.10 01:41:44 ID_PARAM  - 'DESCRIPCION              - 'VALOR              - 'DATA_TYPE      
+2018.08.10 01:41:44 1         - 'Nombre_Fic_Data_Input    - 'sawe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 01:41:44 2         - 'Nombre_Fic_Data_Output   - 'sawe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 01:41:44 4         - 'Tipo_Optimizacion        - '1                  - 'INT            
+2018.08.10 01:41:44 5         - 'Modo_Rotacion_Pesos      - '1                  - 'VARCHAR(100)   
+2018.08.10 01:41:44 6         - 'Num_Soluciones           - '1000               - 'INT            
+2018.08.10 01:41:44 99        - 'Vueltas_por_Iteracion    - '5                  - 'INT            
+2018.08.10 01:41:44 100       - 'Max_Precision_Decimales  - '15                 - 'INT            
+2018.08.10 01:41:44 102       - 'Max_Cambio               - '0.1                - 'NUMERIC(20,18) 
+2018.08.10 01:41:44 0 - Volver
+2018.08.10 01:41:48 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:41:48 menuOption::existeOpcion::opcion ('99') OK
+2018.08.10 01:41:48 Accediendo a la modificacion del parametro 'Vueltas_por_Iteracion'
+2018.08.10 01:41:48 El valor actual es: '5'
+2018.08.10 01:42:36 Comprobando si existen parametrizaciones sobre el parametro 99
+2018.08.10 01:42:36 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 99
+2018.08.10 01:42:36 Indique el nuevo valor
+2018.08.10 01:42:45 4
+2018.08.10 01:42:45 Procesando consulta de S/N
+2018.08.10 01:42:45 
+2018.08.10 01:42:45 Se va a modificar el parametro 'Vueltas_por_Iteracion' cambiando '5' por 4'. ¿Esta de acuerdo? (S/N)
+2018.08.10 01:42:47 s
+2018.08.10 01:43:38 Error al actualizar el valor
+2018.08.10 01:43:38 Buscando paramentros del escenario 1
+2018.08.10 01:43:38 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:43:38 
+2018.08.10 01:43:38 Seleccione el parametro que desea modificar: 
+2018.08.10 01:43:38 ID_PARAM  - 'DESCRIPCION              - 'VALOR              - 'DATA_TYPE      
+2018.08.10 01:43:38 1         - 'Nombre_Fic_Data_Input    - 'sawe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 01:43:38 2         - 'Nombre_Fic_Data_Output   - 'sawe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 01:43:38 4         - 'Tipo_Optimizacion        - '1                  - 'INT            
+2018.08.10 01:43:38 5         - 'Modo_Rotacion_Pesos      - '1                  - 'VARCHAR(100)   
+2018.08.10 01:43:38 6         - 'Num_Soluciones           - '1000               - 'INT            
+2018.08.10 01:43:38 99        - 'Vueltas_por_Iteracion    - '5                  - 'INT            
+2018.08.10 01:43:38 100       - 'Max_Precision_Decimales  - '15                 - 'INT            
+2018.08.10 01:43:38 102       - 'Max_Cambio               - '0.1                - 'NUMERIC(20,18) 
+2018.08.10 01:43:38 0 - Volver
+2018.08.10 01:43:44 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:43:44 menuOption::existeOpcion::opcion ('6') OK
+2018.08.10 01:43:44 Accediendo a la modificacion del parametro 'Num_Soluciones'
+2018.08.10 01:43:44 El valor actual es: '1000'
+2018.08.10 01:44:00 Comprobando si existen parametrizaciones sobre el parametro 6
+2018.08.10 01:44:00 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 6
+2018.08.10 01:44:00 Indique el nuevo valor
+2018.08.10 01:44:00 4
+2018.08.10 01:44:00 Procesando consulta de S/N
+2018.08.10 01:44:00 
+2018.08.10 01:44:00 Se va a modificar el parametro 'Num_Soluciones' cambiando '1000' por 4'. ¿Esta de acuerdo? (S/N)
+2018.08.10 01:44:04 s
+2018.08.10 01:45:48 Error al actualizar el valor
+2018.08.10 01:45:48 Buscando paramentros del escenario 1
+2018.08.10 01:45:48 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:45:48 
+2018.08.10 01:45:48 Seleccione el parametro que desea modificar: 
+2018.08.10 01:45:48 ID_PARAM  - 'DESCRIPCION              - 'VALOR              - 'DATA_TYPE      
+2018.08.10 01:45:48 1         - 'Nombre_Fic_Data_Input    - 'sawe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 01:45:48 2         - 'Nombre_Fic_Data_Output   - 'sawe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 01:45:48 4         - 'Tipo_Optimizacion        - '1                  - 'INT            
+2018.08.10 01:45:48 5         - 'Modo_Rotacion_Pesos      - '1                  - 'VARCHAR(100)   
+2018.08.10 01:45:48 6         - 'Num_Soluciones           - '1000               - 'INT            
+2018.08.10 01:45:48 99        - 'Vueltas_por_Iteracion    - '5                  - 'INT            
+2018.08.10 01:45:48 100       - 'Max_Precision_Decimales  - '15                 - 'INT            
+2018.08.10 01:45:48 102       - 'Max_Cambio               - '0.1                - 'NUMERIC(20,18) 
+2018.08.10 01:45:48 0 - Volver
+2018.08.10 01:45:52 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:45:52 menuOption::existeOpcion::opcion ('6') OK
+2018.08.10 01:45:52 Accediendo a la modificacion del parametro 'Num_Soluciones'
+2018.08.10 01:45:52 El valor actual es: '1000'
+2018.08.10 01:45:52 Comprobando si existen parametrizaciones sobre el parametro 6
+2018.08.10 01:45:52 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 6
+2018.08.10 01:45:52 Indique el nuevo valor
+2018.08.10 01:45:56 999
+2018.08.10 01:45:56 Procesando consulta de S/N
+2018.08.10 01:45:56 
+2018.08.10 01:45:56 Se va a modificar el parametro 'Num_Soluciones' cambiando '1000' por 999'. ¿Esta de acuerdo? (S/N)
+2018.08.10 01:45:58 s
+2018.08.10 01:46:17 -1 - Se produjo un error.
+2018.08.10 01:46:17 Error al procesar el procedimiento. Param: 'Num_Soluciones'
+2018.08.10 01:46:17 rollback
+2018.08.10 01:46:17 Buscando paramentros del escenario 1
+2018.08.10 01:46:17 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:46:17 
+2018.08.10 01:46:17 Seleccione el parametro que desea modificar: 
+2018.08.10 01:46:17 ID_PARAM  - 'DESCRIPCION              - 'VALOR              - 'DATA_TYPE      
+2018.08.10 01:46:17 1         - 'Nombre_Fic_Data_Input    - 'sawe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 01:46:17 2         - 'Nombre_Fic_Data_Output   - 'sawe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 01:46:17 4         - 'Tipo_Optimizacion        - '1                  - 'INT            
+2018.08.10 01:46:17 5         - 'Modo_Rotacion_Pesos      - '1                  - 'VARCHAR(100)   
+2018.08.10 01:46:17 6         - 'Num_Soluciones           - '1000               - 'INT            
+2018.08.10 01:46:17 99        - 'Vueltas_por_Iteracion    - '5                  - 'INT            
+2018.08.10 01:46:17 100       - 'Max_Precision_Decimales  - '15                 - 'INT            
+2018.08.10 01:46:17 102       - 'Max_Cambio               - '0.1                - 'NUMERIC(20,18) 
+2018.08.10 01:46:17 0 - Volver
+2018.08.10 01:47:23 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:47:23 menuOption::existeOpcion::opcion ('6') OK
+2018.08.10 01:47:23 Accediendo a la modificacion del parametro 'Num_Soluciones'
+2018.08.10 01:47:23 El valor actual es: '1000'
+2018.08.10 01:47:23 Comprobando si existen parametrizaciones sobre el parametro 6
+2018.08.10 01:47:23 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 6
+2018.08.10 01:47:23 Indique el nuevo valor
+2018.08.10 01:47:26 999
+2018.08.10 01:47:26 Procesando consulta de S/N
+2018.08.10 01:47:26 
+2018.08.10 01:47:26 Se va a modificar el parametro 'Num_Soluciones' cambiando '1000' por 999'. ¿Esta de acuerdo? (S/N)
+2018.08.10 01:47:27 s
+2018.08.10 01:47:38 -1 - Se produjo un error.
+2018.08.10 01:47:38 Error al procesar el procedimiento. Param: 'Num_Soluciones'
+2018.08.10 01:47:38 rollback
+2018.08.10 01:47:38 Buscando paramentros del escenario 1
+2018.08.10 01:47:38 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:47:38 
+2018.08.10 01:47:38 Seleccione el parametro que desea modificar: 
+2018.08.10 01:47:38 ID_PARAM  - 'DESCRIPCION              - 'VALOR              - 'DATA_TYPE      
+2018.08.10 01:47:38 1         - 'Nombre_Fic_Data_Input    - 'sawe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 01:47:38 2         - 'Nombre_Fic_Data_Output   - 'sawe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 01:47:38 4         - 'Tipo_Optimizacion        - '1                  - 'INT            
+2018.08.10 01:47:38 5         - 'Modo_Rotacion_Pesos      - '1                  - 'VARCHAR(100)   
+2018.08.10 01:47:38 6         - 'Num_Soluciones           - '1000               - 'INT            
+2018.08.10 01:47:38 99        - 'Vueltas_por_Iteracion    - '5                  - 'INT            
+2018.08.10 01:47:38 100       - 'Max_Precision_Decimales  - '15                 - 'INT            
+2018.08.10 01:47:38 102       - 'Max_Cambio               - '0.1                - 'NUMERIC(20,18) 
+2018.08.10 01:47:38 0 - Volver
+2018.08.10 01:50:30 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:50:30 menuOption::existeOpcion::opcion ('6') OK
+2018.08.10 01:50:30 Accediendo a la modificacion del parametro 'Num_Soluciones'
+2018.08.10 01:50:30 El valor actual es: '1000'
+2018.08.10 01:50:30 Comprobando si existen parametrizaciones sobre el parametro 6
+2018.08.10 01:50:30 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 6
+2018.08.10 01:50:30 Indique el nuevo valor
+2018.08.10 01:50:31 999
+2018.08.10 01:50:31 Procesando consulta de S/N
+2018.08.10 01:50:31 
+2018.08.10 01:50:32 Se va a modificar el parametro 'Num_Soluciones' cambiando '1000' por 999'. ¿Esta de acuerdo? (S/N)
+2018.08.10 01:50:32 s
+2018.08.10 01:50:40 -1 - Se produjo un error.
+2018.08.10 01:50:40 Error al procesar el procedimiento. Param: 'Num_Soluciones'
+2018.08.10 01:50:40 rollback
+2018.08.10 01:50:40 Buscando paramentros del escenario 1
+2018.08.10 01:50:40 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:50:40 
+2018.08.10 01:50:40 Seleccione el parametro que desea modificar: 
+2018.08.10 01:50:40 ID_PARAM  - 'DESCRIPCION              - 'VALOR              - 'DATA_TYPE      
+2018.08.10 01:50:40 1         - 'Nombre_Fic_Data_Input    - 'sawe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 01:50:40 2         - 'Nombre_Fic_Data_Output   - 'sawe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 01:50:40 4         - 'Tipo_Optimizacion        - '1                  - 'INT            
+2018.08.10 01:50:40 5         - 'Modo_Rotacion_Pesos      - '1                  - 'VARCHAR(100)   
+2018.08.10 01:50:40 6         - 'Num_Soluciones           - '1000               - 'INT            
+2018.08.10 01:50:40 99        - 'Vueltas_por_Iteracion    - '5                  - 'INT            
+2018.08.10 01:50:40 100       - 'Max_Precision_Decimales  - '15                 - 'INT            
+2018.08.10 01:50:40 102       - 'Max_Cambio               - '0.1                - 'NUMERIC(20,18) 
+2018.08.10 01:50:40 0 - Volver
+2018.08.10 01:51:05 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:51:05 menuOption::existeOpcion::opcion ('6') OK
+2018.08.10 01:51:05 Accediendo a la modificacion del parametro 'Num_Soluciones'
+2018.08.10 01:51:05 El valor actual es: '1000'
+2018.08.10 01:51:05 Comprobando si existen parametrizaciones sobre el parametro 6
+2018.08.10 01:51:05 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 6
+2018.08.10 01:51:05 Indique el nuevo valor
+2018.08.10 01:51:07 999
+2018.08.10 01:51:07 Procesando consulta de S/N
+2018.08.10 01:51:07 
+2018.08.10 01:51:07 Se va a modificar el parametro 'Num_Soluciones' cambiando '1000' por 999'. ¿Esta de acuerdo? (S/N)
+2018.08.10 01:51:08 s
+2018.08.10 01:51:11 1 - Parametro actualizado
+2018.08.10 01:51:11 Se actualizo el parametro 'Num_Soluciones' a '999'
+2018.08.10 01:51:11 commit
+2018.08.10 01:51:11 Buscando paramentros del escenario 1
+2018.08.10 01:51:11 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:51:11 
+2018.08.10 01:51:11 Seleccione el parametro que desea modificar: 
+2018.08.10 01:51:11 ID_PARAM  - 'DESCRIPCION              - 'VALOR              - 'DATA_TYPE      
+2018.08.10 01:51:11 1         - 'Nombre_Fic_Data_Input    - 'sawe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 01:51:11 2         - 'Nombre_Fic_Data_Output   - 'sawe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 01:51:11 4         - 'Tipo_Optimizacion        - '1                  - 'INT            
+2018.08.10 01:51:11 5         - 'Modo_Rotacion_Pesos      - '1                  - 'VARCHAR(100)   
+2018.08.10 01:51:11 6         - 'Num_Soluciones           - '999                - 'INT            
+2018.08.10 01:51:11 99        - 'Vueltas_por_Iteracion    - '5                  - 'INT            
+2018.08.10 01:51:11 100       - 'Max_Precision_Decimales  - '15                 - 'INT            
+2018.08.10 01:51:11 102       - 'Max_Cambio               - '0.1                - 'NUMERIC(20,18) 
+2018.08.10 01:51:11 0 - Volver
+2018.08.10 01:51:18 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:51:18 menuOption::existeOpcion::opcion ('5') OK
+2018.08.10 01:51:18 Accediendo a la modificacion del parametro 'Modo_Rotacion_Pesos'
+2018.08.10 01:51:18 El valor actual es: '1'
+2018.08.10 01:51:18 Comprobando si existen parametrizaciones sobre el parametro 5
+2018.08.10 01:51:18 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 5
+2018.08.10 01:51:18 Lanzando Query
+2018.08.10 01:51:18 SELECT a.ID_OPCION, 
+       a.DESCRIPCION 
+  FROM IA_APP.T_PARAM_VALORES_VALIDOS a 
+ WHERE a.ID_PARAM = 5
+2018.08.10 01:51:18 queryToMatrix::lanzando query
+2018.08.10 01:51:18 SELECT a.ID_OPCION, 
+       a.DESCRIPCION 
+  FROM IA_APP.T_PARAM_VALORES_VALIDOS a 
+ WHERE a.ID_PARAM = 5
+2018.08.10 01:51:18 MaenusSQL::generaConsulta::Generando consulta...
+2018.08.10 01:51:18 
+2018.08.10 01:51:18 Seleccione un valor de la lista
+2018.08.10 01:51:18     1 - ROTAR_ORDENADO
+2018.08.10 01:51:18     2 - ROTAR_ALEATORIO
+2018.08.10 01:51:19 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 01:51:19 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 01:51:19 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 01:51:19 
+2018.08.10 01:51:19 Ha elegido '2'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 01:51:19 s / n
+2018.08.10 01:51:20 Elegida: s
+2018.08.10 01:51:20 Ha elegido '2'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 01:51:30 1 - Parametro actualizado
+2018.08.10 01:51:30 Se actualizo el parametro 'Modo_Rotacion_Pesos' a '2'
+2018.08.10 01:51:30 commit
+2018.08.10 01:51:30 Buscando paramentros del escenario 1
+2018.08.10 01:51:30 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:51:30 
+2018.08.10 01:51:30 Seleccione el parametro que desea modificar: 
+2018.08.10 01:51:30 ID_PARAM  - 'DESCRIPCION              - 'VALOR              - 'DATA_TYPE      
+2018.08.10 01:51:30 1         - 'Nombre_Fic_Data_Input    - 'sawe_X_INPUT.txt   - 'VARCHAR(100)   
+2018.08.10 01:51:30 2         - 'Nombre_Fic_Data_Output   - 'sawe_Y_OUTPUT.txt  - 'VARCHAR(100)   
+2018.08.10 01:51:30 4         - 'Tipo_Optimizacion        - '1                  - 'INT            
+2018.08.10 01:51:30 5         - 'Modo_Rotacion_Pesos      - '2                  - 'VARCHAR(100)   
+2018.08.10 01:51:30 6         - 'Num_Soluciones           - '999                - 'INT            
+2018.08.10 01:51:30 99        - 'Vueltas_por_Iteracion    - '5                  - 'INT            
+2018.08.10 01:51:30 100       - 'Max_Precision_Decimales  - '15                 - 'INT            
+2018.08.10 01:51:30 102       - 'Max_Cambio               - '0.1                - 'NUMERIC(20,18) 
+2018.08.10 01:51:30 0 - Volver
+2018.08.10 01:53:42 Accediendo al escenario con id: 1
+2018.08.10 01:53:42 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 01:53:42 
+2018.08.10 01:53:42 Seleccione una opcion de la lista:
+2018.08.10 01:53:42     0 - Volver
+2018.08.10 01:53:42     1 - Ver parametros
+2018.08.10 01:53:42     2 - Ver status
+2018.08.10 01:53:42     3 - Modificar parametros
+2018.08.10 01:53:42     4 - Procesar ficheros
+2018.08.10 01:53:42     5 - Modificar Autocorrelaciones
+2018.08.10 01:53:42     6 - Borrar escenario
+2018.08.10 01:53:45 Elegida: 4
+2018.08.10 01:53:46 Procesando accion: procesaFicheros
+2018.08.10 01:53:46 void::procesaFicheros
+2018.08.10 01:53:46 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 01:53:46 
+2018.08.10 01:53:46 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 01:53:46 s / n
+2018.08.10 01:54:58 Elegida: s
+2018.08.10 01:54:58 Recuperando informacion de los ficheros...
+2018.08.10 01:54:58 queryToMatrix::lanzando query
+2018.08.10 01:54:58 SELECT a.VALOR 
+  FROM IA_APP.T_CONFIG_ESCENARIOS a 
+ WHERE a.ID_ESCENARIO = 1 
+   AND a.ID_PARAM IN (1, 2) 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:54:58 ficheros recuperados. Total 3.
+2018.08.10 01:54:58 El fichero de inputs no existe 'G:\IA_APP_v1\imports\VALOR
+2018.08.10 01:54:58 Deteniendo...
+2018.08.10 01:54:58 Accediendo al escenario con id: 1
+2018.08.10 01:54:58 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 01:54:58 
+2018.08.10 01:54:58 Seleccione una opcion de la lista:
+2018.08.10 01:54:58     0 - Volver
+2018.08.10 01:54:58     1 - Ver parametros
+2018.08.10 01:54:58     2 - Ver status
+2018.08.10 01:54:58     3 - Modificar parametros
+2018.08.10 01:54:58     4 - Procesar ficheros
+2018.08.10 01:54:58     5 - Modificar Autocorrelaciones
+2018.08.10 01:54:58     6 - Borrar escenario
+2018.08.10 01:55:42 Accediendo a la aplicación...
+2018.08.10 01:55:45 Conectado a BBDD.
+2018.08.10 01:55:48 Conectado como jb...
+2018.08.10 01:55:48 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 01:55:48 
+2018.08.10 01:55:48 Seleccione una opcion de la lista:
+2018.08.10 01:55:48     0 - Salir
+2018.08.10 01:55:48     1 - Acceder a escenario existente
+2018.08.10 01:55:48     2 - Crear nuevo escenario
+2018.08.10 01:55:49 Elegida: 1
+2018.08.10 01:55:49 Procesando accion: escenariosExistentes
+2018.08.10 01:55:49 Seleccione un escenario: 
+2018.08.10 01:55:49     1 - sawe
+2018.08.10 01:55:49     0 - Volver
+2018.08.10 01:55:50 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:55:50 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 01:55:50 Seleccionando escenario 1...
+2018.08.10 01:55:50 Procesando accion: MENU_ESCENARIO
+2018.08.10 01:55:50 Accediendo al escenario con id: 1
+2018.08.10 01:55:50 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 01:55:50 
+2018.08.10 01:55:50 Seleccione una opcion de la lista:
+2018.08.10 01:55:50     0 - Volver
+2018.08.10 01:55:50     1 - Ver parametros
+2018.08.10 01:55:50     2 - Ver status
+2018.08.10 01:55:50     3 - Modificar parametros
+2018.08.10 01:55:50     4 - Procesar ficheros
+2018.08.10 01:55:50     5 - Modificar Autocorrelaciones
+2018.08.10 01:55:50     6 - Borrar escenario
+2018.08.10 01:55:54 Elegida: 4
+2018.08.10 01:55:54 Procesando accion: procesaFicheros
+2018.08.10 01:55:54 void::procesaFicheros
+2018.08.10 01:55:54 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 01:55:54 
+2018.08.10 01:55:54 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran. En caso contrario se actualizaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 01:55:54 s / n
+2018.08.10 01:55:55 Elegida: s
+2018.08.10 01:55:55 Recuperando informacion de los ficheros...
+2018.08.10 01:55:55 queryToMatrix::lanzando query
+2018.08.10 01:55:55 SELECT a.VALOR 
+  FROM IA_APP.T_CONFIG_ESCENARIOS a 
+ WHERE a.ID_ESCENARIO = 1 
+   AND a.ID_PARAM IN (1, 2) 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:55:55 ficheros recuperados. Total 3.
+2018.08.10 01:55:55 El fichero de inputs no existe 'G:\IA_APP_v1\imports\sawe_X_INPUT.txt
+2018.08.10 01:55:55 Deteniendo...
+2018.08.10 01:55:55 Accediendo al escenario con id: 1
+2018.08.10 01:55:55 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 01:55:55 
+2018.08.10 01:55:55 Seleccione una opcion de la lista:
+2018.08.10 01:55:55     0 - Volver
+2018.08.10 01:55:55     1 - Ver parametros
+2018.08.10 01:55:55     2 - Ver status
+2018.08.10 01:55:55     3 - Modificar parametros
+2018.08.10 01:55:55     4 - Procesar ficheros
+2018.08.10 01:55:55     5 - Modificar Autocorrelaciones
+2018.08.10 01:55:55     6 - Borrar escenario
+2018.08.10 02:01:17 Elegida: 1
+2018.08.10 02:01:17 Procesando accion: verParamEscenario
+2018.08.10 02:01:17 Buscando paramentros del escenario 1
+2018.08.10 02:01:17 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM 
+   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 02:01:17 Opciones encontradas del escenario 1
+2018.08.10 02:01:17 Mostrando opciones del escenario 1
+2018.08.10 02:01:17   1 - Nombre_Fic_Data_Input - 'sawe_X_INPUT.txt' - VARCHAR(100)
+2018.08.10 02:01:17   2 - Nombre_Fic_Data_Output - 'sawe_Y_OUTPUT.txt' - VARCHAR(100)
+2018.08.10 02:01:17   4 - Tipo_Optimizacion - '1' - INT
+2018.08.10 02:01:17   5 - Modo_Rotacion_Pesos - '2' - VARCHAR(100)
+2018.08.10 02:01:17   6 - Num_Soluciones - '999' - INT
+2018.08.10 02:01:17   99 - Vueltas_por_Iteracion - '5' - INT
+2018.08.10 02:01:17   100 - Max_Precision_Decimales - '15' - INT
+2018.08.10 02:01:17   102 - Max_Cambio - '0.1' - NUMERIC(20,18)
+2018.08.10 02:01:17 Accediendo al escenario con id: 1
+2018.08.10 02:01:17 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:01:17 
+2018.08.10 02:01:17 Seleccione una opcion de la lista:
+2018.08.10 02:01:17     0 - Volver
+2018.08.10 02:01:17     1 - Ver parametros
+2018.08.10 02:01:17     2 - Ver status
+2018.08.10 02:01:17     3 - Modificar parametros
+2018.08.10 02:01:17     4 - Procesar ficheros
+2018.08.10 02:01:17     5 - Modificar Autocorrelaciones
+2018.08.10 02:01:17     6 - Borrar escenario
+2018.08.10 02:01:40 Error obteniendo opciones para el menu 'MENU_ESCENARIO_EXISTENTE'
+2018.08.10 02:01:40 java.util.NoSuchElementException: No line found
+2018.08.10 02:01:40 Procesando accion: menuPrincipal
+2018.08.10 02:01:40 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 02:01:40 
+2018.08.10 02:01:40 Seleccione una opcion de la lista:
+2018.08.10 02:01:40     0 - Salir
+2018.08.10 02:01:40     1 - Acceder a escenario existente
+2018.08.10 02:01:40     2 - Crear nuevo escenario
+2018.08.10 02:01:49 Accediendo a la aplicación...
+2018.08.10 02:01:52 Conectado a BBDD.
+2018.08.10 02:01:54 Conectado como jb...
+2018.08.10 02:01:54 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 02:01:54 
+2018.08.10 02:01:54 Seleccione una opcion de la lista:
+2018.08.10 02:01:54     0 - Salir
+2018.08.10 02:01:54     1 - Acceder a escenario existente
+2018.08.10 02:01:54     2 - Crear nuevo escenario
+2018.08.10 02:01:58 Elegida: 1
+2018.08.10 02:01:58 Procesando accion: escenariosExistentes
+2018.08.10 02:01:58 Seleccione un escenario: 
+2018.08.10 02:01:58     1 - sawe
+2018.08.10 02:01:58     0 - Volver
+2018.08.10 02:01:59 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 02:01:59 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 02:01:59 Seleccionando escenario 1...
+2018.08.10 02:01:59 Procesando accion: MENU_ESCENARIO
+2018.08.10 02:01:59 Accediendo al escenario con id: 1
+2018.08.10 02:01:59 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:01:59 
+2018.08.10 02:01:59 Seleccione una opcion de la lista:
+2018.08.10 02:01:59     0 - Volver
+2018.08.10 02:01:59     1 - Ver parametros
+2018.08.10 02:01:59     2 - Ver status
+2018.08.10 02:01:59     3 - Modificar parametros
+2018.08.10 02:01:59     4 - Procesar ficheros
+2018.08.10 02:01:59     5 - Modificar Autocorrelaciones
+2018.08.10 02:01:59     6 - Borrar escenario
+2018.08.10 02:02:02 Elegida: 4
+2018.08.10 02:02:02 Procesando accion: procesaFicheros
+2018.08.10 02:02:02 void::procesaFicheros
+2018.08.10 02:02:02 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 02:02:02 
+2018.08.10 02:02:02 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran. En caso contrario se actualizaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 02:02:02 s / n
+2018.08.10 02:02:02 Elegida: s
+2018.08.10 02:02:03 Recuperando informacion de los ficheros...
+2018.08.10 02:02:03 queryToMatrix::lanzando query
+2018.08.10 02:02:03 SELECT a.VALOR 
+  FROM IA_APP.T_CONFIG_ESCENARIOS a 
+ WHERE a.ID_ESCENARIO = 1 
+   AND a.ID_PARAM IN (1, 2) 
+ ORDER BY a.ID_PARAM
+2018.08.10 02:02:03 ficheros recuperados. Total 3.
+2018.08.10 02:02:03 El fichero de inputs no existe 'G:\IA_APP_v1\imports\sawe_X_INPUT.txt
+2018.08.10 02:02:03 Deteniendo...
+2018.08.10 02:02:03 Accediendo al escenario con id: 1
+2018.08.10 02:02:03 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:02:03 
+2018.08.10 02:02:03 Seleccione una opcion de la lista:
+2018.08.10 02:02:03     0 - Volver
+2018.08.10 02:02:03     1 - Ver parametros
+2018.08.10 02:02:03     2 - Ver status
+2018.08.10 02:02:03     3 - Modificar parametros
+2018.08.10 02:02:03     4 - Procesar ficheros
+2018.08.10 02:02:03     5 - Modificar Autocorrelaciones
+2018.08.10 02:02:03     6 - Borrar escenario
+2018.08.10 02:02:54 Elegida: 4
+2018.08.10 02:02:54 Procesando accion: procesaFicheros
+2018.08.10 02:02:54 void::procesaFicheros
+2018.08.10 02:02:54 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 02:02:54 
+2018.08.10 02:02:54 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran. En caso contrario se actualizaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 02:02:54 s / n
+2018.08.10 02:02:56 Elegida: s
+2018.08.10 02:02:56 Recuperando informacion de los ficheros...
+2018.08.10 02:02:56 queryToMatrix::lanzando query
+2018.08.10 02:02:56 SELECT a.VALOR 
+  FROM IA_APP.T_CONFIG_ESCENARIOS a 
+ WHERE a.ID_ESCENARIO = 1 
+   AND a.ID_PARAM IN (1, 2) 
+ ORDER BY a.ID_PARAM
+2018.08.10 02:02:56 ficheros recuperados. Total 3.
+2018.08.10 02:02:56 El fichero de inputs no existe 'G:\IA_APP_v1\imports\sawe_X_INPUT.txt
+2018.08.10 02:02:56 Deteniendo...
+2018.08.10 02:02:56 Accediendo al escenario con id: 1
+2018.08.10 02:02:56 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:02:56 
+2018.08.10 02:02:56 Seleccione una opcion de la lista:
+2018.08.10 02:02:56     0 - Volver
+2018.08.10 02:02:56     1 - Ver parametros
+2018.08.10 02:02:56     2 - Ver status
+2018.08.10 02:02:56     3 - Modificar parametros
+2018.08.10 02:02:56     4 - Procesar ficheros
+2018.08.10 02:02:56     5 - Modificar Autocorrelaciones
+2018.08.10 02:02:56     6 - Borrar escenario
+2018.08.10 02:03:47 Elegida: 4
+2018.08.10 02:03:47 Procesando accion: procesaFicheros
+2018.08.10 02:03:47 void::procesaFicheros
+2018.08.10 02:03:47 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 02:03:47 
+2018.08.10 02:03:47 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran. En caso contrario se actualizaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 02:03:47 s / n
+2018.08.10 02:03:49 Elegida: s
+2018.08.10 02:03:49 Recuperando informacion de los ficheros...
+2018.08.10 02:03:49 queryToMatrix::lanzando query
+2018.08.10 02:03:49 SELECT a.VALOR 
+  FROM IA_APP.T_CONFIG_ESCENARIOS a 
+ WHERE a.ID_ESCENARIO = 1 
+   AND a.ID_PARAM IN (1, 2) 
+ ORDER BY a.ID_PARAM
+2018.08.10 02:03:49 ficheros recuperados. Total 3.
+2018.08.10 02:03:49 El fichero de inputs existe. 'sawe_X_INPUT.txt'
+2018.08.10 02:03:49 El fichero de outputs no existe 'G:\IA_APP_v1\imports\sawe_Y_OUTPUT.txt
+2018.08.10 02:03:49 Deteniendo...
+2018.08.10 02:03:49 Accediendo al escenario con id: 1
+2018.08.10 02:03:49 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:03:49 
+2018.08.10 02:03:49 Seleccione una opcion de la lista:
+2018.08.10 02:03:49     0 - Volver
+2018.08.10 02:03:49     1 - Ver parametros
+2018.08.10 02:03:49     2 - Ver status
+2018.08.10 02:03:49     3 - Modificar parametros
+2018.08.10 02:03:49     4 - Procesar ficheros
+2018.08.10 02:03:49     5 - Modificar Autocorrelaciones
+2018.08.10 02:03:49     6 - Borrar escenario
+2018.08.10 02:04:16 Elegida: 4
+2018.08.10 02:04:16 Procesando accion: procesaFicheros
+2018.08.10 02:04:16 void::procesaFicheros
+2018.08.10 02:04:16 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 02:04:16 
+2018.08.10 02:04:16 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran. En caso contrario se actualizaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 02:04:16 s / n
+2018.08.10 02:04:18 Elegida: s
+2018.08.10 02:04:18 Recuperando informacion de los ficheros...
+2018.08.10 02:04:18 queryToMatrix::lanzando query
+2018.08.10 02:04:18 SELECT a.VALOR 
+  FROM IA_APP.T_CONFIG_ESCENARIOS a 
+ WHERE a.ID_ESCENARIO = 1 
+   AND a.ID_PARAM IN (1, 2) 
+ ORDER BY a.ID_PARAM
+2018.08.10 02:04:18 ficheros recuperados. Total 3.
+2018.08.10 02:04:18 El fichero de inputs existe. 'sawe_X_INPUT.txt'
+2018.08.10 02:04:18 El fichero de outputs no existe 'G:\IA_APP_v1\imports\sawe_Y_OUTPUT.txt
+2018.08.10 02:04:18 Deteniendo...
+2018.08.10 02:04:18 Accediendo al escenario con id: 1
+2018.08.10 02:04:18 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:04:18 
+2018.08.10 02:04:18 Seleccione una opcion de la lista:
+2018.08.10 02:04:18     0 - Volver
+2018.08.10 02:04:18     1 - Ver parametros
+2018.08.10 02:04:18     2 - Ver status
+2018.08.10 02:04:18     3 - Modificar parametros
+2018.08.10 02:04:18     4 - Procesar ficheros
+2018.08.10 02:04:18     5 - Modificar Autocorrelaciones
+2018.08.10 02:04:18     6 - Borrar escenario
+2018.08.10 02:04:47 Elegida: 4
+2018.08.10 02:04:47 Procesando accion: procesaFicheros
+2018.08.10 02:04:47 void::procesaFicheros
+2018.08.10 02:04:47 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 02:04:47 
+2018.08.10 02:04:47 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran. En caso contrario se actualizaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 02:04:47 s / n
+2018.08.10 02:04:48 Elegida: s
+2018.08.10 02:04:48 Recuperando informacion de los ficheros...
+2018.08.10 02:04:48 queryToMatrix::lanzando query
+2018.08.10 02:04:48 SELECT a.VALOR 
+  FROM IA_APP.T_CONFIG_ESCENARIOS a 
+ WHERE a.ID_ESCENARIO = 1 
+   AND a.ID_PARAM IN (1, 2) 
+ ORDER BY a.ID_PARAM
+2018.08.10 02:04:48 ficheros recuperados. Total 3.
+2018.08.10 02:04:48 El fichero de inputs existe. 'sawe_X_INPUT.txt'
+2018.08.10 02:04:48 El fichero de outputs existe. 'sawe_Y_OUTPUT.txt'
+2018.08.10 02:04:48 Accediendo al escenario con id: 1
+2018.08.10 02:04:48 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:04:48 
+2018.08.10 02:04:48 Seleccione una opcion de la lista:
+2018.08.10 02:04:48     0 - Volver
+2018.08.10 02:04:48     1 - Ver parametros
+2018.08.10 02:04:48     2 - Ver status
+2018.08.10 02:04:48     3 - Modificar parametros
+2018.08.10 02:04:48     4 - Procesar ficheros
+2018.08.10 02:04:48     5 - Modificar Autocorrelaciones
+2018.08.10 02:04:48     6 - Borrar escenario
+2018.08.10 02:06:03 Elegida: 4
+2018.08.10 02:06:03 Procesando accion: procesaFicheros
+2018.08.10 02:06:03 void::procesaFicheros
+2018.08.10 02:06:03 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 02:06:03 
+2018.08.10 02:06:03 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran. En caso contrario se actualizaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 02:06:03 s / n
+2018.08.10 02:06:04 Elegida: s
+2018.08.10 02:06:04 Recuperando informacion de los ficheros...
+2018.08.10 02:06:04 queryToMatrix::lanzando query
+2018.08.10 02:06:04 SELECT a.VALOR 
+  FROM IA_APP.T_CONFIG_ESCENARIOS a 
+ WHERE a.ID_ESCENARIO = 1 
+   AND a.ID_PARAM IN (1, 2) 
+ ORDER BY a.ID_PARAM
+2018.08.10 02:06:04 ficheros recuperados. Total 3.
+2018.08.10 02:06:04 El fichero de inputs existe. 'sawe_X_INPUT.txt'
+2018.08.10 02:06:04 El fichero de outputs existe. 'sawe_Y_OUTPUT.txt'
+2018.08.10 02:06:04 Accediendo al escenario con id: 1
+2018.08.10 02:06:04 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:06:04 
+2018.08.10 02:06:04 Seleccione una opcion de la lista:
+2018.08.10 02:06:04     0 - Volver
+2018.08.10 02:06:04     1 - Ver parametros
+2018.08.10 02:06:04     2 - Ver status
+2018.08.10 02:06:04     3 - Modificar parametros
+2018.08.10 02:06:04     4 - Procesar ficheros
+2018.08.10 02:06:04     5 - Modificar Autocorrelaciones
+2018.08.10 02:06:04     6 - Borrar escenario
+2018.08.10 02:06:17 Accediendo a la aplicación...
+2018.08.10 02:06:20 Conectado a BBDD.
+2018.08.10 02:06:22 Conectado como jb...
+2018.08.10 02:06:22 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 02:06:22 
+2018.08.10 02:06:22 Seleccione una opcion de la lista:
+2018.08.10 02:06:22     0 - Salir
+2018.08.10 02:06:22     1 - Acceder a escenario existente
+2018.08.10 02:06:22     2 - Crear nuevo escenario
+2018.08.10 02:06:23 Elegida: 1
+2018.08.10 02:06:23 Procesando accion: escenariosExistentes
+2018.08.10 02:06:23 Seleccione un escenario: 
+2018.08.10 02:06:23     1 - sawe
+2018.08.10 02:06:23     0 - Volver
+2018.08.10 02:06:25 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 02:06:25 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 02:06:25 Seleccionando escenario 1...
+2018.08.10 02:06:25 Procesando accion: MENU_ESCENARIO
+2018.08.10 02:06:25 Accediendo al escenario con id: 1
+2018.08.10 02:06:25 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:06:25 
+2018.08.10 02:06:25 Seleccione una opcion de la lista:
+2018.08.10 02:06:25     0 - Volver
+2018.08.10 02:06:25     1 - Ver parametros
+2018.08.10 02:06:25     2 - Ver status
+2018.08.10 02:06:25     3 - Modificar parametros
+2018.08.10 02:06:25     4 - Procesar ficheros
+2018.08.10 02:06:25     5 - Modificar Autocorrelaciones
+2018.08.10 02:06:25     6 - Borrar escenario
+2018.08.10 02:06:30 Elegida: 4
+2018.08.10 02:06:30 Procesando accion: procesaFicheros
+2018.08.10 02:06:30 void::procesaFicheros
+2018.08.10 02:06:30 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 02:06:30 
+2018.08.10 02:06:30 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran. En caso contrario se actualizaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 02:06:30 s / n
+2018.08.10 02:06:31 Elegida: s
+2018.08.10 02:06:31 Recuperando informacion de los ficheros...
+2018.08.10 02:06:31 queryToMatrix::lanzando query
+2018.08.10 02:06:31 SELECT a.VALOR 
+  FROM IA_APP.T_CONFIG_ESCENARIOS a 
+ WHERE a.ID_ESCENARIO = 1 
+   AND a.ID_PARAM IN (1, 2) 
+ ORDER BY a.ID_PARAM
+2018.08.10 02:06:31 ficheros recuperados. Total 3.
+2018.08.10 02:06:31 El fichero de inputs existe. 'sawe_X_INPUT.txt'
+2018.08.10 02:06:31 El fichero de outputs existe. 'sawe_Y_OUTPUT.txt'
+2018.08.10 02:06:31 procesaFicheros::proceso completado
+2018.08.10 02:06:31 Accediendo al escenario con id: 1
+2018.08.10 02:06:31 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:06:31 
+2018.08.10 02:06:31 Seleccione una opcion de la lista:
+2018.08.10 02:06:31     0 - Volver
+2018.08.10 02:06:31     1 - Ver parametros
+2018.08.10 02:06:31     2 - Ver status
+2018.08.10 02:06:31     3 - Modificar parametros
+2018.08.10 02:06:31     4 - Procesar ficheros
+2018.08.10 02:06:31     5 - Modificar Autocorrelaciones
+2018.08.10 02:06:31     6 - Borrar escenario
+2018.08.10 02:18:49 Accediendo a la aplicación...
+2018.08.10 02:18:52 Conectado a BBDD.
+2018.08.10 02:18:53 Conectado como jb...
+2018.08.10 02:18:53 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 02:18:53 
+2018.08.10 02:18:53 Seleccione una opcion de la lista:
+2018.08.10 02:18:53     0 - Salir
+2018.08.10 02:18:53     1 - Acceder a escenario existente
+2018.08.10 02:18:53     2 - Crear nuevo escenario
+2018.08.10 02:18:57 Elegida: 1
+2018.08.10 02:18:57 Procesando accion: escenariosExistentes
+2018.08.10 02:18:57 Seleccione un escenario: 
+2018.08.10 02:18:57     1 - sawe
+2018.08.10 02:18:57     0 - Volver
+2018.08.10 02:18:58 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 02:18:58 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 02:18:58 Seleccionando escenario 1...
+2018.08.10 02:18:58 Procesando accion: MENU_ESCENARIO
+2018.08.10 02:18:58 Accediendo al escenario con id: 1
+2018.08.10 02:18:58 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:18:58 
+2018.08.10 02:18:58 Seleccione una opcion de la lista:
+2018.08.10 02:18:58     0 - Volver
+2018.08.10 02:18:58     1 - Ver parametros
+2018.08.10 02:18:58     2 - Ver status
+2018.08.10 02:18:58     3 - Modificar parametros
+2018.08.10 02:18:58     4 - Procesar ficheros
+2018.08.10 02:18:58     5 - Modificar Autocorrelaciones
+2018.08.10 02:18:58     6 - Borrar escenario
+2018.08.10 02:19:03 Elegida: 4
+2018.08.10 02:19:03 Procesando accion: procesaFicheros
+2018.08.10 02:19:03 void::procesaFicheros
+2018.08.10 02:19:03 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 02:19:03 
+2018.08.10 02:19:03 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran. En caso contrario se actualizaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 02:19:03 s / n
+2018.08.10 02:19:06 Elegida: s
+2018.08.10 02:19:06 Recuperando informacion de los ficheros...
+2018.08.10 02:19:06 queryToMatrix::lanzando query
+2018.08.10 02:19:06 SELECT a.VALOR 
+  FROM IA_APP.T_CONFIG_ESCENARIOS a 
+ WHERE a.ID_ESCENARIO = 1 
+   AND a.ID_PARAM IN (1, 2) 
+ ORDER BY a.ID_PARAM
+2018.08.10 02:19:06 ficheros recuperados. Total 3.
+2018.08.10 02:19:06 El fichero de inputs existe. 'sawe_X_INPUT.txt'
+2018.08.10 02:19:06 El fichero de outputs existe. 'sawe_Y_OUTPUT.txt'
+2018.08.10 02:19:06 Leyendo ficheros...(0/2)
+2018.08.10 02:19:08 Fichero de inputs leido
+2018.08.10 02:19:08 Leyendo ficheros...(1/2)
+2018.08.10 02:19:10 Fichero leidos...(2/2)
+2018.08.10 02:19:10 Realizando validaciones...
+2018.08.10 02:19:10 Los ficheros contienen el mismo numero de registros
+2018.08.10 02:19:10 procesaFicheros::proceso completado
+2018.08.10 02:19:10 Accediendo al escenario con id: 1
+2018.08.10 02:19:10 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:19:10 
+2018.08.10 02:19:10 Seleccione una opcion de la lista:
+2018.08.10 02:19:10     0 - Volver
+2018.08.10 02:19:10     1 - Ver parametros
+2018.08.10 02:19:10     2 - Ver status
+2018.08.10 02:19:10     3 - Modificar parametros
+2018.08.10 02:19:10     4 - Procesar ficheros
+2018.08.10 02:19:10     5 - Modificar Autocorrelaciones
+2018.08.10 02:19:10     6 - Borrar escenario

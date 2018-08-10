@@ -1,0 +1,6 @@
+2018.08.09 19:58:27 Algo fallo al crear el escenario 'esc_p1'
+2018.08.09 19:58:27 java.sql.SQLException: Parameter number 2 is not an OUT parameter
+2018.08.09 20:07:45 Algo fallo al crear el escenario 'hkjl'
+2018.08.09 20:07:45 java.sql.SQLException: Parameter number 2 is not an OUT parameter
+2018.08.09 20:12:59 Algo fallo al crear el escenario 'dasd'
+2018.08.09 20:12:59 java.sql.SQLException: Parameter number 2 is not an OUT parameter

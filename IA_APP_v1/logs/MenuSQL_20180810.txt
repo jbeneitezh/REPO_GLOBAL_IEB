@@ -1,0 +1,580 @@
+2018.08.10 00:00:30 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 00:00:30 
+2018.08.10 00:00:30 Seleccione una opcion de la lista:
+2018.08.10 00:00:30     0 - Salir
+2018.08.10 00:00:30     1 - Acceder a escenario existente
+2018.08.10 00:00:30     2 - Crear nuevo escenario
+2018.08.10 00:00:33 Elegida: 2
+2018.08.10 00:00:35 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 00:00:35 
+2018.08.10 00:00:35 Seleccione una opcion de la lista:
+2018.08.10 00:00:35     0 - Salir
+2018.08.10 00:00:35     1 - Acceder a escenario existente
+2018.08.10 00:00:35     2 - Crear nuevo escenario
+2018.08.10 00:00:36 Elegida: 1
+2018.08.10 00:00:46 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:00:46 
+2018.08.10 00:00:46 Seleccione una opcion de la lista:
+2018.08.10 00:00:46     0 - Volver
+2018.08.10 00:00:46     1 - Ver parametros
+2018.08.10 00:00:46     2 - Ver status
+2018.08.10 00:00:46     3 - Modificar parametros
+2018.08.10 00:00:46     4 - Procesar ficheros
+2018.08.10 00:00:46     5 - Modificar Autocorrelaciones
+2018.08.10 00:00:46     6 - Borrar escenario
+2018.08.10 00:00:47 Elegida: 6
+2018.08.10 00:00:47 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 00:00:47 
+2018.08.10 00:00:47 El escenario se borrara junto a toda su parametrizacion. ¿Esta de acuerdo?
+2018.08.10 00:00:47 s / n
+2018.08.10 00:00:48 Elegida: s
+2018.08.10 00:00:53 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:00:53 
+2018.08.10 00:00:53 Seleccione una opcion de la lista:
+2018.08.10 00:00:53     0 - Volver
+2018.08.10 00:00:53     1 - Ver parametros
+2018.08.10 00:00:53     2 - Ver status
+2018.08.10 00:00:53     3 - Modificar parametros
+2018.08.10 00:00:53     4 - Procesar ficheros
+2018.08.10 00:00:53     5 - Modificar Autocorrelaciones
+2018.08.10 00:00:53     6 - Borrar escenario
+2018.08.10 00:00:55 Elegida: 6
+2018.08.10 00:00:55 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 00:00:55 
+2018.08.10 00:00:55 El escenario se borrara junto a toda su parametrizacion. ¿Esta de acuerdo?
+2018.08.10 00:00:55 s / n
+2018.08.10 00:00:56 Elegida: s
+2018.08.10 00:00:58 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:00:58 
+2018.08.10 00:00:58 Seleccione una opcion de la lista:
+2018.08.10 00:00:58     0 - Volver
+2018.08.10 00:00:58     1 - Ver parametros
+2018.08.10 00:00:58     2 - Ver status
+2018.08.10 00:00:58     3 - Modificar parametros
+2018.08.10 00:00:58     4 - Procesar ficheros
+2018.08.10 00:00:58     5 - Modificar Autocorrelaciones
+2018.08.10 00:00:58     6 - Borrar escenario
+2018.08.10 00:01:03 Elegida: 3
+2018.08.10 00:05:40 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 00:05:40 
+2018.08.10 00:05:40 Seleccione una opcion de la lista:
+2018.08.10 00:05:40     0 - Salir
+2018.08.10 00:05:40     1 - Acceder a escenario existente
+2018.08.10 00:05:40     2 - Crear nuevo escenario
+2018.08.10 00:05:42 Elegida: 1
+2018.08.10 00:05:42 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 00:05:42 
+2018.08.10 00:05:42 Seleccione una opcion de la lista:
+2018.08.10 00:05:42     0 - Salir
+2018.08.10 00:05:42     1 - Acceder a escenario existente
+2018.08.10 00:05:42     2 - Crear nuevo escenario
+2018.08.10 00:05:44 Elegida: 2
+2018.08.10 00:05:45 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 00:05:45 
+2018.08.10 00:05:45 Seleccione una opcion de la lista:
+2018.08.10 00:05:45     0 - Salir
+2018.08.10 00:05:45     1 - Acceder a escenario existente
+2018.08.10 00:05:45     2 - Crear nuevo escenario
+2018.08.10 00:05:49 Elegida: 1
+2018.08.10 00:05:50 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:05:50 
+2018.08.10 00:05:50 Seleccione una opcion de la lista:
+2018.08.10 00:05:50     0 - Volver
+2018.08.10 00:05:50     1 - Ver parametros
+2018.08.10 00:05:50     2 - Ver status
+2018.08.10 00:05:50     3 - Modificar parametros
+2018.08.10 00:05:50     4 - Procesar ficheros
+2018.08.10 00:05:50     5 - Modificar Autocorrelaciones
+2018.08.10 00:05:50     6 - Borrar escenario
+2018.08.10 00:05:53 Elegida: 3
+2018.08.10 00:09:41 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:09:41 
+2018.08.10 00:09:41 Seleccione una opcion de la lista:
+2018.08.10 00:09:41     0 - Volver
+2018.08.10 00:09:41     1 - Ver parametros
+2018.08.10 00:09:41     2 - Ver status
+2018.08.10 00:09:41     3 - Modificar parametros
+2018.08.10 00:09:41     4 - Procesar ficheros
+2018.08.10 00:09:41     5 - Modificar Autocorrelaciones
+2018.08.10 00:09:41     6 - Borrar escenario
+2018.08.10 00:09:47 Elegida: 3
+2018.08.10 00:09:51 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:09:51 
+2018.08.10 00:09:51 Seleccione una opcion de la lista:
+2018.08.10 00:09:51     0 - Volver
+2018.08.10 00:09:51     1 - Ver parametros
+2018.08.10 00:09:51     2 - Ver status
+2018.08.10 00:09:51     3 - Modificar parametros
+2018.08.10 00:09:51     4 - Procesar ficheros
+2018.08.10 00:09:51     5 - Modificar Autocorrelaciones
+2018.08.10 00:09:51     6 - Borrar escenario
+2018.08.10 00:09:53 Elegida: 6
+2018.08.10 00:09:53 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 00:09:53 
+2018.08.10 00:09:53 El escenario se borrara junto a toda su parametrizacion. ¿Esta de acuerdo?
+2018.08.10 00:09:53 s / n
+2018.08.10 00:09:55 Elegida: s
+2018.08.10 00:09:55 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 00:09:55 
+2018.08.10 00:09:55 Seleccione una opcion de la lista:
+2018.08.10 00:09:55     0 - Salir
+2018.08.10 00:09:55     1 - Acceder a escenario existente
+2018.08.10 00:09:55     2 - Crear nuevo escenario
+2018.08.10 00:09:57 Elegida: 2
+2018.08.10 00:09:59 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 00:09:59 
+2018.08.10 00:09:59 Seleccione una opcion de la lista:
+2018.08.10 00:09:59     0 - Salir
+2018.08.10 00:09:59     1 - Acceder a escenario existente
+2018.08.10 00:09:59     2 - Crear nuevo escenario
+2018.08.10 00:10:01 Elegida: 1
+2018.08.10 00:10:03 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:10:03 
+2018.08.10 00:10:03 Seleccione una opcion de la lista:
+2018.08.10 00:10:03     0 - Volver
+2018.08.10 00:10:03     1 - Ver parametros
+2018.08.10 00:10:03     2 - Ver status
+2018.08.10 00:10:03     3 - Modificar parametros
+2018.08.10 00:10:03     4 - Procesar ficheros
+2018.08.10 00:10:03     5 - Modificar Autocorrelaciones
+2018.08.10 00:10:03     6 - Borrar escenario
+2018.08.10 00:10:04 Elegida: 3
+2018.08.10 00:12:20 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 00:12:20 
+2018.08.10 00:12:20 Seleccione una opcion de la lista:
+2018.08.10 00:12:20     0 - Salir
+2018.08.10 00:12:20     1 - Acceder a escenario existente
+2018.08.10 00:12:20     2 - Crear nuevo escenario
+2018.08.10 00:12:22 Elegida: 1
+2018.08.10 00:12:23 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:12:23 
+2018.08.10 00:12:23 Seleccione una opcion de la lista:
+2018.08.10 00:12:23     0 - Volver
+2018.08.10 00:12:23     1 - Ver parametros
+2018.08.10 00:12:23     2 - Ver status
+2018.08.10 00:12:23     3 - Modificar parametros
+2018.08.10 00:12:23     4 - Procesar ficheros
+2018.08.10 00:12:23     5 - Modificar Autocorrelaciones
+2018.08.10 00:12:23     6 - Borrar escenario
+2018.08.10 00:12:26 Elegida: 3
+2018.08.10 00:38:42 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 00:38:42 
+2018.08.10 00:38:42 Ha elegido '1'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 00:38:42 s / n
+2018.08.10 00:38:46 Elegida: s
+2018.08.10 00:39:46 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 00:39:46 
+2018.08.10 00:39:46 Seleccione una opcion de la lista:
+2018.08.10 00:39:46     0 - Salir
+2018.08.10 00:39:46     1 - Acceder a escenario existente
+2018.08.10 00:39:46     2 - Crear nuevo escenario
+2018.08.10 00:39:48 Elegida: 1
+2018.08.10 00:39:49 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:39:49 
+2018.08.10 00:39:49 Seleccione una opcion de la lista:
+2018.08.10 00:39:49     0 - Volver
+2018.08.10 00:39:49     1 - Ver parametros
+2018.08.10 00:39:49     2 - Ver status
+2018.08.10 00:39:49     3 - Modificar parametros
+2018.08.10 00:39:49     4 - Procesar ficheros
+2018.08.10 00:39:49     5 - Modificar Autocorrelaciones
+2018.08.10 00:39:49     6 - Borrar escenario
+2018.08.10 00:39:54 Elegida: 1
+2018.08.10 00:39:54 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 00:39:54 
+2018.08.10 00:39:54 Seleccione una opcion de la lista:
+2018.08.10 00:39:54     0 - Volver
+2018.08.10 00:39:54     1 - Ver parametros
+2018.08.10 00:39:54     2 - Ver status
+2018.08.10 00:39:54     3 - Modificar parametros
+2018.08.10 00:39:54     4 - Procesar ficheros
+2018.08.10 00:39:54     5 - Modificar Autocorrelaciones
+2018.08.10 00:39:54     6 - Borrar escenario
+2018.08.10 01:38:53 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 01:38:53 
+2018.08.10 01:38:53 Seleccione una opcion de la lista:
+2018.08.10 01:38:53     0 - Salir
+2018.08.10 01:38:53     1 - Acceder a escenario existente
+2018.08.10 01:38:53     2 - Crear nuevo escenario
+2018.08.10 01:38:54 Elegida: 1
+2018.08.10 01:38:56 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 01:38:56 
+2018.08.10 01:38:56 Seleccione una opcion de la lista:
+2018.08.10 01:38:56     0 - Volver
+2018.08.10 01:38:56     1 - Ver parametros
+2018.08.10 01:38:56     2 - Ver status
+2018.08.10 01:38:56     3 - Modificar parametros
+2018.08.10 01:38:56     4 - Procesar ficheros
+2018.08.10 01:38:56     5 - Modificar Autocorrelaciones
+2018.08.10 01:38:56     6 - Borrar escenario
+2018.08.10 01:39:02 Elegida: 3
+2018.08.10 01:39:10 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 01:39:10 
+2018.08.10 01:39:10 Ha elegido '2'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 01:39:10 s / n
+2018.08.10 01:39:12 Elegida: s
+2018.08.10 01:39:45 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 01:39:45 
+2018.08.10 01:39:45 Ha elegido '2'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 01:39:45 s / n
+2018.08.10 01:39:47 Elegida: s
+2018.08.10 01:40:15 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 01:40:15 
+2018.08.10 01:40:15 Ha elegido '1'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 01:40:15 s / n
+2018.08.10 01:40:18 Elegida: s
+2018.08.10 01:41:36 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 01:41:36 
+2018.08.10 01:41:36 Seleccione una opcion de la lista:
+2018.08.10 01:41:36     0 - Salir
+2018.08.10 01:41:36     1 - Acceder a escenario existente
+2018.08.10 01:41:36     2 - Crear nuevo escenario
+2018.08.10 01:41:39 Elegida: 12
+2018.08.10 01:41:39 Opcion no valida. Vuelva a intentarlo
+2018.08.10 01:41:39 
+2018.08.10 01:41:39 Seleccione una opcion de la lista:
+2018.08.10 01:41:39     0 - Salir
+2018.08.10 01:41:39     1 - Acceder a escenario existente
+2018.08.10 01:41:39     2 - Crear nuevo escenario
+2018.08.10 01:41:40 Elegida: 1
+2018.08.10 01:41:42 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 01:41:42 
+2018.08.10 01:41:42 Seleccione una opcion de la lista:
+2018.08.10 01:41:42     0 - Volver
+2018.08.10 01:41:42     1 - Ver parametros
+2018.08.10 01:41:42     2 - Ver status
+2018.08.10 01:41:42     3 - Modificar parametros
+2018.08.10 01:41:42     4 - Procesar ficheros
+2018.08.10 01:41:42     5 - Modificar Autocorrelaciones
+2018.08.10 01:41:42     6 - Borrar escenario
+2018.08.10 01:41:44 Elegida: 3
+2018.08.10 01:51:19 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 01:51:19 
+2018.08.10 01:51:19 Ha elegido '2'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 01:51:19 s / n
+2018.08.10 01:51:20 Elegida: s
+2018.08.10 01:53:42 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 01:53:42 
+2018.08.10 01:53:42 Seleccione una opcion de la lista:
+2018.08.10 01:53:42     0 - Volver
+2018.08.10 01:53:42     1 - Ver parametros
+2018.08.10 01:53:42     2 - Ver status
+2018.08.10 01:53:42     3 - Modificar parametros
+2018.08.10 01:53:42     4 - Procesar ficheros
+2018.08.10 01:53:42     5 - Modificar Autocorrelaciones
+2018.08.10 01:53:42     6 - Borrar escenario
+2018.08.10 01:53:46 Elegida: 4
+2018.08.10 01:53:46 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 01:53:46 
+2018.08.10 01:53:46 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 01:53:46 s / n
+2018.08.10 01:54:58 Elegida: s
+2018.08.10 01:54:58 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 01:54:58 
+2018.08.10 01:54:58 Seleccione una opcion de la lista:
+2018.08.10 01:54:58     0 - Volver
+2018.08.10 01:54:58     1 - Ver parametros
+2018.08.10 01:54:58     2 - Ver status
+2018.08.10 01:54:58     3 - Modificar parametros
+2018.08.10 01:54:58     4 - Procesar ficheros
+2018.08.10 01:54:58     5 - Modificar Autocorrelaciones
+2018.08.10 01:54:58     6 - Borrar escenario
+2018.08.10 01:55:48 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 01:55:48 
+2018.08.10 01:55:48 Seleccione una opcion de la lista:
+2018.08.10 01:55:48     0 - Salir
+2018.08.10 01:55:48     1 - Acceder a escenario existente
+2018.08.10 01:55:48     2 - Crear nuevo escenario
+2018.08.10 01:55:49 Elegida: 1
+2018.08.10 01:55:50 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 01:55:50 
+2018.08.10 01:55:50 Seleccione una opcion de la lista:
+2018.08.10 01:55:50     0 - Volver
+2018.08.10 01:55:50     1 - Ver parametros
+2018.08.10 01:55:50     2 - Ver status
+2018.08.10 01:55:50     3 - Modificar parametros
+2018.08.10 01:55:50     4 - Procesar ficheros
+2018.08.10 01:55:50     5 - Modificar Autocorrelaciones
+2018.08.10 01:55:50     6 - Borrar escenario
+2018.08.10 01:55:54 Elegida: 4
+2018.08.10 01:55:54 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 01:55:54 
+2018.08.10 01:55:54 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran. En caso contrario se actualizaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 01:55:54 s / n
+2018.08.10 01:55:55 Elegida: s
+2018.08.10 01:55:55 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 01:55:55 
+2018.08.10 01:55:55 Seleccione una opcion de la lista:
+2018.08.10 01:55:55     0 - Volver
+2018.08.10 01:55:55     1 - Ver parametros
+2018.08.10 01:55:55     2 - Ver status
+2018.08.10 01:55:55     3 - Modificar parametros
+2018.08.10 01:55:55     4 - Procesar ficheros
+2018.08.10 01:55:55     5 - Modificar Autocorrelaciones
+2018.08.10 01:55:55     6 - Borrar escenario
+2018.08.10 02:01:17 Elegida: 1
+2018.08.10 02:01:17 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:01:17 
+2018.08.10 02:01:17 Seleccione una opcion de la lista:
+2018.08.10 02:01:17     0 - Volver
+2018.08.10 02:01:17     1 - Ver parametros
+2018.08.10 02:01:17     2 - Ver status
+2018.08.10 02:01:17     3 - Modificar parametros
+2018.08.10 02:01:17     4 - Procesar ficheros
+2018.08.10 02:01:17     5 - Modificar Autocorrelaciones
+2018.08.10 02:01:17     6 - Borrar escenario
+2018.08.10 02:01:40 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 02:01:40 
+2018.08.10 02:01:40 Seleccione una opcion de la lista:
+2018.08.10 02:01:40     0 - Salir
+2018.08.10 02:01:40     1 - Acceder a escenario existente
+2018.08.10 02:01:40     2 - Crear nuevo escenario
+2018.08.10 02:01:54 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 02:01:54 
+2018.08.10 02:01:54 Seleccione una opcion de la lista:
+2018.08.10 02:01:54     0 - Salir
+2018.08.10 02:01:54     1 - Acceder a escenario existente
+2018.08.10 02:01:54     2 - Crear nuevo escenario
+2018.08.10 02:01:58 Elegida: 1
+2018.08.10 02:01:59 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:01:59 
+2018.08.10 02:01:59 Seleccione una opcion de la lista:
+2018.08.10 02:01:59     0 - Volver
+2018.08.10 02:01:59     1 - Ver parametros
+2018.08.10 02:01:59     2 - Ver status
+2018.08.10 02:01:59     3 - Modificar parametros
+2018.08.10 02:01:59     4 - Procesar ficheros
+2018.08.10 02:01:59     5 - Modificar Autocorrelaciones
+2018.08.10 02:01:59     6 - Borrar escenario
+2018.08.10 02:02:02 Elegida: 4
+2018.08.10 02:02:02 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 02:02:02 
+2018.08.10 02:02:02 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran. En caso contrario se actualizaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 02:02:02 s / n
+2018.08.10 02:02:03 Elegida: s
+2018.08.10 02:02:03 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:02:03 
+2018.08.10 02:02:03 Seleccione una opcion de la lista:
+2018.08.10 02:02:03     0 - Volver
+2018.08.10 02:02:03     1 - Ver parametros
+2018.08.10 02:02:03     2 - Ver status
+2018.08.10 02:02:03     3 - Modificar parametros
+2018.08.10 02:02:03     4 - Procesar ficheros
+2018.08.10 02:02:03     5 - Modificar Autocorrelaciones
+2018.08.10 02:02:03     6 - Borrar escenario
+2018.08.10 02:02:54 Elegida: 4
+2018.08.10 02:02:54 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 02:02:54 
+2018.08.10 02:02:54 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran. En caso contrario se actualizaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 02:02:54 s / n
+2018.08.10 02:02:56 Elegida: s
+2018.08.10 02:02:56 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:02:56 
+2018.08.10 02:02:56 Seleccione una opcion de la lista:
+2018.08.10 02:02:56     0 - Volver
+2018.08.10 02:02:56     1 - Ver parametros
+2018.08.10 02:02:56     2 - Ver status
+2018.08.10 02:02:56     3 - Modificar parametros
+2018.08.10 02:02:56     4 - Procesar ficheros
+2018.08.10 02:02:56     5 - Modificar Autocorrelaciones
+2018.08.10 02:02:56     6 - Borrar escenario
+2018.08.10 02:03:47 Elegida: 4
+2018.08.10 02:03:47 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 02:03:47 
+2018.08.10 02:03:47 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran. En caso contrario se actualizaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 02:03:47 s / n
+2018.08.10 02:03:49 Elegida: s
+2018.08.10 02:03:49 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:03:49 
+2018.08.10 02:03:49 Seleccione una opcion de la lista:
+2018.08.10 02:03:49     0 - Volver
+2018.08.10 02:03:49     1 - Ver parametros
+2018.08.10 02:03:49     2 - Ver status
+2018.08.10 02:03:49     3 - Modificar parametros
+2018.08.10 02:03:49     4 - Procesar ficheros
+2018.08.10 02:03:49     5 - Modificar Autocorrelaciones
+2018.08.10 02:03:49     6 - Borrar escenario
+2018.08.10 02:04:16 Elegida: 4
+2018.08.10 02:04:16 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 02:04:16 
+2018.08.10 02:04:16 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran. En caso contrario se actualizaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 02:04:16 s / n
+2018.08.10 02:04:18 Elegida: s
+2018.08.10 02:04:18 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:04:18 
+2018.08.10 02:04:18 Seleccione una opcion de la lista:
+2018.08.10 02:04:18     0 - Volver
+2018.08.10 02:04:18     1 - Ver parametros
+2018.08.10 02:04:18     2 - Ver status
+2018.08.10 02:04:18     3 - Modificar parametros
+2018.08.10 02:04:18     4 - Procesar ficheros
+2018.08.10 02:04:18     5 - Modificar Autocorrelaciones
+2018.08.10 02:04:18     6 - Borrar escenario
+2018.08.10 02:04:47 Elegida: 4
+2018.08.10 02:04:47 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 02:04:47 
+2018.08.10 02:04:47 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran. En caso contrario se actualizaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 02:04:47 s / n
+2018.08.10 02:04:48 Elegida: s
+2018.08.10 02:04:48 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:04:48 
+2018.08.10 02:04:48 Seleccione una opcion de la lista:
+2018.08.10 02:04:48     0 - Volver
+2018.08.10 02:04:48     1 - Ver parametros
+2018.08.10 02:04:48     2 - Ver status
+2018.08.10 02:04:48     3 - Modificar parametros
+2018.08.10 02:04:48     4 - Procesar ficheros
+2018.08.10 02:04:48     5 - Modificar Autocorrelaciones
+2018.08.10 02:04:48     6 - Borrar escenario
+2018.08.10 02:06:03 Elegida: 4
+2018.08.10 02:06:03 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 02:06:03 
+2018.08.10 02:06:03 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran. En caso contrario se actualizaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 02:06:03 s / n
+2018.08.10 02:06:04 Elegida: s
+2018.08.10 02:06:04 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:06:04 
+2018.08.10 02:06:04 Seleccione una opcion de la lista:
+2018.08.10 02:06:04     0 - Volver
+2018.08.10 02:06:04     1 - Ver parametros
+2018.08.10 02:06:04     2 - Ver status
+2018.08.10 02:06:04     3 - Modificar parametros
+2018.08.10 02:06:04     4 - Procesar ficheros
+2018.08.10 02:06:04     5 - Modificar Autocorrelaciones
+2018.08.10 02:06:04     6 - Borrar escenario
+2018.08.10 02:06:22 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 02:06:22 
+2018.08.10 02:06:22 Seleccione una opcion de la lista:
+2018.08.10 02:06:22     0 - Salir
+2018.08.10 02:06:22     1 - Acceder a escenario existente
+2018.08.10 02:06:22     2 - Crear nuevo escenario
+2018.08.10 02:06:23 Elegida: 1
+2018.08.10 02:06:25 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:06:25 
+2018.08.10 02:06:25 Seleccione una opcion de la lista:
+2018.08.10 02:06:25     0 - Volver
+2018.08.10 02:06:25     1 - Ver parametros
+2018.08.10 02:06:25     2 - Ver status
+2018.08.10 02:06:25     3 - Modificar parametros
+2018.08.10 02:06:25     4 - Procesar ficheros
+2018.08.10 02:06:25     5 - Modificar Autocorrelaciones
+2018.08.10 02:06:25     6 - Borrar escenario
+2018.08.10 02:06:30 Elegida: 4
+2018.08.10 02:06:30 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 02:06:30 
+2018.08.10 02:06:30 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran. En caso contrario se actualizaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 02:06:30 s / n
+2018.08.10 02:06:31 Elegida: s
+2018.08.10 02:06:31 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:06:31 
+2018.08.10 02:06:31 Seleccione una opcion de la lista:
+2018.08.10 02:06:31     0 - Volver
+2018.08.10 02:06:31     1 - Ver parametros
+2018.08.10 02:06:31     2 - Ver status
+2018.08.10 02:06:31     3 - Modificar parametros
+2018.08.10 02:06:31     4 - Procesar ficheros
+2018.08.10 02:06:31     5 - Modificar Autocorrelaciones
+2018.08.10 02:06:31     6 - Borrar escenario
+2018.08.10 02:18:53 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.10 02:18:53 
+2018.08.10 02:18:53 Seleccione una opcion de la lista:
+2018.08.10 02:18:53     0 - Salir
+2018.08.10 02:18:53     1 - Acceder a escenario existente
+2018.08.10 02:18:53     2 - Crear nuevo escenario
+2018.08.10 02:18:57 Elegida: 1
+2018.08.10 02:18:58 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:18:58 
+2018.08.10 02:18:58 Seleccione una opcion de la lista:
+2018.08.10 02:18:58     0 - Volver
+2018.08.10 02:18:58     1 - Ver parametros
+2018.08.10 02:18:58     2 - Ver status
+2018.08.10 02:18:58     3 - Modificar parametros
+2018.08.10 02:18:58     4 - Procesar ficheros
+2018.08.10 02:18:58     5 - Modificar Autocorrelaciones
+2018.08.10 02:18:58     6 - Borrar escenario
+2018.08.10 02:19:03 Elegida: 4
+2018.08.10 02:19:03 preguntaConfirmacion::Realizando pregunta de confirmacion
+2018.08.10 02:19:03 
+2018.08.10 02:19:03 
+Se procesaran los ficheros de inputs y outputs. 
+
+Si las tablas del escenario no existen se generaran. En caso contrario se actualizaran.
+
+Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. 
+
+¿Desea continuar?
+2018.08.10 02:19:03 s / n
+2018.08.10 02:19:06 Elegida: s
+2018.08.10 02:19:10 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.10 02:19:10 
+2018.08.10 02:19:10 Seleccione una opcion de la lista:
+2018.08.10 02:19:10     0 - Volver
+2018.08.10 02:19:10     1 - Ver parametros
+2018.08.10 02:19:10     2 - Ver status
+2018.08.10 02:19:10     3 - Modificar parametros
+2018.08.10 02:19:10     4 - Procesar ficheros
+2018.08.10 02:19:10     5 - Modificar Autocorrelaciones
+2018.08.10 02:19:10     6 - Borrar escenario

@@ -1,0 +1,823 @@
+2018.08.06 00:55:14 Accediendo a la aplicación...
+2018.08.06 00:55:15 Conectado a BBDD.
+2018.08.06 00:55:18 Conectado como jb...
+2018.08.06 00:55:18 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 00:55:18 
+2018.08.06 00:55:18 Seleccione una opcion de la lista:
+2018.08.06 00:55:18     0 - Salir
+2018.08.06 00:55:18     1 - Acceder a escenario existente
+2018.08.06 00:55:18     2 - Crear nuevo escenario
+2018.08.06 00:55:20 Elegida: 0
+2018.08.06 00:55:20 Procesando accion: Salir
+2018.08.06 00:55:20 Se saldra de la aplicacion.
+2018.08.06 00:55:20 Finalizada la ejecucion. Pulse cualquier tecla para finalizar.
+2018.08.06 00:55:26 Accediendo a la aplicación...
+2018.08.06 00:55:27 Conectado a BBDD.
+2018.08.06 00:55:30 Conectado como jb...
+2018.08.06 00:55:30 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 00:55:30 
+2018.08.06 00:55:30 Seleccione una opcion de la lista:
+2018.08.06 00:55:30     0 - Salir
+2018.08.06 00:55:30     1 - Acceder a escenario existente
+2018.08.06 00:55:30     2 - Crear nuevo escenario
+2018.08.06 00:55:33 Elegida: 1
+2018.08.06 00:55:33 Procesando accion: escenariosExistentes
+2018.08.06 00:55:33 Seleccione un escenario: 
+2018.08.06 00:55:33     1 - prueba esc
+2018.08.06 00:55:33     2 - prueba 1
+2018.08.06 00:55:33     3 - prueba 2
+2018.08.06 00:55:33     0 - Volver
+2018.08.06 00:55:40 Procesando accion: menuPrincipal
+2018.08.06 00:55:40 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 00:55:40 
+2018.08.06 00:55:40 Seleccione una opcion de la lista:
+2018.08.06 00:55:40     0 - Salir
+2018.08.06 00:55:40     1 - Acceder a escenario existente
+2018.08.06 00:55:40     2 - Crear nuevo escenario
+2018.08.06 00:55:43 Elegida: 1
+2018.08.06 00:55:43 Procesando accion: escenariosExistentes
+2018.08.06 00:55:43 Seleccione un escenario: 
+2018.08.06 00:55:43     1 - prueba esc
+2018.08.06 00:55:43     2 - prueba 1
+2018.08.06 00:55:43     3 - prueba 2
+2018.08.06 00:55:43     0 - Volver
+2018.08.06 00:55:48 menuOption::existeOpcion::Evaluando opciones
+2018.08.06 00:55:48 menuOption::existeOpcion::opcion ('3') OK
+2018.08.06 00:55:48 Seleccionando escenario 3...
+2018.08.06 00:55:48 Procesando accion: MENU_ESCENARIO
+2018.08.06 00:55:48 Accediendo al escenario con id: 3
+2018.08.06 00:55:48 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 00:55:48 
+2018.08.06 00:55:48 Seleccione una opcion de la lista:
+2018.08.06 00:55:48     0 - Volver
+2018.08.06 00:55:48     1 - Ver parametros
+2018.08.06 00:55:48     2 - Modificar parametros
+2018.08.06 00:55:51 Elegida: 0
+2018.08.06 00:55:51 Procesando accion: escenariosExistentes
+2018.08.06 00:55:51 No se encontro ninguna accion para: escenariosExistentes
+2018.08.06 00:55:51 Finalizada la ejecucion. Pulse cualquier tecla para finalizar.
+2018.08.06 00:58:29 Accediendo a la aplicación...
+2018.08.06 00:58:30 Conectado a BBDD.
+2018.08.06 00:58:32 Conectado como jb...
+2018.08.06 00:58:32 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 00:58:32 
+2018.08.06 00:58:32 Seleccione una opcion de la lista:
+2018.08.06 00:58:32     0 - Salir
+2018.08.06 00:58:32     1 - Acceder a escenario existente
+2018.08.06 00:58:32     2 - Crear nuevo escenario
+2018.08.06 00:58:37 Elegida: 1
+2018.08.06 00:58:37 Procesando accion: escenariosExistentes
+2018.08.06 00:58:37 Seleccione un escenario: 
+2018.08.06 00:58:37     1 - prueba esc
+2018.08.06 00:58:37     2 - prueba 1
+2018.08.06 00:58:37     3 - prueba 2
+2018.08.06 00:58:37     0 - Volver
+2018.08.06 00:58:39 Procesando accion: menuPrincipal
+2018.08.06 00:58:39 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 00:58:39 
+2018.08.06 00:58:39 Seleccione una opcion de la lista:
+2018.08.06 00:58:39     0 - Salir
+2018.08.06 00:58:39     1 - Acceder a escenario existente
+2018.08.06 00:58:39     2 - Crear nuevo escenario
+2018.08.06 00:58:41 Elegida: 1
+2018.08.06 00:58:41 Procesando accion: escenariosExistentes
+2018.08.06 00:58:41 Seleccione un escenario: 
+2018.08.06 00:58:41     1 - prueba esc
+2018.08.06 00:58:41     2 - prueba 1
+2018.08.06 00:58:41     3 - prueba 2
+2018.08.06 00:58:41     0 - Volver
+2018.08.06 00:58:43 menuOption::existeOpcion::Evaluando opciones
+2018.08.06 00:58:43 menuOption::existeOpcion::opcion ('3') OK
+2018.08.06 00:58:43 Seleccionando escenario 3...
+2018.08.06 00:58:43 Procesando accion: MENU_ESCENARIO
+2018.08.06 00:58:43 Accediendo al escenario con id: 3
+2018.08.06 00:58:43 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 00:58:43 
+2018.08.06 00:58:43 Seleccione una opcion de la lista:
+2018.08.06 00:58:43     0 - Volver
+2018.08.06 00:58:43     1 - Ver parametros
+2018.08.06 00:58:43     2 - Modificar parametros
+2018.08.06 00:58:48 Elegida: 0
+2018.08.06 00:58:48 Procesando accion: escenariosExistentes
+2018.08.06 00:58:48 Seleccione un escenario: 
+2018.08.06 00:58:48     1 - prueba esc
+2018.08.06 00:58:48     2 - prueba 1
+2018.08.06 00:58:48     3 - prueba 2
+2018.08.06 00:58:48     0 - Volver
+2018.08.06 00:58:51 menuOption::existeOpcion::Evaluando opciones
+2018.08.06 00:58:51 menuOption::existeOpcion::opcion ('3') OK
+2018.08.06 00:58:51 Seleccionando escenario 3...
+2018.08.06 00:58:51 Procesando accion: MENU_ESCENARIO
+2018.08.06 00:58:51 Accediendo al escenario con id: 3
+2018.08.06 00:58:51 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 00:58:51 
+2018.08.06 00:58:51 Seleccione una opcion de la lista:
+2018.08.06 00:58:51     0 - Volver
+2018.08.06 00:58:51     1 - Ver parametros
+2018.08.06 00:58:51     2 - Modificar parametros
+2018.08.06 00:58:54 Elegida: 1
+2018.08.06 00:58:54 Procesando accion: verParamEscenario
+2018.08.06 00:58:54 Finalizada la ejecucion. Pulse cualquier tecla para finalizar.
+2018.08.06 01:02:25 Accediendo a la aplicación...
+2018.08.06 01:02:26 Conectado a BBDD.
+2018.08.06 01:02:31 Conectado como jb...
+2018.08.06 01:02:31 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 01:02:31 
+2018.08.06 01:02:31 Seleccione una opcion de la lista:
+2018.08.06 01:02:31     0 - Salir
+2018.08.06 01:02:31     1 - Acceder a escenario existente
+2018.08.06 01:02:31     2 - Crear nuevo escenario
+2018.08.06 01:02:34 Elegida: 1
+2018.08.06 01:02:34 Procesando accion: escenariosExistentes
+2018.08.06 01:02:34 Seleccione un escenario: 
+2018.08.06 01:02:34     1 - prueba esc
+2018.08.06 01:02:34     2 - prueba 1
+2018.08.06 01:02:34     3 - prueba 2
+2018.08.06 01:02:34     0 - Volver
+2018.08.06 01:02:36 menuOption::existeOpcion::Evaluando opciones
+2018.08.06 01:02:36 menuOption::existeOpcion::opcion ('3') OK
+2018.08.06 01:02:36 Seleccionando escenario 3...
+2018.08.06 01:02:36 Procesando accion: MENU_ESCENARIO
+2018.08.06 01:02:36 Accediendo al escenario con id: 3
+2018.08.06 01:02:36 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 01:02:36 
+2018.08.06 01:02:36 Seleccione una opcion de la lista:
+2018.08.06 01:02:36     0 - Volver
+2018.08.06 01:02:36     1 - Ver parametros
+2018.08.06 01:02:36     2 - Modificar parametros
+2018.08.06 01:02:38 Elegida: 1
+2018.08.06 01:02:38 Procesando accion: verParamEscenario
+2018.08.06 01:02:38 Buscando paramentros del escenario 3
+2018.08.06 01:02:38 Opciones encontradas del escenario 3
+2018.08.06 01:02:38 Mostrando opciones del escenario 3
+2018.08.06 01:02:38   2 - Nombre_Fichero - ''
+2018.08.06 01:02:38   1 - Num_Soluciones - '1000'
+2018.08.06 01:02:38   99 - Vueltas_por_Iteracion - '5'
+2018.08.06 01:02:38 Accediendo al escenario con id: 3
+2018.08.06 01:02:38 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 01:02:38 
+2018.08.06 01:02:38 Seleccione una opcion de la lista:
+2018.08.06 01:02:38     0 - Volver
+2018.08.06 01:02:38     1 - Ver parametros
+2018.08.06 01:02:38     2 - Modificar parametros
+2018.08.06 01:05:29 Accediendo a la aplicación...
+2018.08.06 01:05:29 Conectado a BBDD.
+2018.08.06 01:05:34 Conectado como jb...
+2018.08.06 01:05:34 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 01:05:34 Error obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 01:05:34 com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'ia_app.t_menus' doesn't exist
+2018.08.06 01:05:34 No se realizará ninguna accion
+2018.08.06 01:05:34 Procesando accion: null
+2018.08.06 01:06:37 Accediendo a la aplicación...
+2018.08.06 01:06:38 Conectado a BBDD.
+2018.08.06 01:06:42 Conectado como jb...
+2018.08.06 01:06:42 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 01:06:42 
+2018.08.06 01:06:42 Seleccione una opcion de la lista:
+2018.08.06 01:06:42     0 - Salir
+2018.08.06 01:06:42     1 - Acceder a escenario existente
+2018.08.06 01:06:42     2 - Crear nuevo escenario
+2018.08.06 01:06:45 Elegida: 0
+2018.08.06 01:06:45 Procesando accion: Salir
+2018.08.06 01:06:45 Se saldra de la aplicacion.
+2018.08.06 01:06:45 Finalizada la ejecucion. Pulse cualquier tecla para finalizar.
+2018.08.06 01:06:49 Accediendo a la aplicación...
+2018.08.06 01:06:50 Conectado a BBDD.
+2018.08.06 01:06:55 Conectado como jb...
+2018.08.06 01:06:55 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 01:06:55 
+2018.08.06 01:06:55 Seleccione una opcion de la lista:
+2018.08.06 01:06:55     0 - Salir
+2018.08.06 01:06:55     1 - Acceder a escenario existente
+2018.08.06 01:06:55     2 - Crear nuevo escenario
+2018.08.06 01:06:58 Elegida: 1
+2018.08.06 01:06:58 Procesando accion: escenariosExistentes
+2018.08.06 01:06:58 No se encontro ninguna escenario.
+2018.08.06 01:06:58 Procesando accion: menuPrincipal
+2018.08.06 01:06:58 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 01:06:58 
+2018.08.06 01:06:58 Seleccione una opcion de la lista:
+2018.08.06 01:06:58     0 - Salir
+2018.08.06 01:06:58     1 - Acceder a escenario existente
+2018.08.06 01:06:58     2 - Crear nuevo escenario
+2018.08.06 01:07:36 Elegida: 2
+2018.08.06 01:07:36 Procesando accion: escenarioNuevo
+2018.08.06 01:07:36 Ha seleccionado crear un nuevo escenario.
+2018.08.06 01:07:36 Indique un nombre para el escenario: 
+2018.08.06 01:07:45 opc1
+2018.08.06 01:07:45 Validando el nombre: opc1
+2018.08.06 01:07:45 Nombre valido: opc1
+2018.08.06 01:07:45 Creando escenario 'opc1'...
+2018.08.06 01:07:45 Se creo el escenario 'opc1'.
+2018.08.06 01:07:45 Se añadieron valores por defecto 'opc1'.
+2018.08.06 01:07:45 Procesando accion: menuPrincipal
+2018.08.06 01:07:45 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 01:07:45 
+2018.08.06 01:07:45 Seleccione una opcion de la lista:
+2018.08.06 01:07:45     0 - Salir
+2018.08.06 01:07:45     1 - Acceder a escenario existente
+2018.08.06 01:07:45     2 - Crear nuevo escenario
+2018.08.06 01:07:47 Elegida: 1
+2018.08.06 01:07:47 Procesando accion: escenariosExistentes
+2018.08.06 01:07:47 Seleccione un escenario: 
+2018.08.06 01:07:47     1 - opc1
+2018.08.06 01:07:47     0 - Volver
+2018.08.06 01:07:50 Procesando accion: menuPrincipal
+2018.08.06 01:07:50 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 01:07:50 
+2018.08.06 01:07:50 Seleccione una opcion de la lista:
+2018.08.06 01:07:50     0 - Salir
+2018.08.06 01:07:50     1 - Acceder a escenario existente
+2018.08.06 01:07:50     2 - Crear nuevo escenario
+2018.08.06 01:07:52 Elegida: 1
+2018.08.06 01:07:52 Procesando accion: escenariosExistentes
+2018.08.06 01:07:52 Seleccione un escenario: 
+2018.08.06 01:07:52     1 - opc1
+2018.08.06 01:07:52     0 - Volver
+2018.08.06 01:07:54 menuOption::existeOpcion::Evaluando opciones
+2018.08.06 01:07:54 menuOption::existeOpcion::opcion ('1') OK
+2018.08.06 01:07:54 Seleccionando escenario 1...
+2018.08.06 01:07:54 Procesando accion: MENU_ESCENARIO
+2018.08.06 01:07:54 Accediendo al escenario con id: 1
+2018.08.06 01:07:54 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 01:07:54 
+2018.08.06 01:07:54 Seleccione una opcion de la lista:
+2018.08.06 01:07:54     0 - Volver
+2018.08.06 01:07:54     1 - Ver parametros
+2018.08.06 01:07:54     2 - Modificar parametros
+2018.08.06 01:07:56 Elegida: 0
+2018.08.06 01:07:56 Procesando accion: escenariosExistentes
+2018.08.06 01:07:56 Seleccione un escenario: 
+2018.08.06 01:07:56     1 - opc1
+2018.08.06 01:07:56     0 - Volver
+2018.08.06 01:07:58 menuOption::existeOpcion::Evaluando opciones
+2018.08.06 01:07:58 menuOption::existeOpcion::opcion ('1') OK
+2018.08.06 01:07:58 Seleccionando escenario 1...
+2018.08.06 01:07:58 Procesando accion: MENU_ESCENARIO
+2018.08.06 01:07:58 Accediendo al escenario con id: 1
+2018.08.06 01:07:58 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 01:07:58 
+2018.08.06 01:07:58 Seleccione una opcion de la lista:
+2018.08.06 01:07:58     0 - Volver
+2018.08.06 01:07:58     1 - Ver parametros
+2018.08.06 01:07:58     2 - Modificar parametros
+2018.08.06 01:08:01 Elegida: 1
+2018.08.06 01:08:01 Procesando accion: verParamEscenario
+2018.08.06 01:08:01 Buscando paramentros del escenario 1
+2018.08.06 01:08:01 Opciones encontradas del escenario 1
+2018.08.06 01:08:01 Mostrando opciones del escenario 1
+2018.08.06 01:08:01   2 - Nombre_Fichero - ' '
+2018.08.06 01:08:01   1 - Num_Soluciones - '1000'
+2018.08.06 01:08:01   99 - Vueltas_por_Iteracion - '5'
+2018.08.06 01:08:01 Accediendo al escenario con id: 1
+2018.08.06 01:08:01 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 01:08:01 
+2018.08.06 01:08:01 Seleccione una opcion de la lista:
+2018.08.06 01:08:01     0 - Volver
+2018.08.06 01:08:01     1 - Ver parametros
+2018.08.06 01:08:01     2 - Modificar parametros
+2018.08.06 03:18:15 Accediendo a la aplicación...
+2018.08.06 03:18:16 Conectado a BBDD.
+2018.08.06 03:24:10 Accediendo a la aplicación...
+2018.08.06 03:24:11 Conectado a BBDD.
+2018.08.06 03:24:14 Conectado como jb...
+2018.08.06 03:24:14 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 03:24:14 
+2018.08.06 03:24:14 Seleccione una opcion de la lista:
+2018.08.06 03:24:14     0 - Salir
+2018.08.06 03:24:14     1 - Acceder a escenario existente
+2018.08.06 03:24:14     2 - Crear nuevo escenario
+2018.08.06 03:24:17 Elegida: 1
+2018.08.06 03:24:17 Procesando accion: escenariosExistentes
+2018.08.06 03:24:17 No se encontro ningun escenario.
+2018.08.06 03:24:17 Procesando accion: menuPrincipal
+2018.08.06 03:24:17 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 03:24:17 
+2018.08.06 03:24:17 Seleccione una opcion de la lista:
+2018.08.06 03:24:17     0 - Salir
+2018.08.06 03:24:17     1 - Acceder a escenario existente
+2018.08.06 03:24:17     2 - Crear nuevo escenario
+2018.08.06 03:24:29 Elegida: 2
+2018.08.06 03:24:29 Procesando accion: escenarioNuevo
+2018.08.06 03:24:29 Ha seleccionado crear un nuevo escenario.
+2018.08.06 03:24:29 Indique un nombre para el escenario: 
+2018.08.06 03:24:35 esc1
+2018.08.06 03:24:35 Validando el nombre: esc1
+2018.08.06 03:24:35 Nombre valido: esc1
+2018.08.06 03:24:35 Creando escenario 'esc1'...
+2018.08.06 03:24:35 Se creo el escenario 'esc1'.
+2018.08.06 03:24:35 Se añadieron valores por defecto 'esc1'.
+2018.08.06 03:24:35 Procesando accion: menuPrincipal
+2018.08.06 03:24:35 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 03:24:35 
+2018.08.06 03:24:35 Seleccione una opcion de la lista:
+2018.08.06 03:24:35     0 - Salir
+2018.08.06 03:24:35     1 - Acceder a escenario existente
+2018.08.06 03:24:35     2 - Crear nuevo escenario
+2018.08.06 03:24:39 Elegida: 1
+2018.08.06 03:24:39 Procesando accion: escenariosExistentes
+2018.08.06 03:24:39 Seleccione un escenario: 
+2018.08.06 03:24:39     1 - esc1
+2018.08.06 03:24:39     0 - Volver
+2018.08.06 03:24:41 menuOption::existeOpcion::Evaluando opciones
+2018.08.06 03:24:41 menuOption::existeOpcion::opcion ('1') OK
+2018.08.06 03:24:41 Seleccionando escenario 1...
+2018.08.06 03:24:41 Procesando accion: MENU_ESCENARIO
+2018.08.06 03:24:41 Accediendo al escenario con id: 1
+2018.08.06 03:24:41 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 03:24:41 
+2018.08.06 03:24:41 Seleccione una opcion de la lista:
+2018.08.06 03:24:41     0 - Volver
+2018.08.06 03:24:41     1 - Ver parametros
+2018.08.06 03:24:41     2 - Modificar parametros
+2018.08.06 03:24:45 Elegida: 1
+2018.08.06 03:24:45 Procesando accion: verParamEscenario
+2018.08.06 03:24:45 Buscando paramentros del escenario 1
+2018.08.06 03:24:45 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM ORDER BY a.ID_PARAM
+2018.08.06 03:24:45 Opciones encontradas del escenario 1
+2018.08.06 03:24:45 Mostrando opciones del escenario 1
+2018.08.06 03:24:45   1 - Nombre_Fic_Data_Input - ' ' - VARCHAR(100)
+2018.08.06 03:24:45   2 - Nombre_Fic_Data_Output - ' ' - VARCHAR(100)
+2018.08.06 03:24:45   5 - Num_Soluciones - '1000' - INT
+2018.08.06 03:24:45   99 - Vueltas_por_Iteracion - '5' - INT
+2018.08.06 03:24:45   100 - Max_Precision_Decimales - '15' - INT
+2018.08.06 03:24:45   102 - Max_Cambio - '0.1' - NUMERIC(20,18)
+2018.08.06 03:24:45 Accediendo al escenario con id: 1
+2018.08.06 03:24:45 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 03:24:45 
+2018.08.06 03:24:45 Seleccione una opcion de la lista:
+2018.08.06 03:24:45     0 - Volver
+2018.08.06 03:24:45     1 - Ver parametros
+2018.08.06 03:24:45     2 - Modificar parametros
+2018.08.06 03:25:25 Elegida: 1
+2018.08.06 03:25:25 Procesando accion: verParamEscenario
+2018.08.06 03:25:25 Buscando paramentros del escenario 1
+2018.08.06 03:25:25 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM ORDER BY a.ID_PARAM
+2018.08.06 03:25:25 Opciones encontradas del escenario 1
+2018.08.06 03:25:25 Mostrando opciones del escenario 1
+2018.08.06 03:25:25   1 - Nombre_Fic_Data_Input - ' ' - VARCHAR(100)
+2018.08.06 03:25:25   2 - Nombre_Fic_Data_Output - ' ' - VARCHAR(100)
+2018.08.06 03:25:25   5 - Num_Soluciones - '1000' - INT
+2018.08.06 03:25:25   99 - Vueltas_por_Iteracion - '5' - INT
+2018.08.06 03:25:25   100 - Max_Precision_Decimales - '15' - INT
+2018.08.06 03:25:25   102 - Max_Cambio - '0.1' - NUMERIC(20,18)
+2018.08.06 03:25:25 Accediendo al escenario con id: 1
+2018.08.06 03:25:25 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 03:25:25 
+2018.08.06 03:25:25 Seleccione una opcion de la lista:
+2018.08.06 03:25:25     0 - Volver
+2018.08.06 03:25:25     1 - Ver parametros
+2018.08.06 03:25:25     2 - Modificar parametros
+2018.08.06 03:25:28 Elegida: 2
+2018.08.06 03:25:28 Procesando accion: modParamEscenario
+2018.08.06 03:25:28 Buscando paramentros del escenario 1
+2018.08.06 03:25:28 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM ORDER BY a.ID_PARAM
+2018.08.06 03:25:28 
+2018.08.06 03:25:28 Seleccione el parametro que desea modificar: 
+2018.08.06 03:25:28 0 - 'ID_PARAM' - 'DESCRIPCION'             - 'VALOR' - 'DATA_TYPE'     
+2018.08.06 03:25:28 1 - '1'        - 'Nombre_Fic_Data_Input'   - ' '     - 'VARCHAR(100)'  
+2018.08.06 03:25:28 2 - '2'        - 'Nombre_Fic_Data_Output'  - ' '     - 'VARCHAR(100)'  
+2018.08.06 03:25:28 3 - '5'        - 'Num_Soluciones'          - '1000'  - 'INT'           
+2018.08.06 03:25:28 4 - '99'       - 'Vueltas_por_Iteracion'   - '5'     - 'INT'           
+2018.08.06 03:25:28 5 - '100'      - 'Max_Precision_Decimales' - '15'    - 'INT'           
+2018.08.06 03:25:28 6 - '102'      - 'Max_Cambio'              - '0.1'   - 'NUMERIC(20,18)'
+2018.08.06 03:25:28 0 - Volver
+2018.08.06 03:25:45 menuOption::existeOpcion::Evaluando opciones
+2018.08.06 03:25:45 menuOption::existeOpcion::opcion ('1') OK
+2018.08.06 03:25:45 Accediendo a la modificacion del parametro 'Nombre_Fic_Data_Input'
+2018.08.06 03:25:45 El valor actual es: ' '
+2018.08.06 03:25:45 Indique el nuevo valor
+2018.08.06 03:25:55 rutaInput.csv
+2018.08.06 03:25:55 Procesando consulta de S/N
+2018.08.06 03:25:55 
+2018.08.06 03:25:55 Se va a modificar el parametro 'Nombre_Fic_Data_Input' cambiando ' ' por rutaInput.csv'. ¿Esta de acuerdo? (S/N)
+2018.08.06 03:26:00 s
+2018.08.06 03:26:00 Error al actualizar el valor
+2018.08.06 03:26:00 Buscando paramentros del escenario 1
+2018.08.06 03:26:00 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM ORDER BY a.ID_PARAM
+2018.08.06 03:26:00 
+2018.08.06 03:26:00 Seleccione el parametro que desea modificar: 
+2018.08.06 03:26:00 0 - 'ID_PARAM' - 'DESCRIPCION'             - 'VALOR' - 'DATA_TYPE'     
+2018.08.06 03:26:00 1 - '1'        - 'Nombre_Fic_Data_Input'   - ' '     - 'VARCHAR(100)'  
+2018.08.06 03:26:00 2 - '2'        - 'Nombre_Fic_Data_Output'  - ' '     - 'VARCHAR(100)'  
+2018.08.06 03:26:00 3 - '5'        - 'Num_Soluciones'          - '1000'  - 'INT'           
+2018.08.06 03:26:00 4 - '99'       - 'Vueltas_por_Iteracion'   - '5'     - 'INT'           
+2018.08.06 03:26:00 5 - '100'      - 'Max_Precision_Decimales' - '15'    - 'INT'           
+2018.08.06 03:26:00 6 - '102'      - 'Max_Cambio'              - '0.1'   - 'NUMERIC(20,18)'
+2018.08.06 03:26:00 0 - Volver
+2018.08.06 03:26:28 menuOption::existeOpcion::Evaluando opciones
+2018.08.06 03:26:28 menuOption::existeOpcion::opcion ('5') OK
+2018.08.06 03:26:28 Accediendo a la modificacion del parametro 'Num_Soluciones'
+2018.08.06 03:26:28 El valor actual es: '1000'
+2018.08.06 03:26:28 Indique el nuevo valor
+2018.08.06 03:26:30 500
+2018.08.06 03:26:30 Procesando consulta de S/N
+2018.08.06 03:26:30 
+2018.08.06 03:26:30 Se va a modificar el parametro 'Num_Soluciones' cambiando '1000' por 500'. ¿Esta de acuerdo? (S/N)
+2018.08.06 03:26:35 S
+2018.08.06 03:26:35 Error al actualizar el valor
+2018.08.06 03:26:35 Buscando paramentros del escenario 1
+2018.08.06 03:26:35 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM ORDER BY a.ID_PARAM
+2018.08.06 03:26:35 
+2018.08.06 03:26:35 Seleccione el parametro que desea modificar: 
+2018.08.06 03:26:35 0 - 'ID_PARAM' - 'DESCRIPCION'             - 'VALOR' - 'DATA_TYPE'     
+2018.08.06 03:26:35 1 - '1'        - 'Nombre_Fic_Data_Input'   - ' '     - 'VARCHAR(100)'  
+2018.08.06 03:26:35 2 - '2'        - 'Nombre_Fic_Data_Output'  - ' '     - 'VARCHAR(100)'  
+2018.08.06 03:26:35 3 - '5'        - 'Num_Soluciones'          - '1000'  - 'INT'           
+2018.08.06 03:26:35 4 - '99'       - 'Vueltas_por_Iteracion'   - '5'     - 'INT'           
+2018.08.06 03:26:35 5 - '100'      - 'Max_Precision_Decimales' - '15'    - 'INT'           
+2018.08.06 03:26:35 6 - '102'      - 'Max_Cambio'              - '0.1'   - 'NUMERIC(20,18)'
+2018.08.06 03:26:35 0 - Volver
+2018.08.06 03:27:01 Accediendo a la aplicación...
+2018.08.06 03:27:01 Conectado a BBDD.
+2018.08.06 03:27:06 Conectado como jb...
+2018.08.06 03:27:06 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 03:27:06 
+2018.08.06 03:27:06 Seleccione una opcion de la lista:
+2018.08.06 03:27:06     0 - Salir
+2018.08.06 03:27:06     1 - Acceder a escenario existente
+2018.08.06 03:27:06     2 - Crear nuevo escenario
+2018.08.06 03:27:10 Elegida: 1
+2018.08.06 03:27:10 Procesando accion: escenariosExistentes
+2018.08.06 03:27:10 Seleccione un escenario: 
+2018.08.06 03:27:10     1 - esc1
+2018.08.06 03:27:10     0 - Volver
+2018.08.06 03:27:11 menuOption::existeOpcion::Evaluando opciones
+2018.08.06 03:27:11 menuOption::existeOpcion::opcion ('1') OK
+2018.08.06 03:27:11 Seleccionando escenario 1...
+2018.08.06 03:27:11 Procesando accion: MENU_ESCENARIO
+2018.08.06 03:27:11 Accediendo al escenario con id: 1
+2018.08.06 03:27:11 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 03:27:11 
+2018.08.06 03:27:11 Seleccione una opcion de la lista:
+2018.08.06 03:27:11     0 - Volver
+2018.08.06 03:27:11     1 - Ver parametros
+2018.08.06 03:27:11     2 - Modificar parametros
+2018.08.06 03:27:13 Elegida: 1
+2018.08.06 03:27:13 Procesando accion: verParamEscenario
+2018.08.06 03:27:13 Buscando paramentros del escenario 1
+2018.08.06 03:27:13 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM ORDER BY a.ID_PARAM
+2018.08.06 03:27:13 Opciones encontradas del escenario 1
+2018.08.06 03:27:13 Mostrando opciones del escenario 1
+2018.08.06 03:27:13   1 - Nombre_Fic_Data_Input - ' ' - VARCHAR(100)
+2018.08.06 03:27:13   2 - Nombre_Fic_Data_Output - ' ' - VARCHAR(100)
+2018.08.06 03:27:13   5 - Num_Soluciones - '1000' - INT
+2018.08.06 03:27:13   99 - Vueltas_por_Iteracion - '5' - INT
+2018.08.06 03:27:13   100 - Max_Precision_Decimales - '15' - INT
+2018.08.06 03:27:13   102 - Max_Cambio - '0.1' - NUMERIC(20,18)
+2018.08.06 03:27:13 Accediendo al escenario con id: 1
+2018.08.06 03:27:13 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 03:27:13 
+2018.08.06 03:27:13 Seleccione una opcion de la lista:
+2018.08.06 03:27:13     0 - Volver
+2018.08.06 03:27:13     1 - Ver parametros
+2018.08.06 03:27:13     2 - Modificar parametros
+2018.08.06 03:27:15 Elegida: 2
+2018.08.06 03:27:15 Procesando accion: modParamEscenario
+2018.08.06 03:27:15 Buscando paramentros del escenario 1
+2018.08.06 03:27:15 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM ORDER BY a.ID_PARAM
+2018.08.06 03:27:15 
+2018.08.06 03:27:15 Seleccione el parametro que desea modificar: 
+2018.08.06 03:27:15 0 - 'ID_PARAM' - 'DESCRIPCION'             - 'VALOR' - 'DATA_TYPE'     
+2018.08.06 03:27:15 1 - '1'        - 'Nombre_Fic_Data_Input'   - ' '     - 'VARCHAR(100)'  
+2018.08.06 03:27:15 2 - '2'        - 'Nombre_Fic_Data_Output'  - ' '     - 'VARCHAR(100)'  
+2018.08.06 03:27:15 3 - '5'        - 'Num_Soluciones'          - '1000'  - 'INT'           
+2018.08.06 03:27:15 4 - '99'       - 'Vueltas_por_Iteracion'   - '5'     - 'INT'           
+2018.08.06 03:27:15 5 - '100'      - 'Max_Precision_Decimales' - '15'    - 'INT'           
+2018.08.06 03:27:15 6 - '102'      - 'Max_Cambio'              - '0.1'   - 'NUMERIC(20,18)'
+2018.08.06 03:27:15 0 - Volver
+2018.08.06 03:27:21 menuOption::existeOpcion::Evaluando opciones
+2018.08.06 03:27:21 menuOption::existeOpcion::opcion ('3') KO!!
+2018.08.06 03:27:21 El parametro seleccionado no es valido. Debe seleccionar una opcion de la lista.
+2018.08.06 03:27:21 
+2018.08.06 03:27:21 Seleccione el parametro que desea modificar: 
+2018.08.06 03:27:21 0 - 'ID_PARAM' - 'DESCRIPCION'             - 'VALOR' - 'DATA_TYPE'     
+2018.08.06 03:27:21 1 - '1'        - 'Nombre_Fic_Data_Input'   - ' '     - 'VARCHAR(100)'  
+2018.08.06 03:27:21 2 - '2'        - 'Nombre_Fic_Data_Output'  - ' '     - 'VARCHAR(100)'  
+2018.08.06 03:27:21 3 - '5'        - 'Num_Soluciones'          - '1000'  - 'INT'           
+2018.08.06 03:27:21 4 - '99'       - 'Vueltas_por_Iteracion'   - '5'     - 'INT'           
+2018.08.06 03:27:21 5 - '100'      - 'Max_Precision_Decimales' - '15'    - 'INT'           
+2018.08.06 03:27:21 6 - '102'      - 'Max_Cambio'              - '0.1'   - 'NUMERIC(20,18)'
+2018.08.06 03:27:21 0 - Volver
+2018.08.06 03:27:30 menuOption::existeOpcion::Evaluando opciones
+2018.08.06 03:27:30 menuOption::existeOpcion::opcion ('5') OK
+2018.08.06 03:27:30 Accediendo a la modificacion del parametro 'Num_Soluciones'
+2018.08.06 03:27:30 El valor actual es: '1000'
+2018.08.06 03:27:30 Indique el nuevo valor
+2018.08.06 03:27:34 500
+2018.08.06 03:27:34 Procesando consulta de S/N
+2018.08.06 03:27:34 
+2018.08.06 03:27:34 Se va a modificar el parametro 'Num_Soluciones' cambiando '1000' por 500'. ¿Esta de acuerdo? (S/N)
+2018.08.06 03:27:40 s
+2018.08.06 03:28:14 Error al actualizar el valor
+2018.08.06 03:28:14 Buscando paramentros del escenario 1
+2018.08.06 03:28:14 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM ORDER BY a.ID_PARAM
+2018.08.06 03:28:14 
+2018.08.06 03:28:14 Seleccione el parametro que desea modificar: 
+2018.08.06 03:28:14 0 - 'ID_PARAM' - 'DESCRIPCION'             - 'VALOR' - 'DATA_TYPE'     
+2018.08.06 03:28:14 1 - '1'        - 'Nombre_Fic_Data_Input'   - ' '     - 'VARCHAR(100)'  
+2018.08.06 03:28:14 2 - '2'        - 'Nombre_Fic_Data_Output'  - ' '     - 'VARCHAR(100)'  
+2018.08.06 03:28:14 3 - '5'        - 'Num_Soluciones'          - '1000'  - 'INT'           
+2018.08.06 03:28:14 4 - '99'       - 'Vueltas_por_Iteracion'   - '5'     - 'INT'           
+2018.08.06 03:28:14 5 - '100'      - 'Max_Precision_Decimales' - '15'    - 'INT'           
+2018.08.06 03:28:14 6 - '102'      - 'Max_Cambio'              - '0.1'   - 'NUMERIC(20,18)'
+2018.08.06 03:28:14 0 - Volver
+2018.08.06 03:28:20 menuOption::existeOpcion::Evaluando opciones
+2018.08.06 03:28:20 menuOption::existeOpcion::opcion ('5') OK
+2018.08.06 03:28:20 Accediendo a la modificacion del parametro 'Num_Soluciones'
+2018.08.06 03:28:20 El valor actual es: '1000'
+2018.08.06 03:28:20 Indique el nuevo valor
+2018.08.06 03:28:21 500
+2018.08.06 03:28:21 Procesando consulta de S/N
+2018.08.06 03:28:21 
+2018.08.06 03:28:21 Se va a modificar el parametro 'Num_Soluciones' cambiando '1000' por 500'. ¿Esta de acuerdo? (S/N)
+2018.08.06 03:28:24 s
+2018.08.06 03:30:11 Accediendo a la aplicación...
+2018.08.06 03:30:11 Conectado a BBDD.
+2018.08.06 03:30:25 Conectado como jb...
+2018.08.06 03:30:25 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 03:30:25 
+2018.08.06 03:30:25 Seleccione una opcion de la lista:
+2018.08.06 03:30:25     0 - Salir
+2018.08.06 03:30:25     1 - Acceder a escenario existente
+2018.08.06 03:30:25     2 - Crear nuevo escenario
+2018.08.06 03:30:28 Elegida: 1
+2018.08.06 03:30:28 Procesando accion: escenariosExistentes
+2018.08.06 03:30:28 Seleccione un escenario: 
+2018.08.06 03:30:28     1 - esc1
+2018.08.06 03:30:28     0 - Volver
+2018.08.06 03:30:30 menuOption::existeOpcion::Evaluando opciones
+2018.08.06 03:30:30 menuOption::existeOpcion::opcion ('1') OK
+2018.08.06 03:30:30 Seleccionando escenario 1...
+2018.08.06 03:30:30 Procesando accion: MENU_ESCENARIO
+2018.08.06 03:30:30 Accediendo al escenario con id: 1
+2018.08.06 03:30:30 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 03:30:30 
+2018.08.06 03:30:30 Seleccione una opcion de la lista:
+2018.08.06 03:30:30     0 - Volver
+2018.08.06 03:30:30     1 - Ver parametros
+2018.08.06 03:30:30     2 - Modificar parametros
+2018.08.06 03:30:33 Elegida: 2
+2018.08.06 03:30:33 Procesando accion: modParamEscenario
+2018.08.06 03:30:33 Buscando paramentros del escenario 1
+2018.08.06 03:30:33 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM ORDER BY a.ID_PARAM
+2018.08.06 03:30:33 
+2018.08.06 03:30:33 Seleccione el parametro que desea modificar: 
+2018.08.06 03:30:33 0 - 'ID_PARAM' - 'DESCRIPCION'             - 'VALOR' - 'DATA_TYPE'     
+2018.08.06 03:30:33 1 - '1'        - 'Nombre_Fic_Data_Input'   - ' '     - 'VARCHAR(100)'  
+2018.08.06 03:30:33 2 - '2'        - 'Nombre_Fic_Data_Output'  - ' '     - 'VARCHAR(100)'  
+2018.08.06 03:30:33 3 - '5'        - 'Num_Soluciones'          - '1000'  - 'INT'           
+2018.08.06 03:30:33 4 - '99'       - 'Vueltas_por_Iteracion'   - '5'     - 'INT'           
+2018.08.06 03:30:33 5 - '100'      - 'Max_Precision_Decimales' - '15'    - 'INT'           
+2018.08.06 03:30:33 6 - '102'      - 'Max_Cambio'              - '0.1'   - 'NUMERIC(20,18)'
+2018.08.06 03:30:33 0 - Volver
+2018.08.06 03:30:35 menuOption::existeOpcion::Evaluando opciones
+2018.08.06 03:30:35 menuOption::existeOpcion::opcion ('5') OK
+2018.08.06 03:30:35 Accediendo a la modificacion del parametro 'Num_Soluciones'
+2018.08.06 03:30:35 El valor actual es: '1000'
+2018.08.06 03:30:35 Indique el nuevo valor
+2018.08.06 03:30:36 200
+2018.08.06 03:30:36 Procesando consulta de S/N
+2018.08.06 03:30:36 
+2018.08.06 03:30:36 Se va a modificar el parametro 'Num_Soluciones' cambiando '1000' por 200'. ¿Esta de acuerdo? (S/N)
+2018.08.06 03:30:39 s
+2018.08.06 03:33:52 Error al actualizar el valor
+2018.08.06 03:33:52 Buscando paramentros del escenario 1
+2018.08.06 03:33:52 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM ORDER BY a.ID_PARAM
+2018.08.06 03:33:52 
+2018.08.06 03:33:52 Seleccione el parametro que desea modificar: 
+2018.08.06 03:33:52 0 - 'ID_PARAM' - 'DESCRIPCION'             - 'VALOR' - 'DATA_TYPE'     
+2018.08.06 03:33:52 1 - '1'        - 'Nombre_Fic_Data_Input'   - ' '     - 'VARCHAR(100)'  
+2018.08.06 03:33:52 2 - '2'        - 'Nombre_Fic_Data_Output'  - ' '     - 'VARCHAR(100)'  
+2018.08.06 03:33:52 3 - '5'        - 'Num_Soluciones'          - '1000'  - 'INT'           
+2018.08.06 03:33:52 4 - '99'       - 'Vueltas_por_Iteracion'   - '5'     - 'INT'           
+2018.08.06 03:33:52 5 - '100'      - 'Max_Precision_Decimales' - '15'    - 'INT'           
+2018.08.06 03:33:52 6 - '102'      - 'Max_Cambio'              - '0.1'   - 'NUMERIC(20,18)'
+2018.08.06 03:33:52 0 - Volver
+2018.08.06 03:33:56 menuOption::existeOpcion::Evaluando opciones
+2018.08.06 03:33:56 menuOption::existeOpcion::opcion ('5') OK
+2018.08.06 03:33:56 Accediendo a la modificacion del parametro 'Num_Soluciones'
+2018.08.06 03:33:56 El valor actual es: '1000'
+2018.08.06 03:33:56 Indique el nuevo valor
+2018.08.06 03:33:58 200
+2018.08.06 03:33:58 Procesando consulta de S/N
+2018.08.06 03:33:58 
+2018.08.06 03:33:58 Se va a modificar el parametro 'Num_Soluciones' cambiando '1000' por 200'. ¿Esta de acuerdo? (S/N)
+2018.08.06 03:33:59 s
+2018.08.06 03:34:13 Parametro actualizado
+2018.08.06 03:34:22 Se actualizo el parametro 'Num_Soluciones' a '200'
+2018.08.06 03:34:30 Buscando paramentros del escenario 1
+2018.08.06 03:34:30 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM ORDER BY a.ID_PARAM
+2018.08.06 03:34:30 
+2018.08.06 03:34:30 Seleccione el parametro que desea modificar: 
+2018.08.06 03:34:30 0 - 'ID_PARAM' - 'DESCRIPCION'             - 'VALOR' - 'DATA_TYPE'     
+2018.08.06 03:34:30 1 - '1'        - 'Nombre_Fic_Data_Input'   - ' '     - 'VARCHAR(100)'  
+2018.08.06 03:34:30 2 - '2'        - 'Nombre_Fic_Data_Output'  - ' '     - 'VARCHAR(100)'  
+2018.08.06 03:34:30 3 - '5'        - 'Num_Soluciones'          - '200'   - 'INT'           
+2018.08.06 03:34:30 4 - '99'       - 'Vueltas_por_Iteracion'   - '5'     - 'INT'           
+2018.08.06 03:34:30 5 - '100'      - 'Max_Precision_Decimales' - '15'    - 'INT'           
+2018.08.06 03:34:30 6 - '102'      - 'Max_Cambio'              - '0.1'   - 'NUMERIC(20,18)'
+2018.08.06 03:34:30 0 - Volver
+2018.08.06 03:42:27 Accediendo a la aplicación...
+2018.08.06 03:42:27 Conectado a BBDD.
+2018.08.06 03:42:31 Conectado como jb...
+2018.08.06 03:42:31 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 03:42:31 
+2018.08.06 03:42:31 Seleccione una opcion de la lista:
+2018.08.06 03:42:31     0 - Salir
+2018.08.06 03:42:31     1 - Acceder a escenario existente
+2018.08.06 03:42:31     2 - Crear nuevo escenario
+2018.08.06 03:42:35 Elegida: 1
+2018.08.06 03:42:35 Procesando accion: escenariosExistentes
+2018.08.06 03:42:35 Seleccione un escenario: 
+2018.08.06 03:42:35     1 - esc1
+2018.08.06 03:42:35     0 - Volver
+2018.08.06 03:42:37 menuOption::existeOpcion::Evaluando opciones
+2018.08.06 03:42:37 menuOption::existeOpcion::opcion ('1') OK
+2018.08.06 03:42:37 Seleccionando escenario 1...
+2018.08.06 03:42:37 Procesando accion: MENU_ESCENARIO
+2018.08.06 03:42:37 Accediendo al escenario con id: 1
+2018.08.06 03:42:37 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 03:42:37 
+2018.08.06 03:42:37 Seleccione una opcion de la lista:
+2018.08.06 03:42:37     0 - Volver
+2018.08.06 03:42:37     1 - Ver parametros
+2018.08.06 03:42:37     2 - Modificar parametros
+2018.08.06 03:42:39 Elegida: 1
+2018.08.06 03:42:39 Procesando accion: verParamEscenario
+2018.08.06 03:42:39 Buscando paramentros del escenario 1
+2018.08.06 03:42:39 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM ORDER BY a.ID_PARAM
+2018.08.06 03:42:39 Opciones encontradas del escenario 1
+2018.08.06 03:42:39 Mostrando opciones del escenario 1
+2018.08.06 03:42:39   1 - Nombre_Fic_Data_Input - ' ' - VARCHAR(100)
+2018.08.06 03:42:39   2 - Nombre_Fic_Data_Output - ' ' - VARCHAR(100)
+2018.08.06 03:42:39   5 - Num_Soluciones - '200' - INT
+2018.08.06 03:42:39   99 - Vueltas_por_Iteracion - '5' - INT
+2018.08.06 03:42:39   100 - Max_Precision_Decimales - '15' - INT
+2018.08.06 03:42:39   102 - Max_Cambio - '0.1' - NUMERIC(20,18)
+2018.08.06 03:42:39 Accediendo al escenario con id: 1
+2018.08.06 03:42:39 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 03:42:39 
+2018.08.06 03:42:39 Seleccione una opcion de la lista:
+2018.08.06 03:42:39     0 - Volver
+2018.08.06 03:42:39     1 - Ver parametros
+2018.08.06 03:42:39     2 - Modificar parametros
+2018.08.06 03:42:55 Elegida: 2
+2018.08.06 03:42:55 Procesando accion: modParamEscenario
+2018.08.06 03:42:55 Buscando paramentros del escenario 1
+2018.08.06 03:42:55 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM ORDER BY a.ID_PARAM
+2018.08.06 03:42:55 
+2018.08.06 03:42:55 Seleccione el parametro que desea modificar: 
+2018.08.06 03:42:55 ID_PARAM  - 'DESCRIPCION              - 'VALOR  - 'DATA_TYPE      
+2018.08.06 03:42:55 1         - 'Nombre_Fic_Data_Input    - '       - 'VARCHAR(100)   
+2018.08.06 03:42:55 2         - 'Nombre_Fic_Data_Output   - '       - 'VARCHAR(100)   
+2018.08.06 03:42:55 5         - 'Num_Soluciones           - '200    - 'INT            
+2018.08.06 03:42:55 99        - 'Vueltas_por_Iteracion    - '5      - 'INT            
+2018.08.06 03:42:55 100       - 'Max_Precision_Decimales  - '15     - 'INT            
+2018.08.06 03:42:55 102       - 'Max_Cambio               - '0.1    - 'NUMERIC(20,18) 
+2018.08.06 03:42:55 0 - Volver
+2018.08.06 03:43:03 menuOption::existeOpcion::Evaluando opciones
+2018.08.06 03:43:03 menuOption::existeOpcion::opcion ('100') OK
+2018.08.06 03:43:03 Accediendo a la modificacion del parametro 'Max_Precision_Decimales'
+2018.08.06 03:43:03 El valor actual es: '15'
+2018.08.06 03:43:03 Indique el nuevo valor
+2018.08.06 03:43:07 16
+2018.08.06 03:43:07 Procesando consulta de S/N
+2018.08.06 03:43:07 
+2018.08.06 03:43:07 Se va a modificar el parametro 'Max_Precision_Decimales' cambiando '15' por 16'. ¿Esta de acuerdo? (S/N)
+2018.08.06 03:43:11 s
+2018.08.06 03:43:11 Parametro actualizado
+2018.08.06 03:43:11 Se actualizo el parametro 'Max_Precision_Decimales' a '16'
+2018.08.06 03:43:11 Buscando paramentros del escenario 1
+2018.08.06 03:43:11 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM ORDER BY a.ID_PARAM
+2018.08.06 03:43:11 
+2018.08.06 03:43:11 Seleccione el parametro que desea modificar: 
+2018.08.06 03:43:11 ID_PARAM  - 'DESCRIPCION              - 'VALOR  - 'DATA_TYPE      
+2018.08.06 03:43:11 1         - 'Nombre_Fic_Data_Input    - '       - 'VARCHAR(100)   
+2018.08.06 03:43:11 2         - 'Nombre_Fic_Data_Output   - '       - 'VARCHAR(100)   
+2018.08.06 03:43:11 5         - 'Num_Soluciones           - '200    - 'INT            
+2018.08.06 03:43:11 99        - 'Vueltas_por_Iteracion    - '5      - 'INT            
+2018.08.06 03:43:11 100       - 'Max_Precision_Decimales  - '16     - 'INT            
+2018.08.06 03:43:11 102       - 'Max_Cambio               - '0.1    - 'NUMERIC(20,18) 
+2018.08.06 03:43:11 0 - Volver
+2018.08.06 03:43:40 Accediendo al escenario con id: 1
+2018.08.06 03:43:40 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 03:43:40 
+2018.08.06 03:43:40 Seleccione una opcion de la lista:
+2018.08.06 03:43:40     0 - Volver
+2018.08.06 03:43:40     1 - Ver parametros
+2018.08.06 03:43:40     2 - Modificar parametros
+2018.08.06 03:43:42 Elegida: 0
+2018.08.06 03:43:42 Procesando accion: escenariosExistentes
+2018.08.06 03:43:42 Seleccione un escenario: 
+2018.08.06 03:43:42     1 - esc1
+2018.08.06 03:43:42     0 - Volver
+2018.08.06 03:43:49 Procesando accion: menuPrincipal
+2018.08.06 03:43:49 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 03:43:49 
+2018.08.06 03:43:49 Seleccione una opcion de la lista:
+2018.08.06 03:43:49     0 - Salir
+2018.08.06 03:43:49     1 - Acceder a escenario existente
+2018.08.06 03:43:49     2 - Crear nuevo escenario
+2018.08.06 03:44:02 Elegida: 0
+2018.08.06 03:44:02 Procesando accion: Salir
+2018.08.06 03:44:02 Se saldra de la aplicacion.
+2018.08.06 03:44:02 Finalizada la ejecucion. Pulse cualquier tecla para finalizar.

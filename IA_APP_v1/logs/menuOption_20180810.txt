@@ -1,0 +1,100 @@
+2018.08.10 00:00:46 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:00:46 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 00:00:53 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:00:53 menuOption::existeOpcion::opcion ('2') OK
+2018.08.10 00:00:58 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:00:58 menuOption::existeOpcion::opcion ('3') OK
+2018.08.10 00:05:50 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:05:50 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 00:05:56 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:05:56 menuOption::existeOpcion::opcion ('5') OK
+2018.08.10 00:06:13 Procesando consulta de S/N
+2018.08.10 00:06:13 
+2018.08.10 00:06:13 Se va a modificar el parametro 'Modo_Rotacion_Pesos' cambiando '1000' por das'. ¿Esta de acuerdo? (S/N)
+2018.08.10 00:06:25 s
+2018.08.10 00:10:03 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:10:03 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 00:10:08 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:10:08 menuOption::existeOpcion::opcion ('6') OK
+2018.08.10 00:10:19 Procesando consulta de S/N
+2018.08.10 00:10:19 
+2018.08.10 00:10:19 Se va a modificar el parametro 'Num_Soluciones' cambiando '1000' por 200'. ¿Esta de acuerdo? (S/N)
+2018.08.10 00:10:20 s
+2018.08.10 00:10:24 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:10:24 menuOption::existeOpcion::opcion ('5') OK
+2018.08.10 00:12:23 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:12:23 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 00:12:27 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:12:27 menuOption::existeOpcion::opcion ('5') OK
+2018.08.10 00:38:25 Procesando consulta de S/N
+2018.08.10 00:38:25 
+2018.08.10 00:38:25 Se va a modificar el parametro 'Modo_Rotacion_Pesos' cambiando '1' por 8'. ¿Esta de acuerdo? (S/N)
+2018.08.10 00:38:27 s
+2018.08.10 00:38:31 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:38:31 menuOption::existeOpcion::opcion ('5') OK
+2018.08.10 00:39:31 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:39:31 menuOption::existeOpcion::opcion ('4') OK
+2018.08.10 00:39:49 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 00:39:49 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 01:38:56 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:38:56 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 01:39:08 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:39:08 menuOption::existeOpcion::opcion ('5') OK
+2018.08.10 01:39:44 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:39:44 menuOption::existeOpcion::opcion ('5') OK
+2018.08.10 01:40:14 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:40:14 menuOption::existeOpcion::opcion ('4') OK
+2018.08.10 01:40:23 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:40:23 menuOption::existeOpcion::opcion ('6') OK
+2018.08.10 01:40:27 Procesando consulta de S/N
+2018.08.10 01:40:27 
+2018.08.10 01:40:27 Se va a modificar el parametro 'Num_Soluciones' cambiando '1000' por 1000'. ¿Esta de acuerdo? (S/N)
+2018.08.10 01:40:28 s
+2018.08.10 01:41:42 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:41:42 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 01:41:48 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:41:48 menuOption::existeOpcion::opcion ('99') OK
+2018.08.10 01:42:45 Procesando consulta de S/N
+2018.08.10 01:42:45 
+2018.08.10 01:42:45 Se va a modificar el parametro 'Vueltas_por_Iteracion' cambiando '5' por 4'. ¿Esta de acuerdo? (S/N)
+2018.08.10 01:42:47 s
+2018.08.10 01:43:44 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:43:44 menuOption::existeOpcion::opcion ('6') OK
+2018.08.10 01:44:00 Procesando consulta de S/N
+2018.08.10 01:44:00 
+2018.08.10 01:44:00 Se va a modificar el parametro 'Num_Soluciones' cambiando '1000' por 4'. ¿Esta de acuerdo? (S/N)
+2018.08.10 01:44:04 s
+2018.08.10 01:45:52 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:45:52 menuOption::existeOpcion::opcion ('6') OK
+2018.08.10 01:45:56 Procesando consulta de S/N
+2018.08.10 01:45:56 
+2018.08.10 01:45:56 Se va a modificar el parametro 'Num_Soluciones' cambiando '1000' por 999'. ¿Esta de acuerdo? (S/N)
+2018.08.10 01:45:58 s
+2018.08.10 01:47:23 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:47:23 menuOption::existeOpcion::opcion ('6') OK
+2018.08.10 01:47:26 Procesando consulta de S/N
+2018.08.10 01:47:26 
+2018.08.10 01:47:26 Se va a modificar el parametro 'Num_Soluciones' cambiando '1000' por 999'. ¿Esta de acuerdo? (S/N)
+2018.08.10 01:47:27 s
+2018.08.10 01:50:30 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:50:30 menuOption::existeOpcion::opcion ('6') OK
+2018.08.10 01:50:31 Procesando consulta de S/N
+2018.08.10 01:50:32 
+2018.08.10 01:50:32 Se va a modificar el parametro 'Num_Soluciones' cambiando '1000' por 999'. ¿Esta de acuerdo? (S/N)
+2018.08.10 01:50:32 s
+2018.08.10 01:51:05 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:51:05 menuOption::existeOpcion::opcion ('6') OK
+2018.08.10 01:51:07 Procesando consulta de S/N
+2018.08.10 01:51:07 
+2018.08.10 01:51:07 Se va a modificar el parametro 'Num_Soluciones' cambiando '1000' por 999'. ¿Esta de acuerdo? (S/N)
+2018.08.10 01:51:08 s
+2018.08.10 01:51:18 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:51:18 menuOption::existeOpcion::opcion ('5') OK
+2018.08.10 01:55:50 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 01:55:50 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 02:01:59 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 02:01:59 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 02:06:25 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 02:06:25 menuOption::existeOpcion::opcion ('1') OK
+2018.08.10 02:18:58 menuOption::existeOpcion::Evaluando opciones
+2018.08.10 02:18:58 menuOption::existeOpcion::opcion ('1') OK

@@ -1,0 +1,39 @@
+2018.08.10 00:38:36 MaenusSQL::generaConsulta::Generando consulta...
+2018.08.10 00:38:36 
+2018.08.10 00:38:36 Seleccione un valor de la lista
+2018.08.10 00:38:36     1 - ROTAR_ORDENADO
+2018.08.10 00:38:36     2 - ROTAR_ALEATORIO
+2018.08.10 00:38:40 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 00:38:40 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 00:38:40 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 00:38:40 
+2018.08.10 00:38:40 Seleccione un valor de la lista
+2018.08.10 00:38:40     1 - ROTAR_ORDENADO
+2018.08.10 00:38:40     2 - ROTAR_ALEATORIO
+2018.08.10 00:38:42 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 01:39:08 MaenusSQL::generaConsulta::Generando consulta...
+2018.08.10 01:39:08 
+2018.08.10 01:39:08 Seleccione un valor de la lista
+2018.08.10 01:39:08     1 - ROTAR_ORDENADO
+2018.08.10 01:39:08     2 - ROTAR_ALEATORIO
+2018.08.10 01:39:10 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 01:39:10 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 01:39:44 MaenusSQL::generaConsulta::Generando consulta...
+2018.08.10 01:39:44 
+2018.08.10 01:39:44 Seleccione un valor de la lista
+2018.08.10 01:39:44     1 - ROTAR_ORDENADO
+2018.08.10 01:39:44     2 - ROTAR_ALEATORIO
+2018.08.10 01:39:45 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 01:39:45 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 01:40:14 MaenusSQL::generaConsulta::Generando consulta...
+2018.08.10 01:40:14 
+2018.08.10 01:40:14 Seleccione un valor de la lista
+2018.08.10 01:40:14     1 - MINIMIZAR_ERROR_CUADRATICO
+2018.08.10 01:40:15 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 01:51:18 MaenusSQL::generaConsulta::Generando consulta...
+2018.08.10 01:51:18 
+2018.08.10 01:51:18 Seleccione un valor de la lista
+2018.08.10 01:51:18     1 - ROTAR_ORDENADO
+2018.08.10 01:51:18     2 - ROTAR_ALEATORIO
+2018.08.10 01:51:19 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.10 01:51:19 Opcion no disponible. Por favor, seleccione una de la lista.

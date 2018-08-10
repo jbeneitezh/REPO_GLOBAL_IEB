@@ -1,0 +1,6 @@
+ip;localhost;
+puerto;3306/IA_APP;
+user;root;
+--key;;
+rutaWamp;C:\wamp\wampmanager.exe;
+

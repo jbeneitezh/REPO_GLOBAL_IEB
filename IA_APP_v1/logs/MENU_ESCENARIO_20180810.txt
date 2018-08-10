@@ -1,0 +1,573 @@
+2018.08.10 00:00:46 Accediendo al escenario con id: 1
+2018.08.10 00:00:47 Entrando a borrar el escenario 1
+2018.08.10 00:00:47 
+2018.08.10 00:00:48 Borrando el escenario 1...
+2018.08.10 00:00:48 Se elimino el escenario 1
+2018.08.10 00:00:48 Borrado el escenario 1
+2018.08.10 00:00:53 Accediendo al escenario con id: 2
+2018.08.10 00:00:55 Entrando a borrar el escenario 2
+2018.08.10 00:00:55 
+2018.08.10 00:00:56 Borrando el escenario 2...
+2018.08.10 00:00:56 Se elimino el escenario 2
+2018.08.10 00:00:56 Borrado el escenario 2
+2018.08.10 00:00:58 Accediendo al escenario con id: 3
+2018.08.10 00:01:03 Buscando paramentros del escenario 3
+2018.08.10 00:01:03 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 3 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:01:03 
+2018.08.10 00:01:03 Seleccione el parametro que desea modificar: 
+2018.08.10 00:01:03 0 - Volver
+2018.08.10 00:05:50 Accediendo al escenario con id: 1
+2018.08.10 00:05:53 Buscando paramentros del escenario 1
+2018.08.10 00:05:53 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:05:53 
+2018.08.10 00:05:53 Seleccione el parametro que desea modificar: 
+2018.08.10 00:05:53 0 - Volver
+2018.08.10 00:05:56 Accediendo a la modificacion del parametro 'Modo_Rotacion_Pesos'
+2018.08.10 00:05:56 El valor actual es: '1000'
+2018.08.10 00:05:56 Comprobando si existen parametrizaciones sobre el parametro 5
+2018.08.10 00:05:56 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 5
+2018.08.10 00:05:56 Indique el nuevo valor
+2018.08.10 00:06:13 das
+2018.08.10 00:06:25 Error al actualizar el valor
+2018.08.10 00:06:25 Buscando paramentros del escenario 1
+2018.08.10 00:06:25 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:06:25 
+2018.08.10 00:06:25 Seleccione el parametro que desea modificar: 
+2018.08.10 00:06:25 0 - Volver
+2018.08.10 00:09:41 Accediendo al escenario con id: 1
+2018.08.10 00:09:47 Buscando paramentros del escenario 1
+2018.08.10 00:09:47 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:09:47 
+2018.08.10 00:09:47 Seleccione el parametro que desea modificar: 
+2018.08.10 00:09:47 0 - Volver
+2018.08.10 00:09:51 Accediendo al escenario con id: 1
+2018.08.10 00:09:53 Entrando a borrar el escenario 1
+2018.08.10 00:09:53 
+2018.08.10 00:09:55 Borrando el escenario 1...
+2018.08.10 00:09:55 Se elimino el escenario 1
+2018.08.10 00:09:55 Borrado el escenario 1
+2018.08.10 00:10:03 Accediendo al escenario con id: 1
+2018.08.10 00:10:04 Buscando paramentros del escenario 1
+2018.08.10 00:10:04 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:10:04 
+2018.08.10 00:10:04 Seleccione el parametro que desea modificar: 
+2018.08.10 00:10:04 0 - Volver
+2018.08.10 00:10:08 Accediendo a la modificacion del parametro 'Num_Soluciones'
+2018.08.10 00:10:08 El valor actual es: '1000'
+2018.08.10 00:10:08 Comprobando si existen parametrizaciones sobre el parametro 6
+2018.08.10 00:10:08 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 6
+2018.08.10 00:10:08 Indique el nuevo valor
+2018.08.10 00:10:19 200
+2018.08.10 00:10:20 Error al actualizar el valor
+2018.08.10 00:10:20 Buscando paramentros del escenario 1
+2018.08.10 00:10:20 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:10:20 
+2018.08.10 00:10:20 Seleccione el parametro que desea modificar: 
+2018.08.10 00:10:20 0 - Volver
+2018.08.10 00:10:24 Accediendo a la modificacion del parametro 'Modo_Rotacion_Pesos'
+2018.08.10 00:10:24 El valor actual es: '1'
+2018.08.10 00:10:24 Comprobando si existen parametrizaciones sobre el parametro 5
+2018.08.10 00:10:24 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 5
+2018.08.10 00:10:24 Indique el nuevo valor
+2018.08.10 00:12:23 Accediendo al escenario con id: 1
+2018.08.10 00:12:26 Buscando paramentros del escenario 1
+2018.08.10 00:12:26 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:12:26 
+2018.08.10 00:12:26 Seleccione el parametro que desea modificar: 
+2018.08.10 00:12:26 0 - Volver
+2018.08.10 00:12:27 Accediendo a la modificacion del parametro 'Modo_Rotacion_Pesos'
+2018.08.10 00:12:27 El valor actual es: '1'
+2018.08.10 00:12:39 Comprobando si existen parametrizaciones sobre el parametro 5
+2018.08.10 00:12:41 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 5
+2018.08.10 00:38:25 Indique el nuevo valor
+2018.08.10 00:38:25 8
+2018.08.10 00:38:27 Error al actualizar el valor
+2018.08.10 00:38:27 Buscando paramentros del escenario 1
+2018.08.10 00:38:27 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:38:27 
+2018.08.10 00:38:27 Seleccione el parametro que desea modificar: 
+2018.08.10 00:38:27 0 - Volver
+2018.08.10 00:38:31 Accediendo a la modificacion del parametro 'Modo_Rotacion_Pesos'
+2018.08.10 00:38:31 El valor actual es: '1'
+2018.08.10 00:38:36 Comprobando si existen parametrizaciones sobre el parametro 5
+2018.08.10 00:38:36 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 5
+2018.08.10 00:38:36 Lanzando Query
+2018.08.10 00:38:36 SELECT a.ID_OPCION, 
+       a.DESCRIPCION 
+  FROM IA_APP.T_PARAM_VALORES_VALIDOS a 
+ WHERE a.ID_PARAM = 5
+2018.08.10 00:38:46 Ha elegido '1'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 00:38:46 Error al actualizar el valor
+2018.08.10 00:38:46 Buscando paramentros del escenario 1
+2018.08.10 00:38:46 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:38:46 
+2018.08.10 00:38:46 Seleccione el parametro que desea modificar: 
+2018.08.10 00:38:46 0 - Volver
+2018.08.10 00:39:31 Accediendo a la modificacion del parametro 'Tipo_Optimizacion'
+2018.08.10 00:39:31 El valor actual es: '1'
+2018.08.10 00:39:49 Accediendo al escenario con id: 1
+2018.08.10 00:39:54 Buscando paramentros del escenario 1
+2018.08.10 00:39:54 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM 
+   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 00:39:54 Opciones encontradas del escenario 1
+2018.08.10 00:39:54 Mostrando opciones del escenario 1
+2018.08.10 00:39:54   1 - Nombre_Fic_Data_Input - 'sawe_X_INPUT.txt' - VARCHAR(100)
+2018.08.10 00:39:54   2 - Nombre_Fic_Data_Output - 'sawe_Y_OUTPUT.txt' - VARCHAR(100)
+2018.08.10 00:39:54   4 - Tipo_Optimizacion - '1' - INT
+2018.08.10 00:39:54   5 - Modo_Rotacion_Pesos - '1' - VARCHAR(100)
+2018.08.10 00:39:54   6 - Num_Soluciones - '1000' - INT
+2018.08.10 00:39:54   99 - Vueltas_por_Iteracion - '5' - INT
+2018.08.10 00:39:54   100 - Max_Precision_Decimales - '15' - INT
+2018.08.10 00:39:54   102 - Max_Cambio - '0.1' - NUMERIC(20,18)
+2018.08.10 00:39:54 Accediendo al escenario con id: 1
+2018.08.10 01:38:56 Accediendo al escenario con id: 1
+2018.08.10 01:39:02 Buscando paramentros del escenario 1
+2018.08.10 01:39:02 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:39:02 
+2018.08.10 01:39:02 Seleccione el parametro que desea modificar: 
+2018.08.10 01:39:02 0 - Volver
+2018.08.10 01:39:08 Accediendo a la modificacion del parametro 'Modo_Rotacion_Pesos'
+2018.08.10 01:39:08 El valor actual es: '1'
+2018.08.10 01:39:08 Comprobando si existen parametrizaciones sobre el parametro 5
+2018.08.10 01:39:08 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 5
+2018.08.10 01:39:08 Lanzando Query
+2018.08.10 01:39:08 SELECT a.ID_OPCION, 
+       a.DESCRIPCION 
+  FROM IA_APP.T_PARAM_VALORES_VALIDOS a 
+ WHERE a.ID_PARAM = 5
+2018.08.10 01:39:12 Ha elegido '2'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 01:39:12 Error al actualizar el valor
+2018.08.10 01:39:12 Buscando paramentros del escenario 1
+2018.08.10 01:39:12 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:39:12 
+2018.08.10 01:39:12 Seleccione el parametro que desea modificar: 
+2018.08.10 01:39:12 0 - Volver
+2018.08.10 01:39:44 Accediendo a la modificacion del parametro 'Modo_Rotacion_Pesos'
+2018.08.10 01:39:44 El valor actual es: '1'
+2018.08.10 01:39:44 Comprobando si existen parametrizaciones sobre el parametro 5
+2018.08.10 01:39:44 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 5
+2018.08.10 01:39:44 Lanzando Query
+2018.08.10 01:39:44 SELECT a.ID_OPCION, 
+       a.DESCRIPCION 
+  FROM IA_APP.T_PARAM_VALORES_VALIDOS a 
+ WHERE a.ID_PARAM = 5
+2018.08.10 01:39:47 Ha elegido '2'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 01:39:47 Error al actualizar el valor
+2018.08.10 01:39:47 Buscando paramentros del escenario 1
+2018.08.10 01:39:47 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:39:47 
+2018.08.10 01:39:47 Seleccione el parametro que desea modificar: 
+2018.08.10 01:39:47 0 - Volver
+2018.08.10 01:40:14 Accediendo a la modificacion del parametro 'Tipo_Optimizacion'
+2018.08.10 01:40:14 El valor actual es: '1'
+2018.08.10 01:40:14 Comprobando si existen parametrizaciones sobre el parametro 4
+2018.08.10 01:40:14 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 4
+2018.08.10 01:40:14 Lanzando Query
+2018.08.10 01:40:14 SELECT a.ID_OPCION, 
+       a.DESCRIPCION 
+  FROM IA_APP.T_PARAM_VALORES_VALIDOS a 
+ WHERE a.ID_PARAM = 4
+2018.08.10 01:40:18 Ha elegido '1'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 01:40:18 Error al actualizar el valor
+2018.08.10 01:40:18 Buscando paramentros del escenario 1
+2018.08.10 01:40:18 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:40:18 
+2018.08.10 01:40:18 Seleccione el parametro que desea modificar: 
+2018.08.10 01:40:18 0 - Volver
+2018.08.10 01:40:23 Accediendo a la modificacion del parametro 'Num_Soluciones'
+2018.08.10 01:40:23 El valor actual es: '1000'
+2018.08.10 01:40:23 Comprobando si existen parametrizaciones sobre el parametro 6
+2018.08.10 01:40:23 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 6
+2018.08.10 01:40:23 Indique el nuevo valor
+2018.08.10 01:40:27 1000
+2018.08.10 01:40:28 Error al actualizar el valor
+2018.08.10 01:40:28 Buscando paramentros del escenario 1
+2018.08.10 01:40:28 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:40:28 
+2018.08.10 01:40:28 Seleccione el parametro que desea modificar: 
+2018.08.10 01:40:28 0 - Volver
+2018.08.10 01:41:42 Accediendo al escenario con id: 1
+2018.08.10 01:41:44 Buscando paramentros del escenario 1
+2018.08.10 01:41:44 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:41:44 
+2018.08.10 01:41:44 Seleccione el parametro que desea modificar: 
+2018.08.10 01:41:44 0 - Volver
+2018.08.10 01:41:48 Accediendo a la modificacion del parametro 'Vueltas_por_Iteracion'
+2018.08.10 01:41:48 El valor actual es: '5'
+2018.08.10 01:42:36 Comprobando si existen parametrizaciones sobre el parametro 99
+2018.08.10 01:42:36 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 99
+2018.08.10 01:42:36 Indique el nuevo valor
+2018.08.10 01:42:45 4
+2018.08.10 01:43:38 Error al actualizar el valor
+2018.08.10 01:43:38 Buscando paramentros del escenario 1
+2018.08.10 01:43:38 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:43:38 
+2018.08.10 01:43:38 Seleccione el parametro que desea modificar: 
+2018.08.10 01:43:38 0 - Volver
+2018.08.10 01:43:44 Accediendo a la modificacion del parametro 'Num_Soluciones'
+2018.08.10 01:43:44 El valor actual es: '1000'
+2018.08.10 01:44:00 Comprobando si existen parametrizaciones sobre el parametro 6
+2018.08.10 01:44:00 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 6
+2018.08.10 01:44:00 Indique el nuevo valor
+2018.08.10 01:44:00 4
+2018.08.10 01:45:48 Error al actualizar el valor
+2018.08.10 01:45:48 Buscando paramentros del escenario 1
+2018.08.10 01:45:48 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:45:48 
+2018.08.10 01:45:48 Seleccione el parametro que desea modificar: 
+2018.08.10 01:45:48 0 - Volver
+2018.08.10 01:45:52 Accediendo a la modificacion del parametro 'Num_Soluciones'
+2018.08.10 01:45:52 El valor actual es: '1000'
+2018.08.10 01:45:52 Comprobando si existen parametrizaciones sobre el parametro 6
+2018.08.10 01:45:52 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 6
+2018.08.10 01:45:52 Indique el nuevo valor
+2018.08.10 01:45:56 999
+2018.08.10 01:46:17 -1 - Se produjo un error.
+2018.08.10 01:46:17 Error al procesar el procedimiento. Param: 'Num_Soluciones'
+2018.08.10 01:46:17 rollback
+2018.08.10 01:46:17 Buscando paramentros del escenario 1
+2018.08.10 01:46:17 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:46:17 
+2018.08.10 01:46:17 Seleccione el parametro que desea modificar: 
+2018.08.10 01:46:17 0 - Volver
+2018.08.10 01:47:23 Accediendo a la modificacion del parametro 'Num_Soluciones'
+2018.08.10 01:47:23 El valor actual es: '1000'
+2018.08.10 01:47:23 Comprobando si existen parametrizaciones sobre el parametro 6
+2018.08.10 01:47:23 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 6
+2018.08.10 01:47:23 Indique el nuevo valor
+2018.08.10 01:47:26 999
+2018.08.10 01:47:38 -1 - Se produjo un error.
+2018.08.10 01:47:38 Error al procesar el procedimiento. Param: 'Num_Soluciones'
+2018.08.10 01:47:38 rollback
+2018.08.10 01:47:38 Buscando paramentros del escenario 1
+2018.08.10 01:47:38 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:47:38 
+2018.08.10 01:47:38 Seleccione el parametro que desea modificar: 
+2018.08.10 01:47:38 0 - Volver
+2018.08.10 01:50:30 Accediendo a la modificacion del parametro 'Num_Soluciones'
+2018.08.10 01:50:30 El valor actual es: '1000'
+2018.08.10 01:50:30 Comprobando si existen parametrizaciones sobre el parametro 6
+2018.08.10 01:50:30 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 6
+2018.08.10 01:50:30 Indique el nuevo valor
+2018.08.10 01:50:31 999
+2018.08.10 01:50:40 -1 - Se produjo un error.
+2018.08.10 01:50:40 Error al procesar el procedimiento. Param: 'Num_Soluciones'
+2018.08.10 01:50:40 rollback
+2018.08.10 01:50:40 Buscando paramentros del escenario 1
+2018.08.10 01:50:40 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:50:40 
+2018.08.10 01:50:40 Seleccione el parametro que desea modificar: 
+2018.08.10 01:50:40 0 - Volver
+2018.08.10 01:51:05 Accediendo a la modificacion del parametro 'Num_Soluciones'
+2018.08.10 01:51:05 El valor actual es: '1000'
+2018.08.10 01:51:05 Comprobando si existen parametrizaciones sobre el parametro 6
+2018.08.10 01:51:05 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 6
+2018.08.10 01:51:05 Indique el nuevo valor
+2018.08.10 01:51:07 999
+2018.08.10 01:51:11 1 - Parametro actualizado
+2018.08.10 01:51:11 Se actualizo el parametro 'Num_Soluciones' a '999'
+2018.08.10 01:51:11 commit
+2018.08.10 01:51:11 Buscando paramentros del escenario 1
+2018.08.10 01:51:11 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:51:11 
+2018.08.10 01:51:11 Seleccione el parametro que desea modificar: 
+2018.08.10 01:51:11 0 - Volver
+2018.08.10 01:51:18 Accediendo a la modificacion del parametro 'Modo_Rotacion_Pesos'
+2018.08.10 01:51:18 El valor actual es: '1'
+2018.08.10 01:51:18 Comprobando si existen parametrizaciones sobre el parametro 5
+2018.08.10 01:51:18 SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = 5
+2018.08.10 01:51:18 Lanzando Query
+2018.08.10 01:51:18 SELECT a.ID_OPCION, 
+       a.DESCRIPCION 
+  FROM IA_APP.T_PARAM_VALORES_VALIDOS a 
+ WHERE a.ID_PARAM = 5
+2018.08.10 01:51:20 Ha elegido '2'. Se realizará la modificacion. ¿Desea continuar?
+2018.08.10 01:51:30 1 - Parametro actualizado
+2018.08.10 01:51:30 Se actualizo el parametro 'Modo_Rotacion_Pesos' a '2'
+2018.08.10 01:51:30 commit
+2018.08.10 01:51:30 Buscando paramentros del escenario 1
+2018.08.10 01:51:30 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 01:51:30 
+2018.08.10 01:51:30 Seleccione el parametro que desea modificar: 
+2018.08.10 01:51:30 0 - Volver
+2018.08.10 01:53:42 Accediendo al escenario con id: 1
+2018.08.10 01:53:46 void::procesaFicheros
+2018.08.10 01:54:58 Recuperando informacion de los ficheros...
+2018.08.10 01:54:58 ficheros recuperados. Total 3.
+2018.08.10 01:54:58 El fichero de inputs no existe 'G:\IA_APP_v1\imports\VALOR
+2018.08.10 01:54:58 Deteniendo...
+2018.08.10 01:54:58 Accediendo al escenario con id: 1
+2018.08.10 01:55:50 Accediendo al escenario con id: 1
+2018.08.10 01:55:54 void::procesaFicheros
+2018.08.10 01:55:55 Recuperando informacion de los ficheros...
+2018.08.10 01:55:55 ficheros recuperados. Total 3.
+2018.08.10 01:55:55 El fichero de inputs no existe 'G:\IA_APP_v1\imports\sawe_X_INPUT.txt
+2018.08.10 01:55:55 Deteniendo...
+2018.08.10 01:55:55 Accediendo al escenario con id: 1
+2018.08.10 02:01:17 Buscando paramentros del escenario 1
+2018.08.10 02:01:17 SELECT a.ID_PARAM, 
+       a.DESCRIPCION, 
+       b.VALOR, 
+       a.DATA_TYPE 
+  FROM IA_APP.T_CONFIG_ESC_PARAM a, 
+       IA_APP.T_CONFIG_ESCENARIOS b 
+ WHERE b.ID_ESCENARIO = 1 
+   AND a.ID_PARAM = b.ID_PARAM 
+   AND a.MENU = 'INPUT' 
+ ORDER BY a.ID_PARAM
+2018.08.10 02:01:17 Opciones encontradas del escenario 1
+2018.08.10 02:01:17 Mostrando opciones del escenario 1
+2018.08.10 02:01:17   1 - Nombre_Fic_Data_Input - 'sawe_X_INPUT.txt' - VARCHAR(100)
+2018.08.10 02:01:17   2 - Nombre_Fic_Data_Output - 'sawe_Y_OUTPUT.txt' - VARCHAR(100)
+2018.08.10 02:01:17   4 - Tipo_Optimizacion - '1' - INT
+2018.08.10 02:01:17   5 - Modo_Rotacion_Pesos - '2' - VARCHAR(100)
+2018.08.10 02:01:17   6 - Num_Soluciones - '999' - INT
+2018.08.10 02:01:17   99 - Vueltas_por_Iteracion - '5' - INT
+2018.08.10 02:01:17   100 - Max_Precision_Decimales - '15' - INT
+2018.08.10 02:01:17   102 - Max_Cambio - '0.1' - NUMERIC(20,18)
+2018.08.10 02:01:17 Accediendo al escenario con id: 1
+2018.08.10 02:01:59 Accediendo al escenario con id: 1
+2018.08.10 02:02:02 void::procesaFicheros
+2018.08.10 02:02:03 Recuperando informacion de los ficheros...
+2018.08.10 02:02:03 ficheros recuperados. Total 3.
+2018.08.10 02:02:03 El fichero de inputs no existe 'G:\IA_APP_v1\imports\sawe_X_INPUT.txt
+2018.08.10 02:02:03 Deteniendo...
+2018.08.10 02:02:03 Accediendo al escenario con id: 1
+2018.08.10 02:02:54 void::procesaFicheros
+2018.08.10 02:02:56 Recuperando informacion de los ficheros...
+2018.08.10 02:02:56 ficheros recuperados. Total 3.
+2018.08.10 02:02:56 El fichero de inputs no existe 'G:\IA_APP_v1\imports\sawe_X_INPUT.txt
+2018.08.10 02:02:56 Deteniendo...
+2018.08.10 02:02:56 Accediendo al escenario con id: 1
+2018.08.10 02:03:47 void::procesaFicheros
+2018.08.10 02:03:49 Recuperando informacion de los ficheros...
+2018.08.10 02:03:49 ficheros recuperados. Total 3.
+2018.08.10 02:03:49 El fichero de inputs existe. 'sawe_X_INPUT.txt'
+2018.08.10 02:03:49 El fichero de outputs no existe 'G:\IA_APP_v1\imports\sawe_Y_OUTPUT.txt
+2018.08.10 02:03:49 Deteniendo...
+2018.08.10 02:03:49 Accediendo al escenario con id: 1
+2018.08.10 02:04:16 void::procesaFicheros
+2018.08.10 02:04:18 Recuperando informacion de los ficheros...
+2018.08.10 02:04:18 ficheros recuperados. Total 3.
+2018.08.10 02:04:18 El fichero de inputs existe. 'sawe_X_INPUT.txt'
+2018.08.10 02:04:18 El fichero de outputs no existe 'G:\IA_APP_v1\imports\sawe_Y_OUTPUT.txt
+2018.08.10 02:04:18 Deteniendo...
+2018.08.10 02:04:18 Accediendo al escenario con id: 1
+2018.08.10 02:04:47 void::procesaFicheros
+2018.08.10 02:04:48 Recuperando informacion de los ficheros...
+2018.08.10 02:04:48 ficheros recuperados. Total 3.
+2018.08.10 02:04:48 El fichero de inputs existe. 'sawe_X_INPUT.txt'
+2018.08.10 02:04:48 El fichero de outputs existe. 'sawe_Y_OUTPUT.txt'
+2018.08.10 02:04:48 Accediendo al escenario con id: 1
+2018.08.10 02:06:03 void::procesaFicheros
+2018.08.10 02:06:04 Recuperando informacion de los ficheros...
+2018.08.10 02:06:04 ficheros recuperados. Total 3.
+2018.08.10 02:06:04 El fichero de inputs existe. 'sawe_X_INPUT.txt'
+2018.08.10 02:06:04 El fichero de outputs existe. 'sawe_Y_OUTPUT.txt'
+2018.08.10 02:06:04 Accediendo al escenario con id: 1
+2018.08.10 02:06:25 Accediendo al escenario con id: 1
+2018.08.10 02:06:30 void::procesaFicheros
+2018.08.10 02:06:31 Recuperando informacion de los ficheros...
+2018.08.10 02:06:31 ficheros recuperados. Total 3.
+2018.08.10 02:06:31 El fichero de inputs existe. 'sawe_X_INPUT.txt'
+2018.08.10 02:06:31 El fichero de outputs existe. 'sawe_Y_OUTPUT.txt'
+2018.08.10 02:06:31 procesaFicheros::proceso completado
+2018.08.10 02:06:31 Accediendo al escenario con id: 1
+2018.08.10 02:18:58 Accediendo al escenario con id: 1
+2018.08.10 02:19:03 void::procesaFicheros
+2018.08.10 02:19:06 Recuperando informacion de los ficheros...
+2018.08.10 02:19:06 ficheros recuperados. Total 3.
+2018.08.10 02:19:06 El fichero de inputs existe. 'sawe_X_INPUT.txt'
+2018.08.10 02:19:06 El fichero de outputs existe. 'sawe_Y_OUTPUT.txt'
+2018.08.10 02:19:06 Leyendo ficheros...(0/2)
+2018.08.10 02:19:08 Fichero de inputs leido
+2018.08.10 02:19:08 Leyendo ficheros...(1/2)
+2018.08.10 02:19:10 Fichero leidos...(2/2)
+2018.08.10 02:19:10 Realizando validaciones...
+2018.08.10 02:19:10 Los ficheros contienen el mismo numero de registros
+2018.08.10 02:19:10 procesaFicheros::proceso completado
+2018.08.10 02:19:10 Accediendo al escenario con id: 1

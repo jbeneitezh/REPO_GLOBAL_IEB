@@ -1,0 +1,16 @@
+2018.08.06 01:07:36 Ha seleccionado crear un nuevo escenario.
+2018.08.06 01:07:36 Indique un nombre para el escenario: 
+2018.08.06 01:07:45 opc1
+2018.08.06 01:07:45 Validando el nombre: opc1
+2018.08.06 01:07:45 Nombre valido: opc1
+2018.08.06 01:07:45 Creando escenario 'opc1'...
+2018.08.06 01:07:45 Se creo el escenario 'opc1'.
+2018.08.06 01:07:45 Se añadieron valores por defecto 'opc1'.
+2018.08.06 03:24:29 Ha seleccionado crear un nuevo escenario.
+2018.08.06 03:24:29 Indique un nombre para el escenario: 
+2018.08.06 03:24:35 esc1
+2018.08.06 03:24:35 Validando el nombre: esc1
+2018.08.06 03:24:35 Nombre valido: esc1
+2018.08.06 03:24:35 Creando escenario 'esc1'...
+2018.08.06 03:24:35 Se creo el escenario 'esc1'.
+2018.08.06 03:24:35 Se añadieron valores por defecto 'esc1'.

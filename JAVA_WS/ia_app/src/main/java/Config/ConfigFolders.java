@@ -1,21 +1,52 @@
 package Config;
 
 public class ConfigFolders {
+	
+	/*********************************************************/
+	/*******************VARIABLE DE ENTORNO*******************/
+	/*********************************************************/
+	
+	private static String entorno="windows";
+	
+	/*********************************************************/
+	/*******************VARIABLE DE ENTORNO*******************/
+	/*********************************************************/
+	
 	public static String rutaApp () {
-		return "G:\\IA_APP_v1";
+		if(entorno.equals("windows")) {
+			return "G:\\IA_APP_v1";
+		}else {
+			return "";
+		}
 	}
 	public static String rutaConfig () {
-		return rutaApp()+"\\Config";
+		if(entorno.equals("windows")) {
+			return rutaApp()+"\\config";
+		}else {
+			return rutaApp()+"/config";
+		}
 	}
 	public static String rutaExport () {
-		return rutaApp()+"\\Exports";
+		if(entorno.equals("windows")) {
+			return rutaApp()+"\\exports";
+		}else {
+			return rutaApp()+"/exports";
+		}
 	}
 	
 	public static String rutaImport() {
-		return rutaApp()+"\\Imports";
+		if(entorno.equals("windows")) {
+			return rutaApp()+"\\imports";
+		}else {
+			return rutaApp()+"/imports";
+		}
 	}
 	public static String rutaLog() {
-		return rutaApp()+"\\Logs";
+		if(entorno.equals("windows")) {
+			return rutaApp()+"\\Logs";
+		}else {
+			return rutaApp()+"/Logs";
+		}
 	}
 
 

@@ -1,0 +1,12 @@
+2018.08.09 23:55:42 MaenusSQL::generaConsulta::Generando consulta...
+2018.08.09 23:55:42 
+2018.08.09 23:55:42 Seleccione un valor de la lista
+2018.08.09 23:55:42     ID_OPCION - DESCRIPCION
+2018.08.09 23:55:42     1 - MINIMIZAR_ERROR_CUADRATICO
+2018.08.09 23:56:25 Opcion no disponible. Por favor, seleccione una de la lista.
+2018.08.09 23:57:47 MaenusSQL::generaConsulta::Generando consulta...
+2018.08.09 23:57:47 
+2018.08.09 23:57:47 Seleccione un valor de la lista
+2018.08.09 23:57:47     ID_OPCION - DESCRIPCION
+2018.08.09 23:57:47     1 - ROTAR_ORDENADO
+2018.08.09 23:57:47     2 - ROTAR_ALEATORIO

@@ -1,0 +1,8 @@
+2018.08.05 22:15:20 validaNombre::Error al validar el nombre: Un nombre
+2018.08.05 22:15:20 com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'ia_app.t_escenarios' doesn't exist
+2018.08.05 22:16:00 validaNombre::Error al validar el nombre: esc 1
+2018.08.05 22:16:00 java.sql.SQLException: Can't find file: 't_escenarios' (errno: 2)
+2018.08.05 22:58:09 Algo fallo al crear el escenario 'escenario prueba'
+2018.08.05 22:58:09 com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'ia_app.t_config_escenarios' doesn't exist
+2018.08.05 23:03:00 Algo fallo al crear el escenario 'escenario prueba'
+2018.08.05 23:03:00 com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'ia_app.t_config_escenarios' doesn't exist

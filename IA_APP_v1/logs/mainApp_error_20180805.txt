@@ -1,0 +1,8 @@
+2018.08.05 14:15:20 No se pudo conectar a la BBDD
+2018.08.05 14:15:20 java.sql.SQLException: No suitable driver found for 
+2018.08.05 14:17:04 No se pudo conectar a la BBDD
+2018.08.05 14:17:04 java.sql.SQLException: No suitable driver found for 
+2018.08.05 14:17:34 No se pudo conectar a la BBDD
+2018.08.05 14:17:34 java.sql.SQLException: No suitable driver found for 
+2018.08.05 14:17:36 No se pudo conectar a la BBDD
+2018.08.05 14:17:36 java.sql.SQLException: No suitable driver found for 

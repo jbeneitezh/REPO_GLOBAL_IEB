@@ -1,0 +1,4 @@
+2018.08.09 20:12:51 Algo fallo al actualizar el parametro 'Ficheros_Cargados'
+2018.08.09 21:00:59 Error al borrar el escenario 1
+2018.08.09 21:02:19 Error al borrar el escenario 1
+2018.08.09 21:02:19 com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'ia_app.t_escenarios_autocorrel' doesn't exist

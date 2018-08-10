@@ -6,6 +6,9 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Scanner;
 import java.util.Vector;
+
+import Config.ConfigFolders;
+import FilesAndFolders.FicherosCLS;
 import Logger.LoggerIA;
 import MenuUtil.ActionsCLS;
 import MenuUtil.MenusSQL;
@@ -204,16 +207,111 @@ public class MENU_ESCENARIO {
 	
 	public void procesaFicheros() {
 		
-		System.out.println("void::procesaFicheros");
-
+		String msg="void::procesaFicheros";
+		log.WriteMessage(msg,true);
+		
+		msg="\nSe procesaran los ficheros de inputs y outputs. \n\nSi las tablas del escenario no existen se generaran."
+		   +" En caso contrario se actualizaran.\n\n"
+		   +"Este proceso podria tardar varios minutos en funcion del tamaño de los ficheros. \n\n¿Desea continuar?";
+		
+		if(MenusSQL.preguntaConfirmacion(msg, scanner)==false) {
+			msg="Operacion cancelada.";
+			log.WriteMessage(msg, true);
+			OpcionesEscenario();
+			return;
+		}
+		
+		msg="Recuperando informacion de los ficheros...";
+		log.WriteMessage(msg,true);
+		String query="SELECT a.VALOR \n"
+					+"  FROM IA_APP.T_CONFIG_ESCENARIOS a \n"
+					+" WHERE a.ID_ESCENARIO = "+IDEscenario+" \n"
+					+"   AND a.ID_PARAM IN (1, 2) \n"
+					+" ORDER BY a.ID_PARAM";
+		String [][]ficheros=resultsetUseful.queryToMatrix(query, conexion);
+		msg="ficheros recuperados. Total "+ficheros.length+".";
+		log.WriteMessage(msg, true);
+		
+		String rutaFic=ConfigFolders.rutaImport();
+		String ficX="";
+		String ficY="";
+		
+		try {
+			ficX=ficheros[1][0];
+			ficY=ficheros[2][0];
+		} catch (Exception e) {
+			// TODO: handle exception
+			msg="Se produjo un error al recuperar los nombres de los ficheros.";
+			log.WriteError(msg, true);
+			msg=e.toString();
+			log.WriteError(msg, true);
+			OpcionesEscenario();
+			return;
+		}
+		
+		//Verificaciones previas - Comprobamos que existan los ficheros *****
+		if(FicherosCLS.fileExists(rutaFic+"\\"+ficX)==false) {
+			msg="El fichero de inputs no existe '"+rutaFic+"\\"+ficX;
+			log.WriteMessage(msg, true);
+			msg="Deteniendo...";
+			log.WriteMessage(msg, true);
+			OpcionesEscenario();
+			return;
+		}else {
+			msg="El fichero de inputs existe. '"+ficX+"'";
+			log.WriteMessage(msg, true);
+		}
+		
+		if(FicherosCLS.fileExists(rutaFic+"\\"+ficY)==false) {
+			msg="El fichero de outputs no existe '"+rutaFic+"\\"+ficY;
+			log.WriteMessage(msg, true);
+			msg="Deteniendo...";
+			log.WriteMessage(msg, true);
+			OpcionesEscenario();
+			return;
+		}else {
+			msg="El fichero de outputs existe. '"+ficY+"'";
+			log.WriteMessage(msg, true);
+		}
+		
+		//Leemos los ficheros *****
+		msg="Leyendo ficheros...(0/2)";
+		log.WriteMessage(msg, true);
+		String [][]ficXStr=FicherosCLS.readFileMatrixString(rutaFic+"\\"+ficX, ";");
+		msg="Fichero de inputs leido";
+		log.WriteMessage(msg, true);
+		msg="Leyendo ficheros...(1/2)";
+		log.WriteMessage(msg, true);
+		String [][]ficYStr=FicherosCLS.readFileMatrixString(rutaFic+"\\"+ficY, ";");
+		msg="Fichero leidos...(2/2)";
+		log.WriteMessage(msg, true);
+		
+		
+		//Realizamos validaciones *****
+		msg="Realizando validaciones...";
+		log.WriteMessage(msg, true);
+		if(ficXStr.length != ficYStr.length) {
+			msg="Error validaciones. Los ficheros no contienen el mismo numero de registros";
+			log.WriteMessage(msg, true);
+		}else {
+			msg="Los ficheros contienen el mismo numero de registros";
+			log.WriteMessage(msg, true);
+		}
+		
+		
+		msg="procesaFicheros::proceso completado";
+		log.WriteMessage(msg, true);
 		OpcionesEscenario();
 	}
+	
+	
 	public void modAutoCorrel() {
 		
 		System.out.println("void::modAutoCorrel");
 
 		OpcionesEscenario();
 	}
+	
 	public void borraEscenario() {
 		
 		System.out.println("void::borraEscenario");
@@ -282,17 +380,12 @@ public class MENU_ESCENARIO {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	private void modificaParam(String idParam, String valorActual, String tipoDato, String descripcion) {
+		
+		String valorNuevo=""; //variable que almacena la opcion elegida por el usuario
+		boolean modificar=false;
 		
 		String msg="Accediendo a la modificacion del parametro '"+descripcion+"'";
 		System.out.println(msg);
@@ -303,93 +396,137 @@ public class MENU_ESCENARIO {
 		
 		int existeParamListaValores=cuentaParametrosValoresValidos(idParam);
 		if(existeParamListaValores==0) {
-			
+			boolean valorvalido=false;
+			while (valorvalido==false) {
+				msg="Indique el nuevo valor";
+				System.out.println(msg);
+				log.WriteMessage(msg);
+				valorNuevo=""+scanner.nextLine();
+				log.WriteMessage(valorNuevo);
+				
+				if(esParametroNuevoValido(valorNuevo, tipoDato)==false) {
+					msg="'"+valorNuevo+"' no es un "+tipoDato+" valido.";
+					valorvalido=false;
+				}else {
+					String consulta="Se va a modificar el parametro '"+descripcion+"' cambiando '"+valorActual+"' por "+valorNuevo+"'. ¿Esta de acuerdo? (S/N)";
+					String decision=menuOption.procesaConsultaSINO(consulta, scanner);
+					if(decision.equals("S")) {
+						valorvalido=true;
+						modificar=true;
+					}else if (decision.equals("N")) {
+						msg="Modificacion cancelada";
+						log.WriteMessage(msg,true);
+						modParamEscenario();
+						return;
+					}
+				}
+			}
 			
 		}else if(existeParamListaValores>0) {
 			
 			try {
+				String query="SELECT a.ID_OPCION, \n"
+							+"       a.DESCRIPCION \n"
+						    +"  FROM IA_APP.T_PARAM_VALORES_VALIDOS a \n"
+							+" WHERE a.ID_PARAM = "+idParam;
+				msg="Lanzando Query";
+				log.WriteMessage(msg, false);
+				msg=query;
+				log.WriteMessage(msg, false);
+				String [][]matOpciones=resultsetUseful.queryToMatrix(query, conexion);
 				msg="Seleccione un valor de la lista";
-				log.WriteMessage(msg,true);
-			} catch (Exception e) {
-				// TODO: handle exception
-			}
-			
-			
-		}
-		
-		
-		boolean valorvalido=false;
-		while (valorvalido==false) {
-			msg="Indique el nuevo valor";
-			System.out.println(msg);
-			log.WriteMessage(msg);
-			String valorNuevo=""+scanner.nextLine();
-			log.WriteMessage(valorNuevo);
-			if(esParametroNuevoValido(valorNuevo, tipoDato)==false) {
-				msg="'"+valorNuevo+"' no es un "+tipoDato+" valido.";
-			}else {
-				String consulta="Se va a modificar el parametro '"+descripcion+"' cambiando '"+valorActual+"' por "+valorNuevo+"'. ¿Esta de acuerdo? (S/N)";
-				String decision=menuOption.procesaConsultaSINO(consulta, scanner);
+				valorNuevo=MenusSQL.generaConsulta(msg, matOpciones, scanner, 0);
 				
-				if(decision.equals("S")) {
-					
-					try {
-						
-						CallableStatement stat=conexion.prepareCall("{call IA_APP.MODIFICA_PARAM_ESCENARIO(?,?,?,?,?)}");
-						stat.setInt(1, Integer.parseInt(IDEscenario));
-						stat.setInt(2, Integer.parseInt(idParam));
-						stat.setString(3, valorNuevo);
-						stat.registerOutParameter(4, java.sql.Types.INTEGER);
-						stat.registerOutParameter(5, java.sql.Types.VARCHAR);
-						stat.executeUpdate();
-						int res=stat.getInt(4);
-						String resStr=stat.getString(5);
-						
-						msg=resStr;
-						System.out.println(msg);
-						log.WriteMessage(msg);
-						
-						if (res==1) {
-							conexion.commit();
-							msg="Se actualizo el parametro '"+descripcion+"' a '"+valorNuevo+"'";
-							log.WriteMessage(msg);
-							System.out.println(msg);
-						}else if (res==0) {
-							conexion.rollback();
-							msg="Algo fallo al actualizar el parametro '"+descripcion+"'";
-							log.WriteError(msg);
-							System.out.println(msg);
-						}	
-					} catch (Exception e) {
-						// TODO: handle exception
-						msg="Error al actualizar el valor";
-						System.out.println(msg);
-						log.WriteError(msg);
-						try {
-							conexion.rollback();
-						} catch (Exception e2) {
-							// TODO: handle exception
-						}
-					}
-					
-					modParamEscenario();
-					return;
-					
-				}else if (decision.equals("N")) {
+				
+				msg="Ha elegido '"+valorNuevo+"'. Se realizará la modificacion. ¿Desea continuar?";
+				boolean decision=MenusSQL.preguntaConfirmacion(msg, scanner);
+				if(decision) {
+					modificar=true;
+				}else {
 					msg="Modificacion cancelada";
-					System.out.println(msg);
-					log.WriteMessage(msg);
+					log.WriteMessage(msg,true);
 					modParamEscenario();
 					return;
 				}
+				log.WriteMessage(msg,true);
+				
+
+			} catch (Exception e) {
+				// TODO: handle exception
+				msg="MENU_ESCENARIO::modificaParam::ERROR::"+e.toString();
+				valorNuevo="";
+				log.WriteError(msg, true);
+			}
+
+		}
+		
+		
+		if (valorNuevo.equals("") || modificar==false) {
+			msg="Valor no válido.";
+			log.WriteMessage(msg,true);
+			msg="";
+			log.WriteMessage(msg,true);
+			modParamEscenario();
+			return;
+		}
+
+					
+		try {
+			
+			CallableStatement stat=conexion.prepareCall("{call IA_APP.MODIFICA_PARAM_ESCENARIO(?,?,?,?,?)}");
+			stat.setInt(1, Integer.parseInt(IDEscenario));
+			stat.setInt(2, Integer.parseInt(idParam));
+			stat.setString(3, valorNuevo);
+			stat.registerOutParameter(4, java.sql.Types.INTEGER);
+			stat.registerOutParameter(5, java.sql.Types.VARCHAR);
+			stat.executeUpdate();
+			int res=stat.getInt(4);
+			String resStr=stat.getString(5);
+			
+			msg=String.valueOf(res)+" - "+resStr;
+			System.out.println(msg);
+			log.WriteMessage(msg);
+			
+			if (res==1) {
+				msg="Se actualizo el parametro '"+descripcion+"' a '"+valorNuevo+"'";
+				log.WriteMessage(msg,true);
+				conexion.commit();
+				msg="commit";
+				log.WriteMessage(msg,true);
+			}else if (res==0) {
+				conexion.rollback();
+				msg="rollback";
+				log.WriteMessage(msg,true);
+				msg="No se actualizo el parametro '"+descripcion+"'";
+				log.WriteError(msg);
+				System.out.println(msg);
+			}else if(res==-1) {
+				msg="Error al procesar el procedimiento. Param: '"+descripcion+"'";
+				log.WriteError(msg,true);
+				conexion.rollback();
+				msg="rollback";
+				log.WriteMessage(msg,true);
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			msg="Error al actualizar el valor";
+			System.out.println(msg);
+			log.WriteError(msg);
+			try {
+				conexion.rollback();
+			} catch (Exception e2) {
+				// TODO: handle exception
 			}
 		}
 		
-
+		modParamEscenario();
+		return;
 	}
 	
 	
 	private boolean esParametroNuevoValido(String valor, String tipoDato) {
+		
+		String msg="";
 		
 		if(valor.equals("")) {
 			return false;
@@ -397,6 +534,10 @@ public class MENU_ESCENARIO {
 		
 		if(tipoDato.contains("VARCHAR") || valor.length()>0) {
 			return true;
+		}else if(tipoDato.contains("VARCHAR")){
+			msg="esParametroNuevoValido::FALSE - Param: "+valor+" - Tipo esperado: "+tipoDato;
+			log.WriteMessage(msg, true);
+			return false;
 		}
 		
 		if(tipoDato.equals("INT")) {
@@ -405,6 +546,8 @@ public class MENU_ESCENARIO {
 				return true;
 			} catch (Exception e) {
 				// TODO: handle exception
+				msg="esParametroNuevoValido::FALSE - Param: "+valor+" - Tipo esperado: "+tipoDato;
+				log.WriteMessage(msg, true);
 				return false;
 			}
 		}
@@ -415,11 +558,13 @@ public class MENU_ESCENARIO {
 				return true;
 			} catch (Exception e) {
 				// TODO: handle exception
+				msg="esParametroNuevoValido::FALSE - Param: "+valor+" - Tipo esperado: "+tipoDato;
+				log.WriteMessage(msg, true);
 				return false;
 			}
 		}
 		
-		String msg="tipo de dato desconocido::"+tipoDato;
+		msg="tipo de dato desconocido::"+tipoDato;
 		log.WriteError(msg);
 		System.out.println(msg);
 		return false;
@@ -430,7 +575,7 @@ public class MENU_ESCENARIO {
 		try {
 			msg="Comprobando si existen parametrizaciones sobre el parametro "+idparam;
 			log.WriteMessage(msg,true);
-			String query="SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARM = "+idparam;
+			String query="SELECT COUNT(*) FROM IA_APP.T_PARAM_VALORES_VALIDOS a WHERE a.ID_PARAM = "+idparam;
 			log.WriteMessage(query,false);
 			Statement sta=conexion.createStatement();
 			ResultSet res=sta.executeQuery(query);
@@ -449,6 +594,5 @@ public class MENU_ESCENARIO {
 			log.WriteMessage(msg,true);
 			return -1;
 		}
-		
 	}
 }

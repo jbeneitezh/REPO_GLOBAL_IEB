@@ -1,0 +1,66 @@
+2018.08.06 00:55:33 Seleccione un escenario: 
+2018.08.06 00:55:33     1 - prueba esc
+2018.08.06 00:55:33     2 - prueba 1
+2018.08.06 00:55:33     3 - prueba 2
+2018.08.06 00:55:33     0 - Volver
+2018.08.06 00:55:43 Seleccione un escenario: 
+2018.08.06 00:55:43     1 - prueba esc
+2018.08.06 00:55:43     2 - prueba 1
+2018.08.06 00:55:43     3 - prueba 2
+2018.08.06 00:55:43     0 - Volver
+2018.08.06 00:55:48 Seleccionando escenario 3...
+2018.08.06 00:58:37 Seleccione un escenario: 
+2018.08.06 00:58:37     1 - prueba esc
+2018.08.06 00:58:37     2 - prueba 1
+2018.08.06 00:58:37     3 - prueba 2
+2018.08.06 00:58:37     0 - Volver
+2018.08.06 00:58:41 Seleccione un escenario: 
+2018.08.06 00:58:41     1 - prueba esc
+2018.08.06 00:58:41     2 - prueba 1
+2018.08.06 00:58:41     3 - prueba 2
+2018.08.06 00:58:41     0 - Volver
+2018.08.06 00:58:43 Seleccionando escenario 3...
+2018.08.06 00:58:48 Seleccione un escenario: 
+2018.08.06 00:58:48     1 - prueba esc
+2018.08.06 00:58:48     2 - prueba 1
+2018.08.06 00:58:48     3 - prueba 2
+2018.08.06 00:58:48     0 - Volver
+2018.08.06 00:58:51 Seleccionando escenario 3...
+2018.08.06 01:02:34 Seleccione un escenario: 
+2018.08.06 01:02:34     1 - prueba esc
+2018.08.06 01:02:34     2 - prueba 1
+2018.08.06 01:02:34     3 - prueba 2
+2018.08.06 01:02:34     0 - Volver
+2018.08.06 01:02:36 Seleccionando escenario 3...
+2018.08.06 01:06:58 No se encontro ninguna escenario.
+2018.08.06 01:07:47 Seleccione un escenario: 
+2018.08.06 01:07:47     1 - opc1
+2018.08.06 01:07:47     0 - Volver
+2018.08.06 01:07:52 Seleccione un escenario: 
+2018.08.06 01:07:52     1 - opc1
+2018.08.06 01:07:52     0 - Volver
+2018.08.06 01:07:54 Seleccionando escenario 1...
+2018.08.06 01:07:56 Seleccione un escenario: 
+2018.08.06 01:07:56     1 - opc1
+2018.08.06 01:07:56     0 - Volver
+2018.08.06 01:07:58 Seleccionando escenario 1...
+2018.08.06 03:24:17 No se encontro ningun escenario.
+2018.08.06 03:24:39 Seleccione un escenario: 
+2018.08.06 03:24:39     1 - esc1
+2018.08.06 03:24:39     0 - Volver
+2018.08.06 03:24:41 Seleccionando escenario 1...
+2018.08.06 03:27:10 Seleccione un escenario: 
+2018.08.06 03:27:10     1 - esc1
+2018.08.06 03:27:10     0 - Volver
+2018.08.06 03:27:11 Seleccionando escenario 1...
+2018.08.06 03:30:28 Seleccione un escenario: 
+2018.08.06 03:30:28     1 - esc1
+2018.08.06 03:30:28     0 - Volver
+2018.08.06 03:30:30 Seleccionando escenario 1...
+2018.08.06 03:42:35 Seleccione un escenario: 
+2018.08.06 03:42:35     1 - esc1
+2018.08.06 03:42:35     0 - Volver
+2018.08.06 03:42:37 Seleccionando escenario 1...
+2018.08.06 03:43:42 Seleccione un escenario: 
+2018.08.06 03:43:42     1 - esc1
+2018.08.06 03:43:42     0 - Volver

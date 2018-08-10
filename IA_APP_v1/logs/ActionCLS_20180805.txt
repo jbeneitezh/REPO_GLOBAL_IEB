@@ -1,0 +1,12 @@
+2018.08.05 22:15:12 Procesando accion: escenarioNuevo
+2018.08.05 22:17:18 Procesando accion: Salir
+2018.08.05 22:17:18 No se encontro ninguna accion para: Salir
+2018.08.05 22:17:51 Procesando accion: Salir
+2018.08.05 22:17:51 No se encontro ninguna accion para: Salir
+2018.08.05 22:57:57 Procesando accion: escenarioNuevo
+2018.08.05 23:02:53 Procesando accion: escenarioNuevo
+2018.08.05 23:04:44 Procesando accion: escenarioNuevo
+2018.08.05 23:08:44 Procesando accion: escenarioNuevo
+2018.08.05 23:08:50 Procesando accion: menuPrincipal
+2018.08.05 23:08:56 Procesando accion: escenarioNuevo
+2018.08.05 23:09:05 Procesando accion: menuPrincipal

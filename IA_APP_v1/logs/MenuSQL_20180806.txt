@@ -1,0 +1,247 @@
+2018.08.06 00:55:18 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 00:55:18 
+2018.08.06 00:55:18 Seleccione una opcion de la lista:
+2018.08.06 00:55:18     0 - Salir
+2018.08.06 00:55:18     1 - Acceder a escenario existente
+2018.08.06 00:55:18     2 - Crear nuevo escenario
+2018.08.06 00:55:20 Elegida: 0
+2018.08.06 00:55:30 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 00:55:30 
+2018.08.06 00:55:30 Seleccione una opcion de la lista:
+2018.08.06 00:55:30     0 - Salir
+2018.08.06 00:55:30     1 - Acceder a escenario existente
+2018.08.06 00:55:30     2 - Crear nuevo escenario
+2018.08.06 00:55:33 Elegida: 1
+2018.08.06 00:55:40 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 00:55:40 
+2018.08.06 00:55:40 Seleccione una opcion de la lista:
+2018.08.06 00:55:40     0 - Salir
+2018.08.06 00:55:40     1 - Acceder a escenario existente
+2018.08.06 00:55:40     2 - Crear nuevo escenario
+2018.08.06 00:55:43 Elegida: 1
+2018.08.06 00:55:48 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 00:55:48 
+2018.08.06 00:55:48 Seleccione una opcion de la lista:
+2018.08.06 00:55:48     0 - Volver
+2018.08.06 00:55:48     1 - Ver parametros
+2018.08.06 00:55:48     2 - Modificar parametros
+2018.08.06 00:55:51 Elegida: 0
+2018.08.06 00:58:32 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 00:58:32 
+2018.08.06 00:58:32 Seleccione una opcion de la lista:
+2018.08.06 00:58:32     0 - Salir
+2018.08.06 00:58:32     1 - Acceder a escenario existente
+2018.08.06 00:58:32     2 - Crear nuevo escenario
+2018.08.06 00:58:37 Elegida: 1
+2018.08.06 00:58:39 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 00:58:39 
+2018.08.06 00:58:39 Seleccione una opcion de la lista:
+2018.08.06 00:58:39     0 - Salir
+2018.08.06 00:58:39     1 - Acceder a escenario existente
+2018.08.06 00:58:39     2 - Crear nuevo escenario
+2018.08.06 00:58:41 Elegida: 1
+2018.08.06 00:58:43 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 00:58:43 
+2018.08.06 00:58:43 Seleccione una opcion de la lista:
+2018.08.06 00:58:43     0 - Volver
+2018.08.06 00:58:43     1 - Ver parametros
+2018.08.06 00:58:43     2 - Modificar parametros
+2018.08.06 00:58:48 Elegida: 0
+2018.08.06 00:58:51 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 00:58:51 
+2018.08.06 00:58:51 Seleccione una opcion de la lista:
+2018.08.06 00:58:51     0 - Volver
+2018.08.06 00:58:51     1 - Ver parametros
+2018.08.06 00:58:51     2 - Modificar parametros
+2018.08.06 00:58:54 Elegida: 1
+2018.08.06 01:02:31 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 01:02:31 
+2018.08.06 01:02:31 Seleccione una opcion de la lista:
+2018.08.06 01:02:31     0 - Salir
+2018.08.06 01:02:31     1 - Acceder a escenario existente
+2018.08.06 01:02:31     2 - Crear nuevo escenario
+2018.08.06 01:02:34 Elegida: 1
+2018.08.06 01:02:36 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 01:02:36 
+2018.08.06 01:02:36 Seleccione una opcion de la lista:
+2018.08.06 01:02:36     0 - Volver
+2018.08.06 01:02:36     1 - Ver parametros
+2018.08.06 01:02:36     2 - Modificar parametros
+2018.08.06 01:02:38 Elegida: 1
+2018.08.06 01:02:38 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 01:02:38 
+2018.08.06 01:02:38 Seleccione una opcion de la lista:
+2018.08.06 01:02:38     0 - Volver
+2018.08.06 01:02:38     1 - Ver parametros
+2018.08.06 01:02:38     2 - Modificar parametros
+2018.08.06 01:05:34 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 01:05:34 Error obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 01:05:34 com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'ia_app.t_menus' doesn't exist
+2018.08.06 01:05:34 No se realizará ninguna accion
+2018.08.06 01:06:42 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 01:06:42 
+2018.08.06 01:06:42 Seleccione una opcion de la lista:
+2018.08.06 01:06:42     0 - Salir
+2018.08.06 01:06:42     1 - Acceder a escenario existente
+2018.08.06 01:06:42     2 - Crear nuevo escenario
+2018.08.06 01:06:45 Elegida: 0
+2018.08.06 01:06:55 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 01:06:55 
+2018.08.06 01:06:55 Seleccione una opcion de la lista:
+2018.08.06 01:06:55     0 - Salir
+2018.08.06 01:06:55     1 - Acceder a escenario existente
+2018.08.06 01:06:55     2 - Crear nuevo escenario
+2018.08.06 01:06:58 Elegida: 1
+2018.08.06 01:06:58 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 01:06:58 
+2018.08.06 01:06:58 Seleccione una opcion de la lista:
+2018.08.06 01:06:58     0 - Salir
+2018.08.06 01:06:58     1 - Acceder a escenario existente
+2018.08.06 01:06:58     2 - Crear nuevo escenario
+2018.08.06 01:07:36 Elegida: 2
+2018.08.06 01:07:45 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 01:07:45 
+2018.08.06 01:07:45 Seleccione una opcion de la lista:
+2018.08.06 01:07:45     0 - Salir
+2018.08.06 01:07:45     1 - Acceder a escenario existente
+2018.08.06 01:07:45     2 - Crear nuevo escenario
+2018.08.06 01:07:47 Elegida: 1
+2018.08.06 01:07:50 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 01:07:50 
+2018.08.06 01:07:50 Seleccione una opcion de la lista:
+2018.08.06 01:07:50     0 - Salir
+2018.08.06 01:07:50     1 - Acceder a escenario existente
+2018.08.06 01:07:50     2 - Crear nuevo escenario
+2018.08.06 01:07:52 Elegida: 1
+2018.08.06 01:07:54 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 01:07:54 
+2018.08.06 01:07:54 Seleccione una opcion de la lista:
+2018.08.06 01:07:54     0 - Volver
+2018.08.06 01:07:54     1 - Ver parametros
+2018.08.06 01:07:54     2 - Modificar parametros
+2018.08.06 01:07:56 Elegida: 0
+2018.08.06 01:07:58 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 01:07:58 
+2018.08.06 01:07:58 Seleccione una opcion de la lista:
+2018.08.06 01:07:58     0 - Volver
+2018.08.06 01:07:58     1 - Ver parametros
+2018.08.06 01:07:58     2 - Modificar parametros
+2018.08.06 01:08:01 Elegida: 1
+2018.08.06 01:08:01 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 01:08:01 
+2018.08.06 01:08:01 Seleccione una opcion de la lista:
+2018.08.06 01:08:01     0 - Volver
+2018.08.06 01:08:01     1 - Ver parametros
+2018.08.06 01:08:01     2 - Modificar parametros
+2018.08.06 03:24:14 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 03:24:14 
+2018.08.06 03:24:14 Seleccione una opcion de la lista:
+2018.08.06 03:24:14     0 - Salir
+2018.08.06 03:24:14     1 - Acceder a escenario existente
+2018.08.06 03:24:14     2 - Crear nuevo escenario
+2018.08.06 03:24:17 Elegida: 1
+2018.08.06 03:24:17 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 03:24:17 
+2018.08.06 03:24:17 Seleccione una opcion de la lista:
+2018.08.06 03:24:17     0 - Salir
+2018.08.06 03:24:17     1 - Acceder a escenario existente
+2018.08.06 03:24:17     2 - Crear nuevo escenario
+2018.08.06 03:24:29 Elegida: 2
+2018.08.06 03:24:35 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 03:24:35 
+2018.08.06 03:24:35 Seleccione una opcion de la lista:
+2018.08.06 03:24:35     0 - Salir
+2018.08.06 03:24:35     1 - Acceder a escenario existente
+2018.08.06 03:24:35     2 - Crear nuevo escenario
+2018.08.06 03:24:39 Elegida: 1
+2018.08.06 03:24:41 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 03:24:41 
+2018.08.06 03:24:41 Seleccione una opcion de la lista:
+2018.08.06 03:24:41     0 - Volver
+2018.08.06 03:24:41     1 - Ver parametros
+2018.08.06 03:24:41     2 - Modificar parametros
+2018.08.06 03:24:45 Elegida: 1
+2018.08.06 03:24:45 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 03:24:45 
+2018.08.06 03:24:45 Seleccione una opcion de la lista:
+2018.08.06 03:24:45     0 - Volver
+2018.08.06 03:24:45     1 - Ver parametros
+2018.08.06 03:24:45     2 - Modificar parametros
+2018.08.06 03:25:25 Elegida: 1
+2018.08.06 03:25:25 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 03:25:25 
+2018.08.06 03:25:25 Seleccione una opcion de la lista:
+2018.08.06 03:25:25     0 - Volver
+2018.08.06 03:25:25     1 - Ver parametros
+2018.08.06 03:25:25     2 - Modificar parametros
+2018.08.06 03:25:28 Elegida: 2
+2018.08.06 03:27:06 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 03:27:06 
+2018.08.06 03:27:06 Seleccione una opcion de la lista:
+2018.08.06 03:27:06     0 - Salir
+2018.08.06 03:27:06     1 - Acceder a escenario existente
+2018.08.06 03:27:06     2 - Crear nuevo escenario
+2018.08.06 03:27:10 Elegida: 1
+2018.08.06 03:27:11 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 03:27:11 
+2018.08.06 03:27:11 Seleccione una opcion de la lista:
+2018.08.06 03:27:11     0 - Volver
+2018.08.06 03:27:11     1 - Ver parametros
+2018.08.06 03:27:11     2 - Modificar parametros
+2018.08.06 03:27:13 Elegida: 1
+2018.08.06 03:27:13 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 03:27:13 
+2018.08.06 03:27:13 Seleccione una opcion de la lista:
+2018.08.06 03:27:13     0 - Volver
+2018.08.06 03:27:13     1 - Ver parametros
+2018.08.06 03:27:13     2 - Modificar parametros
+2018.08.06 03:27:15 Elegida: 2
+2018.08.06 03:30:25 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 03:30:25 
+2018.08.06 03:30:25 Seleccione una opcion de la lista:
+2018.08.06 03:30:25     0 - Salir
+2018.08.06 03:30:25     1 - Acceder a escenario existente
+2018.08.06 03:30:25     2 - Crear nuevo escenario
+2018.08.06 03:30:28 Elegida: 1
+2018.08.06 03:30:30 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 03:30:30 
+2018.08.06 03:30:30 Seleccione una opcion de la lista:
+2018.08.06 03:30:30     0 - Volver
+2018.08.06 03:30:30     1 - Ver parametros
+2018.08.06 03:30:30     2 - Modificar parametros
+2018.08.06 03:30:33 Elegida: 2
+2018.08.06 03:42:31 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 03:42:31 
+2018.08.06 03:42:31 Seleccione una opcion de la lista:
+2018.08.06 03:42:31     0 - Salir
+2018.08.06 03:42:31     1 - Acceder a escenario existente
+2018.08.06 03:42:31     2 - Crear nuevo escenario
+2018.08.06 03:42:35 Elegida: 1
+2018.08.06 03:42:37 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 03:42:37 
+2018.08.06 03:42:37 Seleccione una opcion de la lista:
+2018.08.06 03:42:37     0 - Volver
+2018.08.06 03:42:37     1 - Ver parametros
+2018.08.06 03:42:37     2 - Modificar parametros
+2018.08.06 03:42:39 Elegida: 1
+2018.08.06 03:42:39 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 03:42:39 
+2018.08.06 03:42:39 Seleccione una opcion de la lista:
+2018.08.06 03:42:39     0 - Volver
+2018.08.06 03:42:39     1 - Ver parametros
+2018.08.06 03:42:39     2 - Modificar parametros
+2018.08.06 03:42:55 Elegida: 2
+2018.08.06 03:43:40 Obteniendo opciones para el menu 'MENU_ESCENARIO'
+2018.08.06 03:43:40 
+2018.08.06 03:43:40 Seleccione una opcion de la lista:
+2018.08.06 03:43:40     0 - Volver
+2018.08.06 03:43:40     1 - Ver parametros
+2018.08.06 03:43:40     2 - Modificar parametros
+2018.08.06 03:43:42 Elegida: 0
+2018.08.06 03:43:49 Obteniendo opciones para el menu 'menuPrincipal'
+2018.08.06 03:43:49 
+2018.08.06 03:43:49 Seleccione una opcion de la lista:
+2018.08.06 03:43:49     0 - Salir
+2018.08.06 03:43:49     1 - Acceder a escenario existente
+2018.08.06 03:43:49     2 - Crear nuevo escenario
+2018.08.06 03:44:02 Elegida: 0

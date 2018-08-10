@@ -1,0 +1,56 @@
+2018.08.05 22:15:12 Ha seleccionado crear un nuevo escenario.
+2018.08.05 22:15:12 Indique un nombre para el escenario: 
+2018.08.05 22:15:20 Un nombre
+2018.08.05 22:15:20 Validando el nombre: Un nombre
+2018.08.05 22:15:20 validaNombre::Error al validar el nombre: Un nombre
+2018.08.05 22:15:20 com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'ia_app.t_escenarios' doesn't exist
+2018.08.05 22:15:20 Indique un nombre para el escenario: 
+2018.08.05 22:16:00 esc 1
+2018.08.05 22:16:00 Validando el nombre: esc 1
+2018.08.05 22:16:00 validaNombre::Error al validar el nombre: esc 1
+2018.08.05 22:16:00 java.sql.SQLException: Can't find file: 't_escenarios' (errno: 2)
+2018.08.05 22:16:00 Indique un nombre para el escenario: 
+2018.08.05 22:57:57 Ha seleccionado crear un nuevo escenario.
+2018.08.05 22:57:57 Indique un nombre para el escenario: 
+2018.08.05 22:58:09 escenario prueba
+2018.08.05 22:58:09 Validando el nombre: escenario prueba
+2018.08.05 22:58:09 Nombre valido: escenario prueba
+2018.08.05 22:58:09 Creando escenario 'escenario prueba'...
+2018.08.05 22:58:09 Algo fallo al crear el escenario 'escenario prueba'
+2018.08.05 22:58:09 com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'ia_app.t_config_escenarios' doesn't exist
+2018.08.05 23:02:53 Ha seleccionado crear un nuevo escenario.
+2018.08.05 23:02:53 Indique un nombre para el escenario: 
+2018.08.05 23:03:00 escenario prueba
+2018.08.05 23:03:00 Validando el nombre: escenario prueba
+2018.08.05 23:03:00 Nombre valido: escenario prueba
+2018.08.05 23:03:00 Creando escenario 'escenario prueba'...
+2018.08.05 23:03:00 Algo fallo al crear el escenario 'escenario prueba'
+2018.08.05 23:03:00 com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'ia_app.t_config_escenarios' doesn't exist
+2018.08.05 23:04:44 Ha seleccionado crear un nuevo escenario.
+2018.08.05 23:04:44 Indique un nombre para el escenario: 
+2018.08.05 23:04:47 prueba esc
+2018.08.05 23:04:47 Validando el nombre: prueba esc
+2018.08.05 23:04:47 Nombre valido: prueba esc
+2018.08.05 23:04:47 Creando escenario 'prueba esc'...
+2018.08.05 23:04:47 Se creo el escenario 'prueba esc'.
+2018.08.05 23:04:47 Se añadieron valores por defecto 'prueba esc'.
+2018.08.05 23:08:44 Ha seleccionado crear un nuevo escenario.
+2018.08.05 23:08:44 Indique un nombre para el escenario: 
+2018.08.05 23:08:50 prueba 1
+2018.08.05 23:08:50 Validando el nombre: prueba 1
+2018.08.05 23:08:50 Nombre valido: prueba 1
+2018.08.05 23:08:50 Creando escenario 'prueba 1'...
+2018.08.05 23:08:50 Se creo el escenario 'prueba 1'.
+2018.08.05 23:08:50 Se añadieron valores por defecto 'prueba 1'.
+2018.08.05 23:08:56 Ha seleccionado crear un nuevo escenario.
+2018.08.05 23:08:56 Indique un nombre para el escenario: 
+2018.08.05 23:09:00 prueba 1
+2018.08.05 23:09:00 Validando el nombre: prueba 1
+2018.08.05 23:09:00 Nombre no valido. Ya existe: prueba 1
+2018.08.05 23:09:00 Indique un nombre para el escenario: 
+2018.08.05 23:09:05 prueba 2
+2018.08.05 23:09:05 Validando el nombre: prueba 2
+2018.08.05 23:09:05 Nombre valido: prueba 2
+2018.08.05 23:09:05 Creando escenario 'prueba 2'...
+2018.08.05 23:09:05 Se creo el escenario 'prueba 2'.
+2018.08.05 23:09:05 Se añadieron valores por defecto 'prueba 2'.

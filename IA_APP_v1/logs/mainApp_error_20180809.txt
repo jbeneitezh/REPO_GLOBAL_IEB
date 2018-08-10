@@ -1,0 +1,2 @@
+2018.08.09 19:56:39 No se pudo conectar a la BBDD
+2018.08.09 19:56:39 java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/IA_APP

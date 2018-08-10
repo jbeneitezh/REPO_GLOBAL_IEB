@@ -121,6 +121,49 @@ public class MenusSQL {
 			
 		}
 		return false;
+	}
+	public static String generaConsulta(String consulta, String [][]matOpciones, Scanner scanner, int iParamOUT){
+		String msg="MaenusSQL::generaConsulta::Generando consulta...";
+		LoggerIA log=new LoggerIA("MenusSQL");
+		log.WriteMessage(msg,false);
+		
+		if(matOpciones.length<2 || matOpciones[0].length<2) {
+			msg="MenusSQL::generaConsulta::La matriz no tiene registros. Retorna ''";
+			log.WriteMessage(msg,true);
+			return "";
+		}
+		
+		boolean validado=false;
+		while (validado==false) {
+			msg="";
+			log.WriteMessage(msg,true);
+			msg=consulta;
+			log.WriteMessage(msg,true);
+			
+			for(int i=1;i<matOpciones.length;i++) {
+				msg="    "+matOpciones[i][0]+" - "+matOpciones[i][1];
+				log.WriteMessage(msg,true);
+			}
+			
+			String respuesta=scanner.nextLine();
+			
+			for(int i=0;i<matOpciones.length;i++) {
+				if(matOpciones[i][0].equals(respuesta)) {
+					respuesta=matOpciones[i][iParamOUT];
+					validado=true;
+					return respuesta;
+				}else {
+					msg="Opcion no disponible. Por favor, seleccione una de la lista.";
+					log.WriteMessage(msg,true);
+					validado=false;
+				}
+			}
+			
+		}
+		
+		return "";
+		
+		
 		
 		
 	}

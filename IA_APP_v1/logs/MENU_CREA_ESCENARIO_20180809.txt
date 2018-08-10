@@ -1,0 +1,90 @@
+2018.08.09 19:58:16 Ha seleccionado crear un nuevo escenario.
+2018.08.09 19:58:16 Indique un nombre para el escenario: 
+2018.08.09 19:58:27 esc_p1
+2018.08.09 19:58:27 Validando el nombre: esc_p1
+2018.08.09 19:58:27 Nombre valido: esc_p1
+2018.08.09 19:58:27 Creando escenario 'esc_p1'...
+2018.08.09 19:58:27 Algo fallo al crear el escenario 'esc_p1'
+2018.08.09 19:58:27 java.sql.SQLException: Parameter number 2 is not an OUT parameter
+2018.08.09 20:02:09 Ha seleccionado crear un nuevo escenario.
+2018.08.09 20:02:09 Indique un nombre para el escenario: 
+2018.08.09 20:02:12 dkasdas
+2018.08.09 20:02:12 Validando el nombre: dkasdas
+2018.08.09 20:02:12 Nombre valido: dkasdas
+2018.08.09 20:02:24 Creando escenario 'dkasdas'...
+2018.08.09 20:07:42 Ha seleccionado crear un nuevo escenario.
+2018.08.09 20:07:42 Indique un nombre para el escenario: 
+2018.08.09 20:07:45 hkjl
+2018.08.09 20:07:45 Validando el nombre: hkjl
+2018.08.09 20:07:45 Nombre valido: hkjl
+2018.08.09 20:07:45 Creando escenario 'hkjl'...
+2018.08.09 20:07:45 Algo fallo al crear el escenario 'hkjl'
+2018.08.09 20:07:45 java.sql.SQLException: Parameter number 2 is not an OUT parameter
+2018.08.09 20:08:45 Ha seleccionado crear un nuevo escenario.
+2018.08.09 20:08:45 Indique un nombre para el escenario: 
+2018.08.09 20:08:47 iyui
+2018.08.09 20:08:47 Validando el nombre: iyui
+2018.08.09 20:08:47 Nombre valido: iyui
+2018.08.09 20:08:47 Creando escenario 'iyui'...
+2018.08.09 20:08:47 Se creo el escenario 'iyui'.
+2018.08.09 20:08:47 Se añadieron valores por defecto 'iyui'.
+2018.08.09 20:12:56 Ha seleccionado crear un nuevo escenario.
+2018.08.09 20:12:56 Indique un nombre para el escenario: 
+2018.08.09 20:12:59 dasd
+2018.08.09 20:12:59 Validando el nombre: dasd
+2018.08.09 20:12:59 Nombre valido: dasd
+2018.08.09 20:12:59 Creando escenario 'dasd'...
+2018.08.09 20:12:59 Algo fallo al crear el escenario 'dasd'
+2018.08.09 20:12:59 java.sql.SQLException: Parameter number 2 is not an OUT parameter
+2018.08.09 20:14:25 Ha seleccionado crear un nuevo escenario.
+2018.08.09 20:14:25 Indique un nombre para el escenario: 
+2018.08.09 20:14:26 whoefrw
+2018.08.09 20:14:26 Validando el nombre: whoefrw
+2018.08.09 20:14:26 Nombre valido: whoefrw
+2018.08.09 20:14:26 Creando escenario 'whoefrw'...
+2018.08.09 20:14:26 Se creo el escenario 'whoefrw'.
+2018.08.09 20:14:26 Se añadieron valores por defecto 'whoefrw'.
+2018.08.09 21:30:56 Ha seleccionado crear un nuevo escenario.
+2018.08.09 21:30:56 Indique un nombre para el escenario: 
+2018.08.09 21:30:59 csfdsfv
+2018.08.09 21:30:59 Validando el nombre: csfdsfv
+2018.08.09 21:30:59 Nombre valido: csfdsfv
+2018.08.09 21:30:59 Creando escenario 'csfdsfv'...
+2018.08.09 21:30:59 Se creo el escenario 'csfdsfv'.
+2018.08.09 21:30:59 Se añadieron valores por defecto 'csfdsfv'.
+2018.08.09 21:31:03 Ha seleccionado crear un nuevo escenario.
+2018.08.09 21:31:03 Indique un nombre para el escenario: 
+2018.08.09 21:31:06 a1
+2018.08.09 21:31:06 Validando el nombre: a1
+2018.08.09 21:31:06 Nombre valido: a1
+2018.08.09 21:31:06 Creando escenario 'a1'...
+2018.08.09 21:31:06 Se creo el escenario 'a1'.
+2018.08.09 21:31:06 Se añadieron valores por defecto 'a1'.
+2018.08.09 21:31:08 Ha seleccionado crear un nuevo escenario.
+2018.08.09 21:31:08 Indique un nombre para el escenario: 
+2018.08.09 21:31:11 a1
+2018.08.09 21:31:11 Validando el nombre: a1
+2018.08.09 21:31:11 Nombre no valido. Ya existe: a1
+2018.08.09 21:31:11 Indique un nombre para el escenario: 
+2018.08.09 21:31:16 kjo
+2018.08.09 21:31:16 Validando el nombre: kjo
+2018.08.09 21:31:16 Nombre valido: kjo
+2018.08.09 21:31:16 Creando escenario 'kjo'...
+2018.08.09 21:31:16 Se creo el escenario 'kjo'.
+2018.08.09 21:31:16 Se añadieron valores por defecto 'kjo'.
+2018.08.09 23:51:06 Ha seleccionado crear un nuevo escenario.
+2018.08.09 23:51:06 Indique un nombre para el escenario: 
+2018.08.09 23:51:09 adsdew
+2018.08.09 23:51:09 Validando el nombre: adsdew
+2018.08.09 23:51:09 Nombre valido: adsdew
+2018.08.09 23:51:09 Creando escenario 'adsdew'...
+2018.08.09 23:51:09 Se creo el escenario 'adsdew'.
+2018.08.09 23:51:09 Se añadieron valores por defecto 'adsdew'.
+2018.08.09 23:51:13 Ha seleccionado crear un nuevo escenario.
+2018.08.09 23:51:13 Indique un nombre para el escenario: 
+2018.08.09 23:51:15 dwet
+2018.08.09 23:51:15 Validando el nombre: dwet
+2018.08.09 23:51:15 Nombre valido: dwet
+2018.08.09 23:51:15 Creando escenario 'dwet'...
+2018.08.09 23:51:15 Se creo el escenario 'dwet'.
+2018.08.09 23:51:15 Se añadieron valores por defecto 'dwet'.

@@ -172,6 +172,15 @@ public class FicherosCLS {
 	    }
 	}
 	
+	public static boolean fileExists(String filePathString) {
+		File f = new File(filePathString);
+		if(f.exists() && !f.isDirectory()) { 
+		   return true;
+		}else {
+			return false;
+		}
+	}
+	
 	public static String getFileName(String Ruta){
 		String text_out = Ruta.substring(Ruta.lastIndexOf('\\') + 1, Ruta.lastIndexOf('.'));
 		return text_out;
