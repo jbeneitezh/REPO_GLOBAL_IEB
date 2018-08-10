@@ -1,0 +1,85 @@
+package MenuUtil;
+
+import java.sql.Connection;
+import java.util.Scanner;
+
+import Logger.LoggerIA;
+import Menus.MENU_CREA_ESCENARIO;
+import Menus.MENU_ESCENARIO;
+import Menus.MENU_ESCENARIO_EXISTENTE;
+import mainApp.main_IA_APP;
+
+public class ActionsCLS {
+	public static void procesaAccion(String action, Connection conexion, Scanner scanner) {
+		LoggerIA log=new LoggerIA("ActionCLS");
+		String msg="Procesando accion: "+action;
+		log.WriteMessage(msg);
+		switch (action) {
+		case "escenarioNuevo":
+			MENU_CREA_ESCENARIO menu=new MENU_CREA_ESCENARIO(conexion, scanner);
+			menu.crearNuevoEscenario();
+			break;
+		case "escenariosExistentes":
+			MENU_ESCENARIO_EXISTENTE menu_ex=new MENU_ESCENARIO_EXISTENTE(conexion, scanner);
+			menu_ex.menu();
+			break;
+		case "verParamEscenario":
+			System.out.println("NO DEBE ENTRAR POR ESTA VIA");
+			break;
+		case "verStatusEscenario":
+			System.out.println("NO DEBE ENTRAR POR ESTA VIA");
+			break;
+		case "modParamEscenario":
+			System.out.println("NO DEBE ENTRAR POR ESTA VIA");
+			break;
+		case "Salir":
+			msg="Se saldra de la aplicacion.";
+			System.out.println(msg);
+			log.WriteMessage(msg);
+			break;
+		case "menuPrincipal":
+			main_IA_APP.menuPrincipal(scanner);
+			break;
+		default:
+			msg="No se encontro ninguna accion para: "+action;
+			log.WriteMessage(msg);
+			System.out.println(msg);
+			break;
+		}
+
+	}
+	
+	public static void procesaAccionPorIDEscenario(String action, Connection conexion, Scanner scanner, String IDEsc) {
+		LoggerIA log=new LoggerIA("ActionCLS");
+		String msg="Procesando accion: "+action;
+		log.WriteMessage(msg);
+		switch (action) {
+			case "escenariosExistentes":
+				MENU_ESCENARIO_EXISTENTE menu_ex=new MENU_ESCENARIO_EXISTENTE(conexion, scanner);
+				menu_ex.menu();
+				break;
+			case "MENU_ESCENARIO":
+				MENU_ESCENARIO m0=new MENU_ESCENARIO(conexion, scanner, IDEsc);
+				m0.OpcionesEscenario();
+				break;
+			case "verParamEscenario":
+				MENU_ESCENARIO m1=new MENU_ESCENARIO(conexion, scanner, IDEsc);
+				m1.verParamEscenario();
+				break;
+			case "modParamEscenario":
+				MENU_ESCENARIO m2=new MENU_ESCENARIO(conexion, scanner, IDEsc);
+				m2.modParamEscenario();
+				break;
+			case "verStatusParamEscenario":
+				MENU_ESCENARIO m3=new MENU_ESCENARIO(conexion, scanner, IDEsc);
+				m3.verStatusEscenario();
+				break;
+			
+			default:
+				msg="No se encontro ninguna accion para: "+action;
+				log.WriteMessage(msg);
+				System.out.println(msg);
+				break;
+		}
+	}
+}
