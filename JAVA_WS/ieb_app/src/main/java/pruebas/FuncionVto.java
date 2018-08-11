@@ -9,6 +9,15 @@ public class FuncionVto {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		String text="100.000";
+		
+		text=text.replace(".",";");
+		String []arr=text.split(";");
+		System.out.println(arr.length);
+		System.out.println(arr[1].length());
+		/*
+		
 		for (int i=1;i<13;i++) {
 			for(int j=1;j<31;j++) {
 				String fecha="2018-"+i+"-"+j;
@@ -21,7 +30,7 @@ public class FuncionVto {
 				System.out.println(msg);
 			}
 		}
-		
+		*/
 		//String primervto=PrimerVto(2018,1,1);
 		
 	}

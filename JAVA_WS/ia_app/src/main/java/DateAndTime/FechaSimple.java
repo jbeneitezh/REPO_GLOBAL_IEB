@@ -2,6 +2,12 @@ package DateAndTime;
 import java.text.SimpleDateFormat;
 import java.util.*;
 public class FechaSimple {
+	
+	public FechaSimple(){
+		
+	}
+	
+	
 		public static String FechaString(Calendar fecha){
 			int anho = fecha.get(Calendar.YEAR);
 	        int mes = fecha.get(Calendar.MONTH)+1;
@@ -197,7 +203,16 @@ public class FechaSimple {
 			return Res;
 		}
 		
-		public FechaSimple(){
+		public static boolean esFecha(String fec, String formato) {
+			
+			try {
+				SimpleDateFormat dateFormat = new SimpleDateFormat(formato); //"yyyy-MM-dd hh:mm:ss"
+				dateFormat.parse(fec);
+				return true;
+			} catch (Exception e) {
+				// TODO: handle exception
+				return false;
+			}
 			
 		}
 		

@@ -8,6 +8,7 @@ import java.util.Scanner;
 import java.util.Vector;
 
 import Config.ConfigFolders;
+import DateAndTime.FechaSimple;
 import FilesAndFolders.FicherosCLS;
 import Logger.LoggerIA;
 import MenuUtil.ActionsCLS;
@@ -20,16 +21,34 @@ public class MENU_ESCENARIO {
 	private Connection conexion;
 	private String IDEscenario="";
 	private Scanner scanner;
+	
+	private double []minimosX;
+	private double []maximosX;
+	private int    []decimalesX;
+	private String []camposX;
+	private String []tiposX;
+	private double []minimosY;
+	private double []maximosY;
+	private int    []decimalesY;
+	private String []camposY;
+	private String []tiposY;
+	
+	private String []notNullX;
+	private String []notNullY;
+	
+	private String nombreTablaX="";
+	private String nombreTablaY="";
+	
 	private LoggerIA log=new LoggerIA("MENU_ESCENARIO");
 	
-	
-	
-	
+
 	public MENU_ESCENARIO(Connection connection, Scanner sca, String id) {
 		// TODO Auto-generated constructor stub
 		conexion=connection;
 		scanner=sca;
 		IDEscenario = id;
+		nombreTablaX="T_X_"+IDEscenario;
+		nombreTablaY="T_Y_"+IDEscenario;
 	}
 	
 	public void OpcionesEscenario() {
@@ -288,15 +307,39 @@ public class MENU_ESCENARIO {
 		
 		
 		//Realizamos validaciones *****
-		msg="Realizando validaciones...";
-		log.WriteMessage(msg, true);
-		if(ficXStr.length != ficYStr.length) {
-			msg="Error validaciones. Los ficheros no contienen el mismo numero de registros";
+		if(evaluaFicheros(ficXStr, ficYStr)) {
+			msg="Primera validacion superada.";
 			log.WriteMessage(msg, true);
 		}else {
-			msg="Los ficheros contienen el mismo numero de registros";
+			msg="Validaciones no cumplidas. Se detendra...";
+			log.WriteMessage(msg, true);
+			OpcionesEscenario();
+			return;
+		}
+		
+		//Comprobamos si existen las tablas
+		boolean existeX=resultsetUseful.existeTabla(nombreTablaX, conexion);
+		boolean existeY=resultsetUseful.existeTabla(nombreTablaY, conexion);		
+		
+		if(existeX==false){
+			msg="La tabla "+nombreTablaX+" no existe. Se creara...";
+			log.WriteMessage(msg, true);
+			creaTabla(nombreTablaX, camposX, tiposX, notNullX);
+		}else {
+			msg="La tabla "+nombreTablaX+" ya existia";
 			log.WriteMessage(msg, true);
 		}
+		
+		if(existeY==false){
+			msg="La tabla "+nombreTablaY+" no existe. Se creara...";
+			log.WriteMessage(msg, true);
+			creaTabla(nombreTablaY, camposY, tiposY, notNullY);
+		}else {
+			msg="La tabla "+nombreTablaY+" ya existia";
+			log.WriteMessage(msg, true);
+		}
+		
+		
 		
 		
 		msg="procesaFicheros::proceso completado";
@@ -594,5 +637,293 @@ public class MENU_ESCENARIO {
 			log.WriteMessage(msg,true);
 			return -1;
 		}
+	}
+	
+	private boolean evaluaFicheros(String [][]ficX, String [][]ficY) {
+		boolean resultado=true;
+		String msg="Realizando validaciones...";
+		log.WriteMessage(msg, true);
+		if(ficX.length != ficY.length) {
+			msg="Error validaciones. Los ficheros no contienen el mismo numero de registros";
+			log.WriteMessage(msg, true);
+			return false;
+		}else {
+			msg="Los ficheros contienen el mismo numero de registros";
+			log.WriteMessage(msg, true);
+		}
+		if(ficX[0].length<2) {
+			msg="Error validaciones. Insuficientes columnas en el fichero de inputs: "+ficX[0].length;
+			log.WriteMessage(msg, true);
+			return false;
+		}else {
+			msg="Numero de columnas valido para el fichero de inputs: "+ficX[0].length;
+			log.WriteMessage(msg, true);
+		}
+		
+		if(ficY[0].length<2) {
+			msg="Error validaciones. Insuficientes columnas en el fichero de outputs: "+ficY[0].length;
+			log.WriteMessage(msg, true);
+			return false;
+		}else {
+			msg="Numero de columnas valido para el fichero de outputs: "+ficY[0].length;
+			log.WriteMessage(msg, true);
+		}
+		
+		
+		//Verificacion de fechas
+		
+		String formatoFecha="yyyy-MM-dd hh:mm:ss";
+		
+		for(int i=1;i<ficX.length;i++) {
+			String fecha=ficX[i][0];
+			if(fecha.length()<=10) {
+				fecha+=" 00:00:00";
+			}
+			if(FechaSimple.esFecha(fecha, formatoFecha)==false) {
+				msg="Error validaciones. Error formato fecha en el fichero de inputs en la linea "+i+": '"+fecha+"'";
+				log.WriteMessage(msg, true);
+				return false;
+			}
+		}
+		msg="Formatos de fecha correctos en el fichero de intups";
+		log.WriteMessage(msg, true);
+		
+		for(int i=1;i<ficY.length;i++) {
+			String fecha=ficX[i][0];
+			if(fecha.length()<=10) {
+				fecha+=" 00:00:00";
+			}
+			if(FechaSimple.esFecha(fecha, formatoFecha)==false) {
+				msg="Error validaciones. Error formato fecha en el fichero de outputs en la linea "+i+": '"+fecha+"'";
+				log.WriteMessage(msg, true);
+				return false;
+			}
+		}
+		msg="Formatos de fecha correctos en el fichero de outputs";
+		log.WriteMessage(msg, true);
+		
+		
+		//Verificacion de numeros
+		
+		double []mins=new double [ficX[0].length];
+		double []maxs=new double [ficX[0].length];
+		int []decimales=new int  [ficX[0].length];
+		
+		for(int i=0;i<mins.length;i++) {
+			mins[i]=999999999;
+			maxs[i]=-999999999;
+			decimales[i]=0;
+		}
+		
+		for(int i=1;i<ficX.length;i++) {
+			for(int j=1;j<ficX[i].length;j++) {
+				if(esDouble(ficX[i][j])==false) {
+					msg="Error validaciones. Error formato numero en el fichero de inputs en la linea "+i+", columna "+j+": '"+ficX[i][j]+"'";
+					log.WriteMessage(msg, true);
+					return false;
+				}else {
+					double num=Double.parseDouble(ficX[i][j]);
+					if(num<mins[j])	{
+						mins[j]=num;
+					}
+					if(num>maxs[j])	{
+						maxs[j]=num;
+					}
+					int decim=0;
+					try {
+						String [] arr=ficX[i][j].toString().replace(".", ",").split(",");
+						decim=arr[1].toString().length();
+					} catch (Exception e) {
+						// TODO: handle exception
+					}
+					//System.out.println("Numero: "+ficX[i][j]+" - Decimales: "+decim);
+					if(decim>decimales[j]) {
+						decimales[j]=decim;
+					}
+				}
+			}
+			
+		}
+		msg="Formatos de numeros correctos en el fichero de intups";
+		
+		minimosX=mins;
+		maximosX=maxs;
+		decimalesX=decimales;
+		
+		log.WriteMessage(msg, true);
+		
+		
+		mins=new double [ficY[0].length];
+		maxs=new double [ficY[0].length];
+		decimales=new int [ficX[0].length];
+		
+		for(int i=0;i<mins.length;i++) {
+			mins[i]=999999999;
+			maxs[i]=-999999999;
+			decimales[i]=0;
+		}
+		
+		for(int i=1;i<ficY.length;i++) {
+			for(int j=1;j<ficY[i].length;j++) {
+				if(esDouble(ficY[i][j])==false) {
+					msg="Error validaciones. Error formato numero en el fichero de inputs en la linea "+i+", columna "+j+": '"+ficY[i][j]+"'";
+					log.WriteMessage(msg, true);
+					return false;
+				}else {
+					double num=Double.parseDouble(ficY[i][j]);
+					if(num<mins[j])	{
+						mins[j]=num;
+					}
+					if(num>maxs[j])	{
+						maxs[j]=num;
+					}
+					int decim=0;
+					try {
+						String [] arr=ficY[i][j].toString().replace(".", ",").split(",");
+						decim=arr[1].toString().length();
+					} catch (Exception e) {
+						// TODO: handle exception
+					}
+					//System.out.println("Numero: "+ficY[i][j]+" - Decimales: "+decim);
+					if(decim>decimales[j]) {
+						decimales[j]=decim;
+					}
+				}
+			}
+			
+		}
+		
+		minimosY=mins;
+		maximosY=maxs;
+		decimalesY=decimales;
+		
+		msg="Formatos de numeros correctos en el fichero de outputs";
+		log.WriteMessage(msg, true);
+		
+		//Extraccion de nombres de campos
+		
+		String [] campos=new String [ficX[0].length-1];
+		campos[0]="FECHA";
+		for(int i=1;i<campos.length;i++) {
+			campos[i]=ficX[0][i];
+		}
+		camposX=campos;
+		
+		campos=new String [ficY[0].length-1];
+		campos[0]="FECHA";
+		for(int i=1;i<campos.length;i++) {
+			campos[i]=ficY[0][i];
+		}
+		camposY=campos;
+		
+		//Extraccion de tipos de datos
+		String []tipos=new String[camposX.length];
+		String [] notnulles=new String[camposX.length];
+		for(int i=0;i<notnulles.length;i++) {
+			notnulles[i]="NOT NULL";
+		}
+		notNullX=notnulles;
+		
+		tipos[0]="DATETIME";
+		for(int i=1;i<camposX.length;i++) {
+			String dec=String.valueOf(decimalesX[i]);
+			String [] arr1=String.valueOf(maximosX[i]).replace(".",",").split(",");
+			String [] arr2=String.valueOf(minimosX[i]).replace(".",",").split(",");
+			int posiciones=Math.max(arr1[0].length(), arr2[0].length())+decimalesX[i]+1;
+			tipos[i]="NUMERIC("+posiciones+", "+dec+")";
+		}
+		tiposX=tipos;
+		
+		
+
+		tipos=new String[camposY.length];
+		notnulles=new String[camposY.length];
+		for(int i=0;i<notnulles.length;i++) {
+			notnulles[i]="NOT NULL";
+		}
+		notNullY=notnulles;
+		
+		tipos[0]="DATETIME";
+		for(int i=1;i<camposY.length;i++) {
+			String dec=String.valueOf(decimalesY[i]);
+			String [] arr1=String.valueOf(maximosY[i]).replace(".",",").split(",");
+			String [] arr2=String.valueOf(minimosY[i]).replace(".",",").split(",");
+			int posiciones=Math.max(arr1[0].length(), arr2[0].length())+decimalesY[i]+1;
+			tipos[i]="NUMERIC("+posiciones+", "+dec+")";
+		}
+		tiposY=tipos;
+		
+		
+		
+		return resultado;
+	}
+	
+	private static boolean esDouble(String dob) {
+		try {
+			Double.parseDouble(dob);
+			return true;
+		} catch (Exception e) {
+			// TODO: handle exception
+			return false;
+		}
+	}
+	
+	private boolean creaTabla(String nombre, String []campos, String []tiposDatos, String []nullNotNull) {
+		String msg="";
+		try {
+			msg="Creando tabla "+nombre;
+			log.WriteMessage(msg,true);
+			
+			String tabla="CREATE TABLE "+nombre+" (";
+			int longitud=tabla.length();
+			
+			for(int i=0;i<campos.length;i++) {
+				String t="";
+				if(i>0) {
+					t=anadeEspacios(t,longitud);
+				}
+				t+=anadeEspacios(campos[i],30)+" ";
+				t+=anadeEspacios(tiposDatos[i],30)+" ";
+				t+=anadeEspacios(nullNotNull[i],30);
+				if(i<campos.length-1) {
+					t+=",";
+				}
+				t+=" \n";
+				tabla+=t;
+			}
+			tabla+=")";
+			msg="Imprimiendo query: ";
+			log.WriteMessage(msg,true);
+			log.WriteMessage(tabla,true);
+			
+			Statement sta=conexion.createStatement();
+			sta.executeUpdate(tabla);
+			msg="Tabla creada: "+nombre;
+			log.WriteMessage(msg,true);
+			
+			msg="Creando PK...";
+			log.WriteMessage(msg,true);
+			String PK="ALTER TABLE "+nombre+" ADD CONSTRAINT PK_"+nombre+" PRIMARY KEY ("+campos[0]+")";
+			log.WriteMessage(PK,true);
+			sta.executeUpdate(PK);
+			sta.close();
+			return true;
+		}catch (Exception e) {
+			// TODO: handle exception
+			msg="Error al crear la tabla: "+nombre;
+			log.WriteMessage(msg,true);
+			msg=e.toString();
+			log.WriteMessage(msg,true);
+			
+			return false;
+		}
+	}
+	
+	private static String anadeEspacios(String t, int num) {
+		String res=t;
+		while(res.length()<num) {
+			res=res+" ";
+		}
+		return res;
 	}
 }

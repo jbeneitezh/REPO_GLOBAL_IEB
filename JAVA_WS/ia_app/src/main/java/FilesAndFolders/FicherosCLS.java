@@ -237,9 +237,29 @@ public class FicherosCLS {
 	public static String []readFileArray(String Ruta){
 		LoggerIA logfilesandfolders=new LoggerIA("FicheroCLS");
 		try{
+			
+			File f=new File(Ruta);
+			BufferedReader b=new BufferedReader(
+					   new InputStreamReader(
+			                      new FileInputStream(f)));
+			String Linea;
+			Vector<String>vStr=new Vector<String>();
+			while((Linea = b.readLine())!=null) {
+				vStr.add(Linea);
+	        }
+			b.close();
+			String []resStrings=new String[vStr.size()];
+			for(int i=0;i<resStrings.length;i++) {
+				resStrings[i]=vStr.get(i);
+			}
+			return resStrings;
+			
+			/*
 			String txtCompleto=readFileString(Ruta);
 			String [] resultadoString=txtCompleto.split("\n");
+
 			return resultadoString;
+			*/
 		}catch(Exception e){
 			logfilesandfolders.WriteError("FicherosCLS::readFileArray: NO se leyó '"+Ruta+"'");
 			String []resStrings=new String[0];
@@ -275,6 +295,20 @@ public class FicherosCLS {
 	public static String [][] readFileMatrixString(String Ruta, String Delimiter){
 		LoggerIA logfilesandfolders=new LoggerIA("FicheroCLS");
 		try{
+			String []AuxStr=readFileArray(Ruta);
+			String []Aux2Str=AuxStr[0].split(Delimiter);
+			String [][]TxtDef=new String [AuxStr.length][Aux2Str.length];
+			for(int i=0;i<TxtDef.length;i++){
+				Aux2Str=AuxStr[i].split(Delimiter);
+				for (int j=0;j<TxtDef[i].length;j++){
+					if(Aux2Str.length>j) {
+						TxtDef[i][j]=Aux2Str[j];
+					}else {
+						TxtDef[i][j]="";
+					}
+				}
+			}
+			/*
 			String textoCompleto=readFileString(Ruta);
 			String []AuxStr=textoCompleto.split("\n");
 			String []Aux2Str=AuxStr[0].split(Delimiter);
@@ -288,7 +322,7 @@ public class FicherosCLS {
 						TxtDef[i][j]="";
 					}
 				}
-			}
+			}*/
 			return TxtDef;
 		}catch(Exception e){
 			logfilesandfolders.WriteError("FicherosCLS::readFileMatrixString No se ha podido sacar la matriz del fichero: "+Ruta);

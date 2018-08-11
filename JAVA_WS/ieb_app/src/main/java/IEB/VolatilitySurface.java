@@ -98,7 +98,7 @@ public class VolatilitySurface extends Thread {
 			 //System.out.println("title : " + title);
 			 Element tabla=doc.selectFirst("TABLE");
 			 Elements filas=tabla.select("TR");
-			 Vector<String[]>filasStr=new Vector<>();
+			 Vector<String[]>filasStr=new Vector<String[]>();
 			 Element titulo = filas.get(1);
 			 System.out.println(name+";"+titulo.text());
 			 //System.out.println(filas.size()+" filas.");

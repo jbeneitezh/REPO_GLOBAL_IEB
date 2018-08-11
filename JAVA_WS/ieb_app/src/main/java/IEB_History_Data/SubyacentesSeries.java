@@ -12,9 +12,9 @@ import config.InfoIEB;
 import config.InfoSQL;
 
 public class SubyacentesSeries {
-	private Vector<String> ids_subyacentes=new Vector<>();
+	private Vector<String>ids_subyacentes;
 	public SubyacentesSeries() {
-		
+		ids_subyacentes=new Vector<String>();
 	}
 	
 	public void getSubyacentesSeries() {

@@ -23,6 +23,14 @@
 	    <artifactId>jsoup</artifactId>
 	    <version>1.11.2</version>
 	</dependency>
+	<!-- https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit -->
+	<dependency>
+	    <groupId>net.sourceforge.htmlunit</groupId>
+	    <artifactId>htmlunit</artifactId>
+	    <version>2.24</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+
 	
   </dependencies>
   <build>

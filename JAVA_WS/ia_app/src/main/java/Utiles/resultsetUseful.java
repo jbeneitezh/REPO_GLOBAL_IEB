@@ -148,4 +148,24 @@ public class resultsetUseful {
 		
 		return matRes;
 	}
+	
+	public static boolean existeTabla(String tabla, Connection con) {
+		
+		try {
+			String query="SELECT COUNT(*) FROM "+tabla;
+			Statement sta=con.createStatement();
+			ResultSet res=sta.executeQuery(query);
+			while(res.next()) {
+				return true;
+			}
+			res.close();
+			sta.close();
+			return false;
+		}catch (Exception e) {
+			// TODO: handle exception
+			return false;
+		}
+		
+		
+	}
 }

@@ -84,7 +84,7 @@ public class IEB_Querys {
 		}
 	}
 	public static Vector<String> getIDActivos(Statement sta, String Tipo){
-		Vector<String>res=new Vector<>();
+		Vector<String>res=new Vector<String>();
 		try {
 			String Query="SELECT a.ID_SUBYACENTE "
 						+"  FROM IEB_PRO.T_SUBYACENTES a"
@@ -107,7 +107,7 @@ public class IEB_Querys {
 		}
 	}
 	public static Vector<String> getIDActivosUso(Statement sta, String Tipo){
-		Vector<String>res=new Vector<>();
+		Vector<String>res=new Vector<String>();
 		try {
 			String Query="SELECT ";
 			if(Tipo.toUpperCase().equals("FUTURE")) {
@@ -246,11 +246,14 @@ public class IEB_Querys {
 		return Query;
 	}
 	public static Vector<String> getSubyacentesUso(Connection con){
-		Vector<String>res=new Vector<>();
+		Vector<String>res=new Vector<String>();
 		try {
 			Statement sta=con.createStatement();
 			String Query="SELECT a.ID_SUBYACENTE \n"
-						+"  FROM IEB_PRO.T_ACTIVOS_USO a";
+						+"  FROM IEB_PRO.T_ACTIVOS_USO a, \n"
+						+"       IEB_PRO.T_SUBYACENTES b \n"
+						+" WHERE a.ID_SUBYACENTE = b.ID_SUBYACENTE \n"
+						+" ORDER BY b.NOMBRE";
 			ResultSet resul=sta.executeQuery(Query);
 			while(resul.next()) {
 				res.add(resul.getString(1));

@@ -1,0 +1,127 @@
+package pruebas;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+public class FuncionVto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String text="100.000";
+		
+		text=text.replace(".",";");
+		String []arr=text.split(";");
+		System.out.println(arr.length);
+		
+		/*
+		
+		for (int i=1;i<13;i++) {
+			for(int j=1;j<31;j++) {
+				String fecha="2018-"+i+"-"+j;
+				String []vtos=getFechasVtos(7, 2018, i, j);
+				
+				String msg="Fecha: "+fecha;
+				for(int k=0;k<vtos.length;k++) {
+					msg+=" - vto"+(k+1)+": "+vtos[k];
+				}
+				System.out.println(msg);
+			}
+		}
+		*/
+		//String primervto=PrimerVto(2018,1,1);
+		
+	}
+	
+	
+	public static String [] getFechasVtos(int numVtos, int anho, int mes, int dia){
+		try {
+			String []res=new String[numVtos];
+			for(int i=0;i<numVtos;i++) {
+				Calendar cal=PrimerVto(anho, mes, dia);
+				res[i]=cal.get(Calendar.YEAR)+"-"+(cal.get(Calendar.MONTH)+1)+"-"+cal.get(Calendar.DAY_OF_MONTH);
+				anho=cal.get(Calendar.YEAR);
+				mes=cal.get(Calendar.MONTH)+1;
+				dia=cal.get(Calendar.DAY_OF_MONTH);
+			}
+			return res;
+		} catch (Exception e) {
+			// TODO: handle exception
+			return null;
+		}
+	}
+	
+	
+	private static Calendar PrimerVto(int anho, int mes, int dia) {
+		
+		//String res="";
+		String fechaArgumento=anho+"-"+mes+"-"+dia;
+		int conta=0;
+		boolean continua=true;
+		try {
+			SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+			while (continua) {
+				conta++;
+				dia++;
+				if(dia>31) {
+					dia=1;
+					mes++;
+					if(mes>12) {
+						mes=1;
+						anho++;
+					}
+				}
+				String fecStr=anho+"-"+mes+"-"+dia;
+				//System.out.println(fecStr);
+				try {
+					Date fecha=dateFormat.parse(fecStr);
+					Calendar cal=new GregorianCalendar();
+					cal.setTime(fecha);
+					
+					if(esVto(cal)) {
+						//System.out.println("Vencimiento encontrado para : "+fechaArgumento+" - "+fecStr);
+						continua=false;
+						return cal;
+					}
+				} catch (Exception e2) {
+					// TODO: handle exception
+					System.out.println("Fallo al evaluar la fehca");
+				}
+				
+				if(conta>100) {
+					continua=false;
+				}
+				
+			}
+			return null;
+		} catch (Exception e) {
+			// TODO: handle exception
+			String msg="FechaSimple::PrimerVto::ERROR::Anho:"+anho+" - mes;"+mes+" - dia:"+dia+"\n"+e.toString();
+			System.out.println(msg);
+			return null;
+		}
+		
+		
+	}
+
+	private static boolean esVto(Calendar fecha) {
+		try {
+			if(fecha.get(Calendar.DAY_OF_WEEK)==6 && fecha.get(Calendar.DAY_OF_WEEK_IN_MONTH)==3) {
+				int mes=fecha.get(Calendar.MONTH);
+				if(mes==2 || mes==5 || mes==8 || mes==11) {
+					return true;
+				}else {
+					return false;
+				}
+			}else {
+				return false;
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("FechaSimple::esVto::ERROR::"+e.toString());
+			return false;
+		}
+	}
+}
