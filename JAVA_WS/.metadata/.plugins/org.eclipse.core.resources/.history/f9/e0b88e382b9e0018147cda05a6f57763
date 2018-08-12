@@ -112,8 +112,7 @@ public class MENU_ESCENARIO {
 			String Query="SELECT a.ID_PARAM, \n"
 						+"       a.DESCRIPCION, \n"
 						+"       b.VALOR, \n"
-						//+"       a.DATA_TYPE \n"
-						+"       IFNULL((SELECT z.DESCRIPCION FROM T_PARAM_VALORES_VALIDOS z WHERE z.ID_PARAM = a.ID_PARAM AND z.ID_OPCION = b.VALOR), ' ') \n"
+						+"       a.DATA_TYPE \n"
 						+"  FROM IA_APP.T_CONFIG_ESC_PARAM a, \n"
 						+"       IA_APP.T_CONFIG_ESCENARIOS b \n"
 						+" WHERE b.ID_ESCENARIO = "+IDEscenario+" \n"
@@ -319,27 +318,13 @@ public class MENU_ESCENARIO {
 		}
 		
 		//Comprobamos si existen las tablas
-		if(modificaParametroLlamada("100", "1")==false) {
-			msg="Error al modificar el parametro";
-			log.WriteMessage(msg, true);
-			rollBack();	
-			OpcionesEscenario();
-			return;
-		}
-		
 		boolean existeX=resultsetUseful.existeTabla(nombreTablaX, conexion);
 		boolean existeY=resultsetUseful.existeTabla(nombreTablaY, conexion);		
 		
 		if(existeX==false){
 			msg="La tabla "+nombreTablaX+" no existe. Se creara...";
 			log.WriteMessage(msg, true);
-			if(creaTabla(nombreTablaX, camposX, tiposX, notNullX)==false) {
-				msg="Error al crear la tabla "+nombreTablaX;
-				log.WriteMessage(msg, true);
-				rollBack();	
-				OpcionesEscenario();
-				return;
-			}
+			creaTabla(nombreTablaX, camposX, tiposX, notNullX);
 		}else {
 			msg="La tabla "+nombreTablaX+" ya existia";
 			log.WriteMessage(msg, true);
@@ -348,204 +333,27 @@ public class MENU_ESCENARIO {
 		if(existeY==false){
 			msg="La tabla "+nombreTablaY+" no existe. Se creara...";
 			log.WriteMessage(msg, true);
-			if(creaTabla(nombreTablaY, camposY, tiposY, notNullY)==false) {
-				msg="Error al crear la tabla "+nombreTablaY;
-				log.WriteMessage(msg, true);
-				rollBack();	
-				OpcionesEscenario();
-				return;
-			}
+			creaTabla(nombreTablaY, camposY, tiposY, notNullY);
 		}else {
 			msg="La tabla "+nombreTablaY+" ya existia";
 			log.WriteMessage(msg, true);
 		}
 		
-		boolean insertaX=realizaInserciones(nombreTablaX, ficXStr, camposX);
-		if(insertaX) {
-			msg="Procesado el fichero "+ficX;
-			log.WriteMessage(msg, true);
-		}else {
-			msg="Error procesando el fichero "+ficX;
-			log.WriteMessage(msg, true);
-			rollBack();	
-			OpcionesEscenario();
-			return;
-		}
+		realizaInserciones(nombreTablaX, ficXStr, camposX);
 		
-		boolean insertaY=realizaInserciones(nombreTablaY, ficYStr, camposY);
-		if(insertaY) {
-			msg="Procesado el fichero "+ficY;
-			log.WriteMessage(msg, true);
-		}else {
-			msg="Error procesando el fichero "+ficY;
-			log.WriteMessage(msg, true);
-			rollBack();	
-			OpcionesEscenario();
-			return;
-		}
+		realizaInserciones(nombreTablaY, ficYStr, camposY);
 		
-		for(int i=1;i<camposX.length;i++) {
-			if(insertaAutocorrelacion(camposX[i], 0)==false) {
-				msg="Error al insertar la autocorrelacion para el campo "+camposX[i];
-				log.WriteMessage(msg,true);
-				rollBack();	
-				OpcionesEscenario();
-				return;
-			}
-		}
-		
-		if(modificaParametroLlamada("100", "2")==false) {
-			msg="Error al modificar el parametro";
-			log.WriteMessage(msg, true);
-			rollBack();	
-			OpcionesEscenario();
-			return;
-		}
-		
-		if(modificaParametroLlamada("101", String.valueOf(camposX.length))==false) {
-			msg="Error al modificar el parametro";
-			log.WriteMessage(msg, true);
-			rollBack();	
-			OpcionesEscenario();
-			return;
-		}
-		if(modificaParametroLlamada("102", String.valueOf(camposY.length))==false) {
-			msg="Error al modificar el parametro";
-			log.WriteMessage(msg, true);
-			rollBack();	
-			OpcionesEscenario();
-			return;
-		}
-		if(modificaParametroLlamada("103", String.valueOf(camposX.length))==false) {
-			msg="Error al modificar el parametro";
-			log.WriteMessage(msg, true);
-			rollBack();	
-			OpcionesEscenario();
-			return;
-		}
-		
-		commit();
 		
 		msg="procesaFicheros::proceso completado";
 		log.WriteMessage(msg, true);
 		OpcionesEscenario();
 	}
 	
+	
 	public void modAutoCorrel() {
 		
 		System.out.println("void::modAutoCorrel");
-		String msg="Entrando a modificar autocorrelaciones del escenario "+IDEscenario;
-		log.WriteMessage(msg,true);
-		
-		try {
-			Statement sta=conexion.createStatement();
-			if(getParamEscenario(IDEscenario, "100", sta).trim().equals("1")) {
-				msg="Los ficheros no han sido procesados. No se pueden modificar las autocorrelaciones hasta que no haya sido procesados.";
-				log.WriteMessage(msg,true);
-				sta.close();
-				OpcionesEscenario();
-				return;
-			}
-		} catch (Exception e) {
-			// TODO: handle exception
-			msg="Error al evaluar el status";
-			log.WriteMessage(msg,true);
-			OpcionesEscenario();
-			return;
-		}
-		
-		
-		String query="SELECT a.CAMPO, a.AUTOCORREL FROM T_ESCENARIOS_AUTOCORRELACION a WHERE ID_ESCENARIO = "+IDEscenario;
-		String [][]opciones=resultsetUseful.queryToMatrix(query, conexion);
-		String [][]opcionesOK=new String [opciones.length+1][opciones[0].length+1];
-		for(int i=0;i<opciones.length;i++) {
-			opcionesOK[i][0]=String.valueOf(i+1);
-			for(int j=0;j<opciones[0].length;j++) {
-				opcionesOK[i][j+1]=opciones[i][j];
-			}
-		}
-		opcionesOK[opcionesOK.length-1][0]="0";
-		opcionesOK[opcionesOK.length-1][1]="Volver";
-		
-		String consulta="Seleccione el campo al que modificar la autocorrelacion";
-		
-		String elegida=MenusSQL.generaConsulta(consulta, opcionesOK, scanner, 0);
-		if(elegida.equals("0")) {
-			msg="volviendo...";
-			
-			log.WriteMessage(msg,true);
-			OpcionesEscenario();
-			return;
-		}
-		
-		int fila=Integer.parseInt(elegida);
-		msg="Se va a modificar la autocorrelacion del campo "+opcionesOK[fila-1][1];
-		log.WriteMessage(msg,true);
-		
-		boolean validado=false;
-		String valorNuevo="";
-		while(validado==false) {
-			msg="Seleccione un nuevo valor para la autocorrelacion del campo "+opcionesOK[fila-1][1];
-			log.WriteMessage(msg,true);
-			valorNuevo=scanner.nextLine();
-			if(esParametroNuevoValido(valorNuevo, "INT")==false) {
-				msg="'"+valorNuevo+"' no es de tipo entero";
-				log.WriteMessage(msg,true);
-				validado=false;
-			}else {
-				validado=true;
-			}
-		}
-		
-		msg="Se va a modificar la autocorrelacion en "+opcionesOK[fila-1][1]+" pasando de '"+opcionesOK[fila-1][2]+"' a '"+valorNuevo+"'. ¿Esta de acuerdo? (S/N)";
-		boolean confirma=MenusSQL.preguntaConfirmacion(msg, scanner);
-		
-		if(confirma==false) {
-			msg="Cancelando...";
-			log.WriteMessage(msg,true);
-			OpcionesEscenario();
-			return;
-		}
-		
-		boolean modificada=insertaAutocorrelacion(opcionesOK[fila-1][1], Integer.parseInt(valorNuevo));
-		if(modificada==false) {
-			msg="Fallo al modificar la autocorrelacion en  el campo "+opcionesOK[fila-1][1];
-			log.WriteMessage(msg,true);
-			try {
-				conexion.rollback();
-				msg="rollback";
-				log.WriteMessage(msg,true);
-			} catch (Exception e) {
-				// TODO: handle exception
-				msg="Fallo en el rollback";
-				log.WriteMessage(msg,true);
-				msg=e.toString();
-				log.WriteMessage(msg,true);
-			}
-			
-		}else {
-			msg="Modificada la autocorrelacion en el campo "+opcionesOK[fila-1][1]+" a "+valorNuevo;
-			log.WriteMessage(msg,true);
-			if(actualiza_total_columnas()==true) {
-				try {
-					conexion.commit();
-					msg="commit";
-					log.WriteMessage(msg,true);	
-				} catch (Exception e) {
-					// TODO: handle exception
-					msg="Fallo en el commit";
-					log.WriteMessage(msg,true);
-					msg=e.toString();
-					log.WriteMessage(msg,true);
-					rollBack();
-				}
-			}else {
-				msg="Fallo al actualizar el total de columnas";
-				log.WriteMessage(msg,true);
-				rollBack();
-			}
-			
-		}
+
 		OpcionesEscenario();
 	}
 	
@@ -554,9 +362,11 @@ public class MENU_ESCENARIO {
 		System.out.println("void::borraEscenario");
 		
 		String msg="Entrando a borrar el escenario "+IDEscenario;
-		log.WriteMessage(msg,true);
+		log.WriteMessage(msg);
+		System.out.println(msg);
 		msg="";
-		log.WriteMessage(msg,true);
+		log.WriteMessage(msg);
+		System.out.println(msg);
 		msg="El escenario se borrara junto a toda su parametrizacion. ¿Esta de acuerdo?";
 		boolean respuesta=MenusSQL.preguntaConfirmacion(msg, scanner);
 		if (respuesta==false) {
@@ -766,7 +576,7 @@ public class MENU_ESCENARIO {
 			return false;
 		}
 		
-		if(tipoDato.contains("VARCHAR") && valor.length()>0) {
+		if(tipoDato.contains("VARCHAR") || valor.length()>0) {
 			return true;
 		}else if(tipoDato.contains("VARCHAR")){
 			msg="esParametroNuevoValido::FALSE - Param: "+valor+" - Tipo esperado: "+tipoDato;
@@ -1142,7 +952,7 @@ public class MENU_ESCENARIO {
 		return res;
 	}
 
-	private boolean realizaInserciones(String tabla, String [][]valores,String []campos) {
+	private void realizaInserciones(String tabla, String [][]valores,String []campos) {
 		
 		String msg="Se realizaran las inserciones en la tabla "+tabla;
 		String msg2="";
@@ -1238,180 +1048,7 @@ public class MENU_ESCENARIO {
 			log.WriteMessage(msg, true);
 		}
 		
-		if(errores==0) {
-			return true;
-		}else {
-			return false;
-		}
-		
 	}
 
-	private void rollBack() {
-		
-		String msg="Realizando rollback...";
-		log.WriteMessage(msg,true);
-		try {
-			conexion.rollback();
-			msg="Rollback realizado.";
-			log.WriteMessage(msg,true);
-		} catch (Exception e) {
-			// TODO: handle exception
-			msg="Error al realizar el rollback.";
-			log.WriteMessage(msg,true);
-		}
-		
-	}
-	
-	private void commit() {
-		
-		String msg="Realizando commit...";
-		log.WriteMessage(msg,true);
-		try {
-			conexion.commit();
-			msg="commit realizado.";
-			log.WriteMessage(msg,true);
-		} catch (Exception e) {
-			// TODO: handle exception
-			msg="Error al realizar el commit.";
-			log.WriteMessage(msg,true);
-		}
-		
-	}
-	
-	private boolean modificaParametroLlamada(String idParam, String valorNuevo) {
-		String msg="Modificando parametro "+idParam+" valor nuevo "+valorNuevo;
-		log.WriteMessage(msg,true);
-		try {
-			
-			CallableStatement stat=conexion.prepareCall("{call IA_APP.MODIFICA_PARAM_ESCENARIO(?,?,?,?,?)}");
-			stat.setInt(1, Integer.parseInt(IDEscenario));
-			stat.setInt(2, Integer.parseInt(idParam));
-			stat.setString(3, valorNuevo);
-			stat.registerOutParameter(4, java.sql.Types.INTEGER);
-			stat.registerOutParameter(5, java.sql.Types.VARCHAR);
-			stat.executeUpdate();
-			int res=stat.getInt(4);
-			String resStr=stat.getString(5);
-			
-			msg=String.valueOf(res)+" - "+resStr;
-			log.WriteMessage(msg,true);
-			
-			if (res==1) {
-				msg="Se actualizo el parametro a '"+valorNuevo+"'";
-				log.WriteMessage(msg,true);
-				return true;
-			}else if (res==0) {
-				msg="No se actualizo el parametro '"+idParam+"'";
-				log.WriteMessage(msg,true);
-				return false;
-			}else if(res==-1) {
-				msg="Error al procesar el procedimiento. Param: '"+idParam+"'";
-				log.WriteError(msg,true);
-				return false;
-			}
-		} catch (Exception e) {
-			// TODO: handle exception
-			msg="Error al actualizar el valor";
-			log.WriteMessage(msg,true);
-			return false;
-		}
-		return false;
-	}
 
-	private boolean insertaAutocorrelacion(String campo, int autocorr) {
-		String msg="Insertando autocorrelacion "+autocorr+" en el campo "+campo+" escenario "+IDEscenario;
-		log.WriteMessage(msg, true);
-		try {
-			CallableStatement stat=conexion.prepareCall("{call IA_APP.MODIFICA_AUTOCORRELACION(?,?,?,?,?)}");
-			stat.setInt(1, Integer.parseInt(IDEscenario));
-			stat.setString(2, campo);
-			stat.setInt(3, autocorr);
-			stat.registerOutParameter(4, java.sql.Types.INTEGER);
-			stat.registerOutParameter(5, java.sql.Types.VARCHAR);
-			stat.executeUpdate();
-			int res=stat.getInt(4);
-			String resStr=stat.getString(5);
-			msg=resStr;
-			log.WriteMessage(msg, true);
-			
-			if(res<1) {
-				return false;
-			}else {
-				return true;
-			}
-			
-		} catch (Exception e) {
-			// TODO: handle exception
-			msg="Error al insertar autocorrelacion "+autocorr+" en el campo "+campo+" escenario "+IDEscenario;
-			log.WriteMessage(msg, true);
-			return false;
-		}
-		
-	}
-
-	private static String getParamEscenario(String idesc, String idparam, Statement sta) {
-		
-		try {
-			String q="SELECT a.VALOR FROM T_CONFIG_ESCENARIOS a WHERE a.ID_ESCENARIO = "+idesc+" AND a.ID_PARAM = "+idparam;
-			String res="";
-			ResultSet resu=sta.executeQuery(q);
-			while(resu.next()) {
-				res=resu.getString(1);
-			}
-			resu.close();
-			return res;
-		} catch (Exception e) {
-			// TODO: handle exception
-			return "";
-		}
-		
-	}
-
-	private boolean actualiza_total_columnas() {
-		String msg="Actualizando el total de columnas de inputs";
-		log.WriteMessage(msg,true);
-		try {
-			CallableStatement stat=conexion.prepareCall("{call IA_APP.ACTUALIZA_TOTAL_COLULMAS(?,?,?)}");
-			stat.setInt(1, Integer.parseInt(IDEscenario));
-			stat.registerOutParameter(2, java.sql.Types.INTEGER);
-			stat.registerOutParameter(3, java.sql.Types.VARCHAR);
-			stat.executeUpdate();
-			int res=stat.getInt(2);
-			String resStr=stat.getString(3);
-			msg=res+" "+resStr;
-			log.WriteMessage(msg,true);
-			stat.close();
-			if (res==0) {
-				return false;
-			}else {
-				return true;
-			}
-		} catch (Exception e) {
-			// TODO: handle exception
-			msg="Error al actualizar el total de columnas";
-			log.WriteMessage(msg,true);
-			msg=e.toString();
-			log.WriteMessage(msg,true);
-			return false;
-		}
-		
-	}
-	
-	
-	/*
-	private int cuentaAutocorrelaciones(String campo, Statement sta) {
-		
-		try {
-			int cuenta=0;
-			String q="SELECT COUNT(*) FROM T_ESCENARIOS_AUTOCORRELACION a WHERE a.ID_ESCENARIO = "+IDEscenario+" AND a.CAMPO = '"+campo+"'";
-			ResultSet res=sta.executeQuery(q);
-			while(res.next()) {
-				cuenta=res.getInt(1);
-			}
-			return cuenta;
-		}catch (Exception e) {
-			// TODO: handle exception
-			return -1;
-		}
-	}*/
 }

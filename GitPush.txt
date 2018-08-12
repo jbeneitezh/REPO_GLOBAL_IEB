@@ -1,6 +1,7 @@
 
+
 git init
 git add .
-git commit -m 'mensaje'
+git commit -m 'control 20180811_2030'
 git remote add origin https://github.com/jbeneitezh/REPO_GLOBAL_IEB.git
 git push -u origin master

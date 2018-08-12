@@ -158,10 +158,8 @@ public class MenusSQL {
 					validado=true;
 					return respuesta;
 				}else {
-					/*
 					msg="Opcion no disponible. Por favor, seleccione una de la lista.";
 					log.WriteMessage(msg,true);
-					*/
 					validado=false;
 				}
 			}

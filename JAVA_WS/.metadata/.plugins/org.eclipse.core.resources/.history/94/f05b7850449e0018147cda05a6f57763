@@ -142,11 +142,6 @@ public class MenusSQL {
 			
 			for(int i=1;i<matOpciones.length;i++) {
 				msg="    "+matOpciones[i][0]+" - "+matOpciones[i][1];
-				if(matOpciones[i].length>2) {
-					for(int j=2;j<matOpciones[i].length;j++) {
-						msg+=" - "+matOpciones[i][j];
-					}
-				}
 				log.WriteMessage(msg,true);
 			}
 			
@@ -158,10 +153,8 @@ public class MenusSQL {
 					validado=true;
 					return respuesta;
 				}else {
-					/*
 					msg="Opcion no disponible. Por favor, seleccione una de la lista.";
 					log.WriteMessage(msg,true);
-					*/
 					validado=false;
 				}
 			}
@@ -169,5 +162,9 @@ public class MenusSQL {
 		}
 		
 		return "";
+		
+		
+		
+		
 	}
 }

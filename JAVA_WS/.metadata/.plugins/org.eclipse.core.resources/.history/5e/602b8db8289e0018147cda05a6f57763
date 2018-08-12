@@ -165,39 +165,6 @@ public class resultsetUseful {
 			// TODO: handle exception
 			return false;
 		}
-	}
-	public static int borraTabla(String tabla, Connection con) {
-		try {
-			boolean existe=existeTabla(tabla, con);
-			if(existe==true) {
-				Statement sta=con.createStatement();
-				String q="DROP TABLE "+tabla;
-				sta.executeUpdate(q);
-				return 1;
-			}else {
-				return 0;
-			}
-			
-		} catch (Exception e) {
-			// TODO: handle exception
-			return -1;
-		}
-	}
-	public static int cuentaRegistros(String tabla, String where, Statement sta) {
-		
-		try {
-			String q="SELECT COUNT(*) FROM "+tabla+" "+where;
-			ResultSet res=sta.executeQuery(q);
-			int cuenta=0;
-			while(res.next()) {
-				cuenta=res.getInt(1);
-			}
-			res.close();
-			return cuenta;
-		} catch (Exception e) {
-			// TODO: handle exception
-			return -1;
-		}
 		
 		
 	}

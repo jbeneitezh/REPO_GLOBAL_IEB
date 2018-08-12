@@ -424,12 +424,11 @@ public class MENU_ESCENARIO {
 			return;
 		}
 		
-		commit();
-		
 		msg="procesaFicheros::proceso completado";
 		log.WriteMessage(msg, true);
 		OpcionesEscenario();
 	}
+	
 	
 	public void modAutoCorrel() {
 		
@@ -486,7 +485,6 @@ public class MENU_ESCENARIO {
 		String valorNuevo="";
 		while(validado==false) {
 			msg="Seleccione un nuevo valor para la autocorrelacion del campo "+opcionesOK[fila-1][1];
-			log.WriteMessage(msg,true);
 			valorNuevo=scanner.nextLine();
 			if(esParametroNuevoValido(valorNuevo, "INT")==false) {
 				msg="'"+valorNuevo+"' no es de tipo entero";
@@ -526,23 +524,16 @@ public class MENU_ESCENARIO {
 		}else {
 			msg="Modificada la autocorrelacion en el campo "+opcionesOK[fila-1][1]+" a "+valorNuevo;
 			log.WriteMessage(msg,true);
-			if(actualiza_total_columnas()==true) {
-				try {
-					conexion.commit();
-					msg="commit";
-					log.WriteMessage(msg,true);	
-				} catch (Exception e) {
-					// TODO: handle exception
-					msg="Fallo en el commit";
-					log.WriteMessage(msg,true);
-					msg=e.toString();
-					log.WriteMessage(msg,true);
-					rollBack();
-				}
-			}else {
-				msg="Fallo al actualizar el total de columnas";
+			try {
+				conexion.commit();
+				msg="commit";
 				log.WriteMessage(msg,true);
-				rollBack();
+			} catch (Exception e) {
+				// TODO: handle exception
+				msg="Fallo en el commit";
+				log.WriteMessage(msg,true);
+				msg=e.toString();
+				log.WriteMessage(msg,true);
 			}
 			
 		}
@@ -766,7 +757,7 @@ public class MENU_ESCENARIO {
 			return false;
 		}
 		
-		if(tipoDato.contains("VARCHAR") && valor.length()>0) {
+		if(tipoDato.contains("VARCHAR") || valor.length()>0) {
 			return true;
 		}else if(tipoDato.contains("VARCHAR")){
 			msg="esParametroNuevoValido::FALSE - Param: "+valor+" - Tipo esperado: "+tipoDato;
@@ -1262,22 +1253,6 @@ public class MENU_ESCENARIO {
 		
 	}
 	
-	private void commit() {
-		
-		String msg="Realizando commit...";
-		log.WriteMessage(msg,true);
-		try {
-			conexion.commit();
-			msg="commit realizado.";
-			log.WriteMessage(msg,true);
-		} catch (Exception e) {
-			// TODO: handle exception
-			msg="Error al realizar el commit.";
-			log.WriteMessage(msg,true);
-		}
-		
-	}
-	
 	private boolean modificaParametroLlamada(String idParam, String valorNuevo) {
 		String msg="Modificando parametro "+idParam+" valor nuevo "+valorNuevo;
 		log.WriteMessage(msg,true);
@@ -1366,38 +1341,6 @@ public class MENU_ESCENARIO {
 		}
 		
 	}
-
-	private boolean actualiza_total_columnas() {
-		String msg="Actualizando el total de columnas de inputs";
-		log.WriteMessage(msg,true);
-		try {
-			CallableStatement stat=conexion.prepareCall("{call IA_APP.ACTUALIZA_TOTAL_COLULMAS(?,?,?)}");
-			stat.setInt(1, Integer.parseInt(IDEscenario));
-			stat.registerOutParameter(2, java.sql.Types.INTEGER);
-			stat.registerOutParameter(3, java.sql.Types.VARCHAR);
-			stat.executeUpdate();
-			int res=stat.getInt(2);
-			String resStr=stat.getString(3);
-			msg=res+" "+resStr;
-			log.WriteMessage(msg,true);
-			stat.close();
-			if (res==0) {
-				return false;
-			}else {
-				return true;
-			}
-		} catch (Exception e) {
-			// TODO: handle exception
-			msg="Error al actualizar el total de columnas";
-			log.WriteMessage(msg,true);
-			msg=e.toString();
-			log.WriteMessage(msg,true);
-			return false;
-		}
-		
-	}
-	
-	
 	/*
 	private int cuentaAutocorrelaciones(String campo, Statement sta) {
 		
