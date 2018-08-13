@@ -1511,3 +1511,14 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: in comment 
 2018-08-12 19:49:18,286 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2018-08-12 19:49:18,286 [Worker-356] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-08-12 19:49:18,287 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-12 22:51:34,996 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2018-08-12 22:51:37,623 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.jbeneitezhiaapp:ia_app:0.0.1-SNAPSHOT @ D:\JBH_Repo\JAVA_WS\ia_app\pom.xml.
+2018-08-12 22:51:37,826 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.jbeneitezh:ieb_app:0.0.1-SNAPSHOT @ D:\JBH_Repo\JAVA_WS\ieb_app\pom.xml.
+2018-08-12 22:51:39,500 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-08-12 22:51:39,506 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-12 22:51:39,509 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-08-12 22:51:39,510 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-12 22:51:40,315 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-08-12 22:51:40,316 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-08-12 22:51:40,317 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-08-12 22:51:40,319 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
