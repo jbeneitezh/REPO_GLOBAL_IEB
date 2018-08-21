@@ -201,6 +201,23 @@ public class FechaSimple {
 			
 		}
 		
+		public static double DifDias(String fecIni, String fecFin, String formato) {
+			try {
+				SimpleDateFormat dateFormat = new SimpleDateFormat(formato);
+				Date fechaInicial=dateFormat.parse(fecIni);
+				Date fechaFinal=dateFormat.parse(fecFin);
+				double fecIniDbl=(double) (fechaInicial.getTime());
+				double fecFinDbl=(double) (fechaFinal.getTime());
+				double anhos=(fecFinDbl-fecIniDbl)/86400000;
+				return anhos;
+			} catch (Exception e) {
+				// TODO: handle exception
+				String msg="FechaSimple::DifDias::ERROR::No se pudieron restar las fechas\n"+e.toString();
+				System.out.println(msg);
+				return 0;
+			}
+		}
+		
 		public static double DifAnhosBase365(String fecIni, String fecFin) {
 			try {
 				SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
@@ -241,6 +258,12 @@ public class FechaSimple {
 			return anhos;
 		}
 		
+		public static double diferenciaDiasFechas(Date ini, Date fin) {
+			double fecIniDbl=(double) (ini.getTime());
+			double fecFinDbl=(double) (fin.getTime());
+			double anhos=(fecFinDbl-fecIniDbl)/(86400000);
+			return anhos;
+		}
 
 		public static String [] getFechasVtos(int numVtos, int anho, int mes, int dia){
 			try {

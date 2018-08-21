@@ -1,0 +1,50 @@
+package IEB_ETL;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.util.Vector;
+
+import IEB.IEB_Querys;
+import Utiles.Matrix;
+import Utiles.resultsetUseful;
+import config.InfoSQL;
+
+public class RtosTables {
+	
+	public static void main(String []args) {
+		
+		try {
+			InfoSQL.iniciar();
+			Connection conexion=DriverManager.getConnection(InfoSQL.BBDDAccess(), InfoSQL.BBDDUser(), InfoSQL.BBDDKey());
+			creaTablasRtos(conexion);
+			conexion.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	
+	public static void creaTablasRtos(Connection conexion) {
+		Statement sta;
+		try {
+			sta=conexion.createStatement();
+			Vector<String>IdsFuturos=IEB_Querys.getIDActivos(sta, "FUTURE");
+			for(int i=0;i<IdsFuturos.size();i++) {
+				String q1="SELECT a.ID_SUBYACENTE, a.FECHA, a.P_ADJ_CLOSE \n"
+						 +"  FROM IEB_PRO.T_HISTORICOS_COMPLETA a \n"
+						 +" WHERE a.ID_SUBYACENTE = "+IdsFuturos.get(i)+" \n"
+						 +" ORDER BY a.FECHA";
+				
+				String [][]preciosStr=resultsetUseful.queryToMatrix(q1, conexion);
+				Matrix.printMatrix(preciosStr);
+				
+				
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		
+		
+	}
+}

@@ -1,0 +1,12 @@
+package IEB_ETL;
+
+import java.sql.Connection;
+
+public class RtosTables {
+	public static void creaTablasRtos(Connection conexion) {
+		
+		
+		
+		
+	}
+}
