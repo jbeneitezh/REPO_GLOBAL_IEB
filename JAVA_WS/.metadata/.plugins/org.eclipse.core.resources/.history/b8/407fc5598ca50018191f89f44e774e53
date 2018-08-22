@@ -1,0 +1,24 @@
+package IEB_ETL;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import config.InfoSQL;
+
+public class mainETL {
+
+	public static void main(String []args) {
+		
+		try {
+			InfoSQL.iniciar();
+			Connection conexion=DriverManager.getConnection(InfoSQL.BBDDAccess(), InfoSQL.BBDDUser(), InfoSQL.BBDDKey());
+			conexion.setAutoCommit(false);
+			RtosTables.creaTablasRtos(conexion);
+			
+			conexion.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+}

@@ -7,7 +7,7 @@ import java.util.Vector;
 
 import DateAndTime.FechaSimple;
 import IEB.IEB_Querys;
-import Utiles.Matrix;
+//import Utiles.Matrix;
 import Utiles.resultsetUseful;
 import config.InfoSQL;
 
@@ -37,6 +37,9 @@ public class RtosTables {
 			
 			Vector<String>IdsFuturos=IEB_Querys.getIDActivos(sta, "FUTURE");
 			for(int i=0;i<IdsFuturos.size();i++) {
+				
+				System.out.println("Procesando el subyacente "+IdsFuturos.get(i));
+				
 				String q1="SELECT a.ID_SUBYACENTE, a.FECHA, a.P_ADJ_CLOSE \n"
 						 +"  FROM IEB_PRO.T_HISTORICOS_COMPLETA a \n"
 						 +" WHERE a.ID_SUBYACENTE = "+IdsFuturos.get(i)+" \n"
@@ -52,26 +55,30 @@ public class RtosTables {
 					double p0=Double.parseDouble(preciosStr[j-1][2]);
 					double dif=FechaSimple.DifDias(f0, f1,"yyyy-MM-dd");
 					double rtoi=Math.log(p1/p0);
-					if(dif<5) {
+					if(dif<=ETL_RESTRICTIONS.maxDiasDifRto()) {
 						aplica++;
-						System.out.println(f0+" - "+f1+" - "+dif+" - "+(rtoi*100)+"% - Aplica"+" - "+aplica+" / "+noaplica);
+						//System.out.println(f0+" - "+f1+" - "+dif+" - "+(rtoi*100)+"% - Aplica"+" - "+aplica+" / "+noaplica);
 						String insert="INSERT INTO IEB_PRO.T_HISTO_RTOS VALUES("+IdsFuturos.get(i)+", STR_TO_DATE('"+f1+"', '%Y-%m-%d'), "+rtoi+")";
 						sta.executeUpdate(insert);
 						
 					}else {
 						noaplica++;
-						System.out.println(f0+" - "+f1+" - "+dif+" - "+(rtoi*100)+"% - NO Aplica"+" - "+aplica+" / "+noaplica);
+						//System.out.println(f0+" - "+f1+" - "+dif+" - "+(rtoi*100)+"% - NO Aplica"+" - "+aplica+" / "+noaplica);
 					}
 				}
 				
+				System.out.println("Procesado el subyacente "+IdsFuturos.get(i));
 			}
+			System.out.println(String.valueOf(aplica+noaplica)+" registros total. "+aplica+" registros insertados");
 			conexion.commit();
+			System.out.println("commit");
 			sta.close();
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("ERROR::"+e.toString());
 			try {
 				conexion.rollback();
+				System.out.println("rollback");
 			} catch (Exception e2) {
 				// TODO: handle exception
 			}

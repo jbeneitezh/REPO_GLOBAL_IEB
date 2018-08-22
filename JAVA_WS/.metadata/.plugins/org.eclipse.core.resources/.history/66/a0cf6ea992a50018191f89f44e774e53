@@ -1,0 +1,119 @@
+package IEB_ETL;
+
+import java.sql.Connection;
+import java.sql.Statement;
+import java.util.Vector;
+
+import DateAndTime.FechaSimple;
+import IEB.IEB_Querys;
+import Utiles.resultsetUseful;
+
+public class Promedios_Table {
+	public static void generaPromedios(Connection conexion) {
+		int aplica=0;int noaplica=0;
+		Statement sta;
+		try {
+			sta=conexion.createStatement();
+	
+			int []periodos=ETL_VARIABLES.Periodos();
+			
+			String truncar="TRUNCATE TABLE IEB_PRO.T_HISTO_PROMEDIOS";
+			sta.executeUpdate(truncar);
+			System.out.println("Truncada T_HISTO_PROMEDIOS");
+			
+			Vector<String>IdsFuturos=IEB_Querys.getIDActivos(sta, "FUTURE");
+			for(int i=0;i<IdsFuturos.size();i++) {
+				
+				System.out.println("Procesando el subyacente "+IdsFuturos.get(i));
+				
+				String q1="SELECT a.ID_SUBYACENTE, a.FECHA, a.RENDIMIENTO \n"
+						 +"  FROM IEB_PRO.T_HISTO_RTOS a \n"
+						 +" WHERE a.ID_SUBYACENTE = "+IdsFuturos.get(i)+" \n"
+						 +" ORDER BY a.ID_SUBYACENTE, a.FECHA";
+				
+				String [][]rtosStr=resultsetUseful.queryToMatrix(q1, conexion);
+				//Matrix.printMatrix(preciosStr);
+				
+				for(int j=0;j<periodos.length;j++) {
+					for(int k=periodos[j]+1;k<rtosStr.length;k++) {
+						
+						//Verificamos que en el registro no se superen los maximos días de diferencia
+						//permitidos, antes de realizar el cálculo del promedio por sesion.
+						boolean valido=true;
+						for(int h=k;h>k-periodos[j]+1;h--) {
+							String f1=rtosStr[h][1];
+							String f0=rtosStr[h-1][1];
+							double dif=FechaSimple.DifDias(f0, f1,"yyyy-MM-dd");
+							if(dif>ETL_RESTRICTIONS.maxDiasDifRto()) {
+								valido=false;
+							}
+						}
+						
+						//Si se cumplen las condiciones se calcula el promedio y se inserta
+						if(valido==true) {
+							double sumaRto=0;
+							for(int h=k;h>k-periodos[j];h--) {
+								sumaRto+=Double.parseDouble(rtosStr[h][2]);
+							}
+							double promedio=sumaRto/periodos[j];
+							
+							double sumaCuadM0=0;
+							double sumaCuadMMovil=0;
+							for(int h=k;h>k-periodos[j];h--) {
+								sumaCuadM0+=Math.pow(Double.parseDouble(rtosStr[h][2]),2);
+								sumaCuadMMovil+=Math.pow(Double.parseDouble(rtosStr[h][2])-promedio,2);
+							}
+							
+							double volaM0=Math.sqrt(sumaCuadM0/(periodos[j]-1));
+							double volaMMovil=Math.sqrt(sumaCuadMMovil/(periodos[j]-1));
+							String f1=rtosStr[j][1];
+							
+							//Insercion del promedio
+							String insert="INSERT INTO IEB_PRO.T_HISTO_PROMEDIOS VALUES("+IdsFuturos.get(i)+", "
+																						+"STR_TO_DATE('"+f1+"', '%Y-%m-%d'), "
+																						+periodos[j]+", "
+																						+promedio+")";
+							sta.executeUpdate(insert);
+							
+							//insercion de la volatilidad com media 0
+							insert="INSERT INTO IEB_PRO.T_HISTO_VOLA_PROM_0 VALUES("+IdsFuturos.get(i)+", "
+																				    +"STR_TO_DATE('"+f1+"', '%Y-%m-%d'), "
+																				    +periodos[j]+", "
+																				    +volaM0+")";
+							sta.executeUpdate(insert);
+							
+							//insercion de la volatilidad com media movil
+							insert="INSERT INTO IEB_PRO.T_HISTO_VOLA_PROM_VAR VALUES("+IdsFuturos.get(i)+", "
+																				      +"STR_TO_DATE('"+f1+"', '%Y-%m-%d'), "
+																				      +periodos[j]+", "
+																				      +volaMMovil+")";
+							sta.executeUpdate(insert);
+							
+							aplica++;
+						}else {
+							noaplica++;
+						}
+					}
+				}
+				
+				System.out.println("Procesado el subyacente "+IdsFuturos.get(i));
+				
+			}
+			conexion.commit();
+			System.out.println("commit");
+			sta.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("ERROR::"+e.toString());
+			try {
+				conexion.rollback();
+				System.out.println("rollback");
+			} catch (Exception e2) {
+				// TODO: handle exception
+			}
+		}
+		
+		
+		
+	}
+}
