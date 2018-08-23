@@ -1,0 +1,90 @@
+package IEB_ETL;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.util.Vector;
+
+import DateAndTime.FechaSimple;
+import IEB.IEB_Querys;
+//import Utiles.Matrix;
+import Utiles.resultsetUseful;
+import config.InfoSQL;
+
+public class RtosTables {
+	
+	public static void main(String []args) {
+		
+		try {
+			InfoSQL.iniciar();
+			Connection conexion=DriverManager.getConnection(InfoSQL.BBDDAccess(), InfoSQL.BBDDUser(), InfoSQL.BBDDKey());
+			conexion.setAutoCommit(false);
+			creaTablasRtos(conexion);
+			conexion.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	
+	public static void creaTablasRtos(Connection conexion) {
+		int aplica=0;int noaplica=0;
+		Statement sta;
+		try {
+			sta=conexion.createStatement();
+			String truncar="TRUNCATE TABLE IEB_PRO.T_HISTO_RTOS";
+			sta.executeUpdate(truncar);
+			System.out.println("Truncada T_HISTO_RTOS");
+			
+			Vector<String>IdsFuturos=IEB_Querys.getIDActivos(sta, "FUTURE");
+			for(int i=0;i<IdsFuturos.size();i++) {
+				
+				System.out.println("Procesando el subyacente "+IdsFuturos.get(i));
+				
+				String q1="SELECT a.ID_SUBYACENTE, a.FECHA, a.P_ADJ_CLOSE \n"
+						 +"  FROM IEB_PRO.T_HISTORICOS_COMPLETA a \n"
+						 +" WHERE a.ID_SUBYACENTE = "+IdsFuturos.get(i)+" \n"
+						 +" ORDER BY a.ID_SUBYACENTE, a.FECHA";
+				
+				String [][]preciosStr=resultsetUseful.queryToMatrix(q1, conexion);
+				//Matrix.printMatrix(preciosStr);
+				
+				for(int j=3;j<preciosStr.length;j++) {
+					String f1=FechaSimple.convierteFechaDatetime(preciosStr[j][1]);
+					String f0=FechaSimple.convierteFechaDatetime(preciosStr[j-1][1]);
+					double p1=Double.parseDouble(preciosStr[j][2]);
+					double p0=Double.parseDouble(preciosStr[j-1][2]);
+					double dif=FechaSimple.DifDias(f0, f1,"yyyy-MM-dd");
+					double rtoi=Math.log(p1/p0);
+					if(dif<=ETL_RESTRICTIONS.maxDiasDifRto()) {
+						aplica++;
+						//System.out.println(f0+" - "+f1+" - "+dif+" - "+(rtoi*100)+"% - Aplica"+" - "+aplica+" / "+noaplica);
+						String insert="INSERT INTO IEB_PRO.T_HISTO_RTOS VALUES("+IdsFuturos.get(i)+", CAST('"+f1+"' AS DATETIME), "+rtoi+")";
+						sta.executeUpdate(insert);
+						
+					}else {
+						noaplica++;
+						//System.out.println(f0+" - "+f1+" - "+dif+" - "+(rtoi*100)+"% - NO Aplica"+" - "+aplica+" / "+noaplica);
+					}
+				}
+				
+				System.out.println("Procesado el subyacente "+IdsFuturos.get(i));
+			}
+			System.out.println(String.valueOf(aplica+noaplica)+" registros total. "+aplica+" registros insertados");
+			conexion.commit();
+			System.out.println("commit");
+			sta.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("ERROR::"+e.toString());
+			try {
+				conexion.rollback();
+				System.out.println("rollback");
+			} catch (Exception e2) {
+				// TODO: handle exception
+			}
+		}
+		
+		
+		
+	}
+}

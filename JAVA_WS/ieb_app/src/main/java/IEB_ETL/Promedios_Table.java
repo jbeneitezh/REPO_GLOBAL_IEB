@@ -59,7 +59,7 @@ public class Promedios_Table {
 							for(int h=k;h>k-periodos[j];h--) {
 								sumaRto+=Double.parseDouble(rtosStr[h][2]);
 							}
-							double promedio=sumaRto/periodos[j];
+							double promedio=sumaRto/(double) periodos[j];
 							
 							double sumaCuadM0=0;
 							double sumaCuadMMovil=0;
@@ -68,8 +68,8 @@ public class Promedios_Table {
 								sumaCuadMMovil+=Math.pow(Double.parseDouble(rtosStr[h][2])-promedio,2);
 							}
 							
-							double volaM0=Math.sqrt(sumaCuadM0/(periodos[j]-1));
-							double volaMMovil=Math.sqrt(sumaCuadMMovil/(periodos[j]-1));
+							double volaM0=Math.sqrt(sumaCuadM0/(double)(periodos[j]-1));
+							double volaMMovil=Math.sqrt(sumaCuadMMovil/(double)(periodos[j]-1));
 							String f1=rtosStr[k][1];
 							
 							//Insercion del promedio

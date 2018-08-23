@@ -2,6 +2,14 @@ package DateAndTime;
 import java.text.SimpleDateFormat;
 import java.util.*;
 public class FechaSimple {
+	
+		public static String convierteFechaDatetime(String fecha) {
+			String res=fecha;
+			if(res.length()<=10) {
+				res+=" 00:00:00";
+			}
+			return res;
+		}
 		public static String FechaString(Calendar fecha){
 			int anho = fecha.get(Calendar.YEAR);
 	        int mes = fecha.get(Calendar.MONTH)+1;
@@ -217,6 +225,22 @@ public class FechaSimple {
 				return 0;
 			}
 		}
+		public static double DifYears(String fecIni, String fecFin, String formato) {
+			try {
+				SimpleDateFormat dateFormat = new SimpleDateFormat(formato);
+				Date fechaInicial=dateFormat.parse(fecIni);
+				Date fechaFinal=dateFormat.parse(fecFin);
+				double fecIniDbl=(double) (fechaInicial.getTime());
+				double fecFinDbl=(double) (fechaFinal.getTime());
+				double anhos=(fecFinDbl-fecIniDbl)/86400000/365;
+				return anhos;
+			} catch (Exception e) {
+				// TODO: handle exception
+				String msg="FechaSimple::DifYears::ERROR::No se pudieron restar las fechas\n"+e.toString();
+				System.out.println(msg);
+				return 0;
+			}
+		}
 		
 		public static double DifAnhosBase365(String fecIni, String fecFin) {
 			try {
@@ -353,5 +377,7 @@ public class FechaSimple {
 				return false;
 			}
 		}
+		
+		
 
 }

@@ -68,7 +68,7 @@ public class AlphaVantageDownload {
 		    int i=-1;
 		    while ((line = bufferedReader.readLine()) != null) {
 			   	i++;
-			    System.out.println(i+"- -"+line);
+			    //System.out.println(i+"- -"+line);
 			    try {
 			    	
 					String []vaux=line.split(",");
@@ -93,7 +93,7 @@ public class AlphaVantageDownload {
 						insertaFila(con, idsuby, fecha, open, high, low, close, adj_close, volume, dividend, split_coef);
 						
 					}else {
-						System.out.println("Suby: "+idsuby+" - fecha: "+fecha+" - cuenta: "+cuenta);
+						//System.out.println("Suby: "+idsuby+" - fecha: "+fecha+" - cuenta: "+cuenta);
 					}
 					
 				} catch (Exception e) {
@@ -158,10 +158,10 @@ public class AlphaVantageDownload {
 					    +"                                                "+volume+", \n"
 					    +"                                                "+dividend+", \n"
 					    +"                                                "+split_coef+")";
-			System.out.println(Query);
+			//System.out.println(Query);
 			sta.executeUpdate(Query);
 			sta.close();
-			System.out.println("Insertado "+idsuby+" - "+fecha);
+			//System.out.println("Insertado "+idsuby+" - "+fecha);
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("AlphaVantageDownload::insertaFila::ERROR::No se pudo insertar id: "+idsuby+" - '"+fecha+"' \n"+e.toString());

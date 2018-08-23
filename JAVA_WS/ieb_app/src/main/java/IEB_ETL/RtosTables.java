@@ -49,16 +49,16 @@ public class RtosTables {
 				//Matrix.printMatrix(preciosStr);
 				
 				for(int j=3;j<preciosStr.length;j++) {
-					String f1=preciosStr[j][1];
-					String f0=preciosStr[j-1][1];
+					String f1=FechaSimple.convierteFechaDatetime(preciosStr[j][1]);
+					String f0=FechaSimple.convierteFechaDatetime(preciosStr[j-1][1]);
 					double p1=Double.parseDouble(preciosStr[j][2]);
 					double p0=Double.parseDouble(preciosStr[j-1][2]);
-					double dif=FechaSimple.DifDias(f0, f1,"yyyy-MM-dd");
+					double dif=FechaSimple.DifDias(f0, f1,"yyyy-MM-dd 00:00:00");
 					double rtoi=Math.log(p1/p0);
 					if(dif<=ETL_RESTRICTIONS.maxDiasDifRto()) {
 						aplica++;
 						//System.out.println(f0+" - "+f1+" - "+dif+" - "+(rtoi*100)+"% - Aplica"+" - "+aplica+" / "+noaplica);
-						String insert="INSERT INTO IEB_PRO.T_HISTO_RTOS VALUES("+IdsFuturos.get(i)+", STR_TO_DATE('"+f1+"', '%Y-%m-%d'), "+rtoi+")";
+						String insert="INSERT INTO IEB_PRO.T_HISTO_RTOS VALUES("+IdsFuturos.get(i)+", CAST('"+f1+"' AS DATETIME), "+rtoi+")";
 						sta.executeUpdate(insert);
 						
 					}else {
